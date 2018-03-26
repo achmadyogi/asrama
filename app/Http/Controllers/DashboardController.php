@@ -37,6 +37,9 @@ class DashboardController extends Controller
         $user = Auth::user();
         $user->nim = (isset($user->valid_nim[0])) ? $user->valid_nim[0]->nim : "-" ;
         $user_penghuni_info = $user->user_penghuni;
+        $is_tombol = 0;
+        $pesan_checkout = 0;
+        $pesan_checkin = 0;
         if ($user->is_penghuni == '1') {
             $des_reguler = 'Penghuni reguler adalah penghuni dengan status mahasiswa ITB. Seorang penghuni reguler hanya dapat mendaftar pada periode tertentu yang waktunya telah ditetapkan oleh pihak asrama.';
             $des_nonreguler = 'Penghuni Non Reguler terbuka bagi siapa saja yang ingin mendaftar ke asrama. Penghuni Non Reguler dapat menetapkan tanggal masuk dan tanggal keluar dari asrama sesuai keinginan sendiri.';
@@ -86,9 +89,7 @@ class DashboardController extends Controller
 			      $user_daftar = collect($user_daftar);
             $last_daftar = $user_daftar->first();
             $list_next_periode = NextPeriode::all();
-            $is_tombol = 0;
-            $pesan_checkout = 0;
-            $pesan_checkin = 0;
+
             foreach ($list_next_periode as $data) {
                 $periode_asal = Periode::find($data->periode_asal);
                 if ($last_daftar != NULL) {
@@ -217,7 +218,7 @@ class DashboardController extends Controller
 												WHERE asrama.id_asrama = pengelola.id_asrama AND pengelola.id_user = ".$user->id." AND asrama.id_asrama = gedung.id_asrama AND gedung.id_gedung = kamar.id_gedung AND kamar.id_kamar = kerusakan_kamar.id_kamar) a
 											ORDER BY created_at DESC");
 			$laporan = collect($laporan);
-			
+
             // NOTIFIKASI
             $count_request_daftar = DaftarAsramaNonReguler::where([['status', 'Menunggu'], ['asrama', $nama_asrama]])->count() + DaftarAsramaReguler::where([['status', 'Menunggu'], ['asrama', $nama_asrama]])->count();
 

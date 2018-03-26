@@ -15,6 +15,15 @@
                                 <input id="nama" type="text" class="form-control" name="nama" required autofocus>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label for="gender" class="col-md-4 control-label">Gender</label>
+                            <div class="col-md-6">
+                                <select id="gender" type="text" class="form-control" name="gender" required>
+                                    <option value="L">Laki-laki</option>
+                                    <option value="P">Perempuan</option>
+                                </select>
+                            </div>
+                        </div>
 
                         <div class="form-group">
                             <div class="col-md-12">
