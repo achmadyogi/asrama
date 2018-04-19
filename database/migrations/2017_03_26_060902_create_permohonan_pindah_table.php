@@ -16,12 +16,13 @@ class CreatePermohonanPindahTable extends Migration
         Schema::create('permohonan_pindah', function (Blueprint $table) {
             $table->increments('id_permohonan');
             $table->unsignedInteger('id_user');
-			$table->foreign('id_user')->references('id')->on('users');
             $table->unsignedInteger('id_kamar_lama');
             $table->unsignedInteger('id_kamar_baru');
-            $table->string('alasan');
+            $table->text('alasan');
             $table->date('tanggal_mulai_pindah');
+            $table->boolean('verification')->comment('whether or not aggreed');
             $table->timestamps();
+            $table->foreign('id_user','id_kamar_lama','id_kamar_baru')->references('id','id_kamar','id_kamar')->on('users','kamar','kamar')->onDelete('cascade');
         });
     }
 

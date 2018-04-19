@@ -66,7 +66,7 @@ class AsramaSeeder extends Seeder
 
          DB::table('Asrama')->insert([
            'id_asrama'=>'5',
-         'nama'=>'Asrama Sangkuriang A dan B',
+         'nama'=>'Asrama Sangkuriang Lama (A dan B)',
          'alamat'=>'
          Jalan Sangkuriang Dalam No.55, Kelurahan Dago, Kecamatan Coblong, Kota Bandung.',
 
@@ -80,7 +80,7 @@ class AsramaSeeder extends Seeder
 
          DB::table('Asrama')->insert([
            'id_asrama'=>'6',
-         'nama'=>'Asrama Sangkuriang C (Putri) / D (Putra) ',
+         'nama'=>'Asrama Sangkuriang Baru (C (Putri) / D (Putra)) ',
          'alamat'=>'
          Jalan Sangkuriang Dalam No.55, Kelurahan Dago, Kecamatan Coblong, Kota Bandung.',
 

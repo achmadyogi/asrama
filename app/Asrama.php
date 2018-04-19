@@ -17,6 +17,14 @@ class Asrama extends Model
 	
 	public function gedung()
     {
-        return $this->hasMany('App\Gedung', 'id_asrama');
+        return $this->hasMany('App\Gedung', 'id_asrama','id_gedung');
+    }
+    public function kamar()
+    {
+    	return $this->hasManyThrough('App\Kamar','App\Gedung','id_asrama','id_gedung','id_asrama','id_gedung');
+    }
+    public function pengelola()
+    {
+        return $this->hasMany('App\Pengelola','id_asrama','id_pengelola');
     }
 }

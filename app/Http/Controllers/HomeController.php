@@ -4,29 +4,41 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
-use App\Model_Pengumuman;
-use App\Model_Berita;
+use App\Berita;
+use App\Pengumuman;
+use App\Http\Controllers\Traits\tanggalWaktu;
 
 class HomeController extends Controller
 {
-    //untuk menampilkan halaman pengumuman
-    public function load_all_pengumuman() {
-      $pengumuman = Model_Pengumuman::all()->sortByDesc("updated_at")->take(5);
-      return view('/pengumuman', ['pengumuman'=> $pengumuman, 'user' => Auth::user()]);
-    }
-
-    //untuk menampilkan pengumuman dan berita di halaman awal web
-    public function load_all_pengumuman_welcome() {
-      $pengumuman = Model_Pengumuman::all()->sortByDesc("updated_at")->take(5);
-      $berita = Model_Berita::all()->sortByDesc("updated_at")->take(5);
-      return view('/welcome', ['pengumuman'=> $pengumuman,
-        'berita' => $berita,
+    use tanggalWaktu;
+    //untuk menampilkan aplikasi
+    public function index() {
+      // Menampilkan aplikasi berita
+      if(Berita::all()->count() > 0){
+        $berita = Berita::all()->sortByDesc("updated_at")->take(4);
+        $i = 0;
+        foreach($berita as $date){
+          $dateResult[$i] = date($date->updated_at);
+          $i += 1;
+        }
+      }else{
+        $berita = '0';
+        $dateResult = '0';
+      }
+      // Menampilkan aplikasi pengumuman
+      if(Pengumuman::all()->count() > 0){
+        $pengumuman = Pengumuman::all()->sortByDesc("updated_at")->take(5);
+        $i = 0;
+        foreach($pengumuman as $info){
+          $dateInfo[$i] = date($info->updated_at);
+          $i += 1;
+        }
+      }else{
+        $pengumuman = '0';
+        $dateInfo = '0';
+      }
+      return view('/home', ['pengumuman'=> $pengumuman,
+        'berita' => $berita, 'date' => $dateResult, 'dateInfo' => $dateInfo,
         'user' => Auth::user()]);
-    }
-
-    //untuk menampilkan halaman berita
-    public function load_all_berita() {
-      $berita = Model_Berita::all()->sortByDesc("updated_at")->take(5);
-      return view('/berita', ['berita'=>$berita, 'user' => Auth::user()]);
     }
 }

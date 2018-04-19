@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name=".env" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131665299864091130" remote="131665299860000000" Dst="0" />
+<file name=".env.example" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131665296735882942" remote="131665296730000000" Dst="0" />
+<file name=".gitattributes" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131665296735892959" remote="131665296730000000" Dst="0" />
+<file name=".gitignore" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131665296735892959" remote="131665296730000000" Dst="0" />
+<file name="artisan" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131665296737127085" remote="131665296730000000" Dst="0" />
+<file name="boolean('is_afirmasi')" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131668973381835425" remote="131668973380000000" Dst="0" />
+<file name="boolean('is_bidikmisi')" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131668973381815368" remote="131668973380000000" Dst="0" />
+<file name="boolean('is_difable')" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131668973381785287" remote="131668973380000000" Dst="0" />
+<file name="boolean('is_international')" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131668973381855468" remote="131668973380000000" Dst="0" />
+<file name="carbon.zip" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131665296737166921" remote="131665296730000000" Dst="0" />
+<file name="comment('disahkan" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131668973381765237" remote="131668973380000000" Dst="0" />
+<file name="composer.json" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131670076391923712" remote="131670076390000000" Dst="0" />
+<file name="composer.lock" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131670078527541218" remote="131670078520000000" Dst="0" />
+<file name="date('tanggal_masuk')" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131668973381875528" remote="131668973380000000" Dst="0" />
+<file name="increments('id_daftar')" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131668973381614857" remote="131668973380000000" Dst="0" />
+<file name="on('periode')" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131668973381745183" remote="131668973380000000" Dst="0" />
+<file name="on('users')" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131668973381664970" remote="131668973380000000" Dst="0" />
+<file name="package.json" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131665296737687010" remote="131665296730000000" Dst="0" />
+<file name="phpunit.xml" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131665296737687010" remote="131665296730000000" Dst="0" />
+<file name="readme.md" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131665296738727513" remote="131665296730000000" Dst="0" />
+<file name="server.php" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131665296739393799" remote="131665296730000000" Dst="0" />
+<file name="timestamps()" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131668973527237136" remote="131668973520000000" Dst="0" />
+<file name="unsignedInteger('id_periode')" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131668973381715182" remote="131668973380000000" Dst="0" />
+<file name="unsignedInteger('id_user')" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131668973381644920" remote="131668973380000000" Dst="0" />
+<file name="webpack.mix.js" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131665296739493883" remote="131665296730000000" Dst="0" />
+<file name="yarn.lock" server="C:/xampp/htdocs/NewWebApp/laravel/" local="131665296739513926" remote="131665296730000000" Dst="0" />
+</dwsync>

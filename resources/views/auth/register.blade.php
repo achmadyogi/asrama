@@ -1,24 +1,34 @@
-@extends('layouts.app')
+@extends('layouts.default')
 
+@section('title','Register')
+
+@section('main_menu')
+    @parent
+
+@endsection
+
+@section('header_title','Register')
+@section('content')
 @section('content')
 <div class="container">
+    <br><br><br>
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading"><h2>Register</h2></div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('register') }}">
-                        {{ csrf_field() }}
+                    	<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-                        <div class="form-group{{ $errors->has('nama') ? ' has-error' : '' }}">
-                            <label for="nama" class="col-md-4 control-label">Name</label>
+                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                            <label for="name" class="col-md-4 control-label">Name</label>
 
                             <div class="col-md-6">
-                                <input id="nama" type="text" class="form-control" name="nama" value="{{ old('nama') }}" required autofocus>
+                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autofocus>
 
-                                @if ($errors->has('nama'))
+                                @if ($errors->has('name'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('nama') }}</strong>
+                                        <strong>{{ $errors->first('name') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -86,5 +96,6 @@
             </div>
         </div>
     </div>
+    <br><br><br><br>
 </div>
 @endsection

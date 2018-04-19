@@ -1,5 +1,5 @@
 <?php
-
+// TABEL INI TIDAK DIGUNAKAN -- HILANGKAN KOMENTAR INI JIKA TABEL INI DIGUNAKAN KEMBALI
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;

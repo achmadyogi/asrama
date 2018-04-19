@@ -1,7 +1,23 @@
-@extends('layouts.app')
+@extends('layouts.default')
+
+@section('title','Login')
+
+@section('main_menu')
+    @parent
+
+@endsection
+
+@section('header_title','Login')
+@section('content')
 
 @section('content')
 <div class="container">
+    <br><br><br>
+    @if (session()->has('verified'))
+        <div class="alert_command">
+            <P>{{session()->get()}}</P>
+        </div><br><br>
+    @endif
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
@@ -50,15 +66,19 @@
 
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <h5><button type="submit" class="btn btn-primary">
                                     Login
-                                </button>
+                                </button> <b><span style="font-size: 25px;">|</span> <a href="/password/reset" style="color: #0769B0">Lupa Password</a></b></h5>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
+            <div style="text-align: center">
+            	<p>Belum punya akun? <b><a href="{{ route('register') }}" style="color: #0769B0">register</a></b></p>
+            </div>
         </div>
     </div>
+    <br><br><br><br>
 </div>
 @endsection

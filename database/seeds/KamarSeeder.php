@@ -16,8 +16,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'A01',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -27,8 +30,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'A02',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -38,8 +44,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'A03',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -49,8 +58,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'A04',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -60,8 +72,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'A05',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -71,8 +86,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'A06',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -82,8 +100,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'A07',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -93,8 +114,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'A08',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -104,8 +128,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'A09',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -115,8 +142,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'A10',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -126,8 +156,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'B01',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -137,8 +170,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'B02',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -148,8 +184,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'B03',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -159,8 +198,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'B04',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -170,8 +212,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'B05',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -181,8 +226,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'B06',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -192,8 +240,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'B07',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -203,8 +254,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'B08',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -214,8 +268,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'B09',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -225,8 +282,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'B10',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -236,8 +296,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'B11',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -247,8 +310,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'B12',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -258,8 +324,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'C01',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -269,8 +338,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'C02',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -280,8 +352,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'C03',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -291,8 +366,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'C04',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -302,8 +380,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'C05',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -313,8 +394,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'C06',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -324,8 +408,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'C07',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -335,8 +422,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'C08',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -346,8 +436,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'C09',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -357,8 +450,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'C10',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -368,8 +464,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'C11',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -379,8 +478,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'6',
       'nama'=>'C12',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -390,8 +492,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K01',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -401,8 +506,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K02',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -412,8 +520,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K03',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -423,8 +534,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K04',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -434,8 +548,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K05',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -445,8 +562,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K06',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -456,8 +576,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K07',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -467,8 +590,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K08',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -478,8 +604,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K09',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -489,8 +618,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K10',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -500,8 +632,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K11',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -511,8 +646,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K12',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -522,8 +660,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K13',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -533,8 +674,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K14',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -544,8 +688,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K15',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -555,8 +702,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K16',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -566,8 +716,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K17',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -577,8 +730,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K18',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -588,8 +744,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K19',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -599,8 +758,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K20',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -610,8 +772,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K21',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -621,8 +786,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K22',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -632,8 +800,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K23',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -643,8 +814,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K24',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -654,8 +828,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K25',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -665,8 +842,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K26',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -676,8 +856,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K27',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -687,8 +870,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K28',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -698,8 +884,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K29',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -709,8 +898,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K30',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -720,8 +912,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K31',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -731,8 +926,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K32',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -742,8 +940,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K33',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -753,8 +954,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K34',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -764,8 +968,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'7',
       'nama'=>'K35',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -775,8 +982,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'9',
       'nama'=>'B01',
       'kapasitas'=>4,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -786,8 +996,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'9',
       'nama'=>'B02',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -797,8 +1010,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'9',
       'nama'=>'B03',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -808,8 +1024,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'9',
       'nama'=>'B04',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -819,8 +1038,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'9',
       'nama'=>'B05',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -830,8 +1052,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'9',
       'nama'=>'B06',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -841,8 +1066,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'9',
       'nama'=>'B07',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -852,8 +1080,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'9',
       'nama'=>'B08',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -863,8 +1094,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'9',
       'nama'=>'B09',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -874,8 +1108,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'9',
       'nama'=>'B10',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -885,8 +1122,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'10',
       'nama'=>'C01',
       'kapasitas'=>4,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -896,8 +1136,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'10',
       'nama'=>'C02',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -907,8 +1150,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'10',
       'nama'=>'C03',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -918,8 +1164,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'10',
       'nama'=>'C04',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -929,8 +1178,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'10',
       'nama'=>'C05',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -940,8 +1192,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'10',
       'nama'=>'C06',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -951,8 +1206,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'10',
       'nama'=>'C07',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -962,8 +1220,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'10',
       'nama'=>'C08',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -973,8 +1234,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'10',
       'nama'=>'C09',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -984,8 +1248,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'10',
       'nama'=>'C10',
       'kapasitas'=>4,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -995,8 +1262,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'10',
       'nama'=>'C11',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1006,8 +1276,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'10',
       'nama'=>'C12',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1017,8 +1290,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'10',
       'nama'=>'C13',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1028,8 +1304,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'10',
       'nama'=>'C14',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1039,8 +1318,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'10',
       'nama'=>'C15',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1050,8 +1332,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'10',
       'nama'=>'C16',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1061,8 +1346,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'10',
       'nama'=>'C17',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1072,8 +1360,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'10',
       'nama'=>'C18',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1083,8 +1374,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D01',
       'kapasitas'=>4,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1094,8 +1388,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D02',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1105,8 +1402,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D03',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1116,8 +1416,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D04',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1127,8 +1430,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D05',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1138,8 +1444,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D06',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1149,8 +1458,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D07',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1160,8 +1472,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D08',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1171,8 +1486,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D09',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1182,8 +1500,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D10',
       'kapasitas'=>4,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1193,8 +1514,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D11',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1204,8 +1528,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D12',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1215,8 +1542,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D13',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1226,8 +1556,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D14',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1237,8 +1570,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D15',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1248,8 +1584,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D16',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1259,8 +1598,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D17',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1270,8 +1612,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D18',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1281,8 +1626,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D19',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1292,8 +1640,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'11',
       'nama'=>'D20',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1303,8 +1654,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'12',
       'nama'=>'E01',
       'kapasitas'=>4,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1314,8 +1668,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'12',
       'nama'=>'E02',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1325,8 +1682,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'12',
       'nama'=>'E03',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1336,8 +1696,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'12',
       'nama'=>'E04',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1347,8 +1710,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'12',
       'nama'=>'E05',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1358,8 +1724,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'12',
       'nama'=>'E06',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1369,8 +1738,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'12',
       'nama'=>'E07',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1380,8 +1752,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'12',
       'nama'=>'E08',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1391,8 +1766,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'12',
       'nama'=>'E09',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1402,8 +1780,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'12',
       'nama'=>'E10',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1413,8 +1794,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'12',
       'nama'=>'E11',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1424,8 +1808,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'12',
       'nama'=>'E12',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1435,8 +1822,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'12',
       'nama'=>'E13',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1446,8 +1836,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'12',
       'nama'=>'E14',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1457,8 +1850,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'12',
       'nama'=>'E15',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1468,8 +1864,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'12',
       'nama'=>'E16',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1479,8 +1878,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'13',
       'nama'=>'F01',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1490,8 +1892,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'13',
       'nama'=>'F02',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1501,8 +1906,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'13',
       'nama'=>'F03',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1512,8 +1920,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'13',
       'nama'=>'F04',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1523,8 +1934,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'13',
       'nama'=>'F05',
       'kapasitas'=>4,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1534,8 +1948,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'13',
       'nama'=>'F06',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1545,8 +1962,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'13',
       'nama'=>'F07',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1556,8 +1976,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'13',
       'nama'=>'F08',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1567,8 +1990,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'13',
       'nama'=>'F09',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1578,8 +2004,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'13',
       'nama'=>'F10',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1589,8 +2018,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A01',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1600,8 +2032,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A02',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1611,8 +2046,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A03',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1622,8 +2060,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A04',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1633,8 +2074,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A05',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1644,8 +2088,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A06',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1655,8 +2102,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A07',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1666,8 +2116,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A08',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1677,8 +2130,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A09',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1688,8 +2144,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A10',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1699,8 +2158,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A11',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1710,8 +2172,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A12',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1721,8 +2186,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A13',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1732,8 +2200,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A14',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1743,8 +2214,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A15',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1754,8 +2228,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A16',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1765,8 +2242,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A17',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1776,8 +2256,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A18',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1787,8 +2270,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A19',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1798,8 +2284,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A20',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1809,8 +2298,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A21',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1820,8 +2312,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A22',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1831,8 +2326,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A23',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1842,8 +2340,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A24',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1853,8 +2354,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A25',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1864,8 +2368,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A26',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1875,8 +2382,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A27',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1886,8 +2396,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A28',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1897,8 +2410,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A29',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1908,8 +2424,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A30',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1919,8 +2438,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A31',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1930,8 +2452,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A32',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1941,8 +2466,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A33',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1952,8 +2480,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A34',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1963,8 +2494,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A35',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1974,8 +2508,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A36',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1985,8 +2522,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A37',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -1996,8 +2536,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A38',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2007,8 +2550,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A39',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2018,8 +2564,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A40',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2029,8 +2578,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A41',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2040,8 +2592,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A42',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2051,8 +2606,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A43',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2062,8 +2620,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A44',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2073,8 +2634,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A45',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2084,8 +2648,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A46',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2095,8 +2662,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A47',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2106,8 +2676,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'14',
       'nama'=>'A48',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2117,8 +2690,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B01',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2128,8 +2704,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B02',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2139,8 +2718,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B03',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2150,8 +2732,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B04',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2161,8 +2746,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B05',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2172,8 +2760,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B06',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2183,8 +2774,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B07',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2194,8 +2788,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B08',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2205,8 +2802,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B09',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2216,8 +2816,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B10',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2227,8 +2830,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B11',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2238,8 +2844,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B12',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2249,8 +2858,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B13',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2260,8 +2872,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B14',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2271,8 +2886,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B15',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2282,8 +2900,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B16',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2293,8 +2914,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B17',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2304,8 +2928,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B18',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2315,8 +2942,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B19',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2326,8 +2956,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B20',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2337,8 +2970,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B21',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2348,8 +2984,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B22',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2359,8 +2998,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B23',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2370,8 +3012,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B24',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2381,8 +3026,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B25',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2392,8 +3040,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B26',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2403,8 +3054,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B27',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2414,8 +3068,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B28',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2425,8 +3082,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B29',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2436,8 +3096,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B30',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2447,8 +3110,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B31',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2458,8 +3124,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B32',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2469,8 +3138,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B33',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2480,8 +3152,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B34',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2491,8 +3166,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B35',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2502,8 +3180,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B36',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2513,8 +3194,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B37',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2524,8 +3208,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B38',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2535,8 +3222,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B39',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2546,8 +3236,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B40',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2557,8 +3250,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B41',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2568,8 +3264,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B42',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2579,8 +3278,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B43',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2590,8 +3292,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B44',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2601,8 +3306,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B45',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2612,8 +3320,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B46',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2623,8 +3334,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B47',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2634,8 +3348,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'15',
       'nama'=>'B48',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2645,8 +3362,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B01',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2656,8 +3376,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B02',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2667,8 +3390,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B03',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2678,8 +3404,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B04',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2689,8 +3418,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B05',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2700,8 +3432,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B06',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2711,8 +3446,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B07',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2722,8 +3460,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B08',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2733,8 +3474,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B09',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2744,8 +3488,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B10',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2755,8 +3502,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B11',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2766,8 +3516,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B12',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2777,8 +3530,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B13',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2788,8 +3544,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B14',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2799,8 +3558,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B15',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2810,8 +3572,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B16',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2821,8 +3586,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B17',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2832,8 +3600,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B18',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2843,8 +3614,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B19',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2854,8 +3628,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B20',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2865,8 +3642,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B21',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2876,8 +3656,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B22',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2887,8 +3670,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B23',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2898,8 +3684,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'B24',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2909,8 +3698,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C01',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2920,8 +3712,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C02',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2931,8 +3726,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C03',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2942,8 +3740,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C04',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2953,8 +3754,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C05',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2964,8 +3768,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C06',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2975,8 +3782,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C07',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2986,8 +3796,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C08',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -2997,8 +3810,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C09',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3008,8 +3824,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C10',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3019,8 +3838,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C11',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3030,8 +3852,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C12',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3041,8 +3866,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C13',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3052,8 +3880,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C14',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3063,8 +3894,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C15',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3074,8 +3908,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C16',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3085,8 +3922,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C17',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3096,8 +3936,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C18',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3107,8 +3950,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C19',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3118,8 +3964,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C20',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3129,8 +3978,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C21',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3140,8 +3992,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C22',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3151,8 +4006,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C23',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3162,8 +4020,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'C24',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3173,8 +4034,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D01',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3184,8 +4048,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D02',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3195,8 +4062,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D03',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3206,8 +4076,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D04',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3217,8 +4090,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D05',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3228,8 +4104,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D06',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3239,8 +4118,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D07',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3250,8 +4132,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D08',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3261,8 +4146,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D09',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3272,8 +4160,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D10',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3283,8 +4174,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D11',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3294,8 +4188,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D12',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3305,8 +4202,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D13',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3316,8 +4216,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D14',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3327,8 +4230,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D15',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3338,8 +4244,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D16',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3349,8 +4258,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D17',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3360,8 +4272,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D18',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3371,8 +4286,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D19',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3382,8 +4300,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D20',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3393,8 +4314,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D21',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3404,8 +4328,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D22',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3415,8 +4342,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D23',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3426,8 +4356,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'D24',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3437,8 +4370,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E01',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3448,8 +4384,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E02',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3459,8 +4398,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E03',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3470,8 +4412,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E04',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3481,8 +4426,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E05',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3492,8 +4440,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E06',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3503,8 +4454,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E07',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3514,8 +4468,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E08',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3525,8 +4482,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E09',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3536,8 +4496,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E10',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3547,8 +4510,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E11',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3558,8 +4524,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E12',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3569,8 +4538,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E13',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3580,8 +4552,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E14',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3591,8 +4566,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E15',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3602,8 +4580,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E16',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3613,8 +4594,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E17',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3624,8 +4608,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E18',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3635,8 +4622,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E19',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3646,8 +4636,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E20',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3657,8 +4650,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E21',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3668,8 +4664,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E22',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3679,8 +4678,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E23',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3690,8 +4692,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'2',
       'nama'=>'E24',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3701,8 +4706,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B01',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3712,8 +4720,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B02',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3723,8 +4734,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B03',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3734,8 +4748,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B04',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3745,8 +4762,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B05',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3756,8 +4776,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B06',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3767,8 +4790,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B07',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3778,8 +4804,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B08',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3789,8 +4818,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B09',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3800,8 +4832,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B10',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3811,8 +4846,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B11',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3822,8 +4860,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B12',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3833,8 +4874,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B13',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3844,8 +4888,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B14',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3855,8 +4902,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B15',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3866,8 +4916,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B16',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3877,8 +4930,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B17',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3888,8 +4944,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B18',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3899,8 +4958,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B19',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3910,8 +4972,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B20',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3921,8 +4986,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B21',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3932,8 +5000,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B22',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3943,8 +5014,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B23',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3954,8 +5028,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'B24',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3965,8 +5042,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C01',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3976,8 +5056,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C02',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3987,8 +5070,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C03',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -3998,8 +5084,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C04',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4009,8 +5098,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C05',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4020,8 +5112,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C06',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4031,8 +5126,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C07',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4042,8 +5140,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C08',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4053,8 +5154,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C09',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4064,8 +5168,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C10',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4075,8 +5182,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C11',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4086,8 +5196,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C12',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4097,8 +5210,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C13',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4108,8 +5224,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C14',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4119,8 +5238,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C15',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4130,8 +5252,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C16',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4141,8 +5266,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C17',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4152,8 +5280,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C18',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4163,8 +5294,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C19',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4174,8 +5308,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C20',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4185,8 +5322,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C21',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4196,8 +5336,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C22',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4207,8 +5350,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C23',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4218,8 +5364,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'C24',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4229,8 +5378,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D01',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4240,8 +5392,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D02',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4251,8 +5406,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D03',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4262,8 +5420,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D04',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4273,8 +5434,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D05',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4284,8 +5448,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D06',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4295,8 +5462,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D07',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4306,8 +5476,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D08',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4317,8 +5490,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D09',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4328,8 +5504,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D10',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4339,8 +5518,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D11',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4350,8 +5532,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D12',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4361,8 +5546,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D13',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4372,8 +5560,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D14',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4383,8 +5574,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D15',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4394,8 +5588,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D16',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4405,8 +5602,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D17',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4416,8 +5616,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D18',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4427,8 +5630,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D19',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4438,8 +5644,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D20',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4449,8 +5658,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D21',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4460,8 +5672,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D22',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4471,8 +5686,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D23',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4482,8 +5700,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'D24',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4493,8 +5714,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E01',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4504,8 +5728,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E02',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4515,8 +5742,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E03',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4526,8 +5756,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E04',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4537,8 +5770,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E05',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4548,8 +5784,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E06',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4559,8 +5798,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E07',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4570,8 +5812,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E08',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4581,8 +5826,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E09',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4592,8 +5840,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E10',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4603,8 +5854,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E11',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4614,8 +5868,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E12',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4625,8 +5882,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E13',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4636,8 +5896,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E14',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4647,8 +5910,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E15',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4658,8 +5924,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E16',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4669,8 +5938,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E17',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4680,8 +5952,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E18',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4691,8 +5966,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E19',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4702,8 +5980,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E20',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4713,8 +5994,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E21',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4724,8 +6008,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E22',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4735,8 +6022,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E23',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4746,8 +6036,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'3',
       'nama'=>'E24',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4757,8 +6050,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B01',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4768,8 +6064,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B02',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4779,8 +6078,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B03',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4790,8 +6092,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B04',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4801,8 +6106,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B05',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4812,8 +6120,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B06',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4823,8 +6134,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B07',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4834,8 +6148,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B08',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4845,8 +6162,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B09',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4856,8 +6176,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B10',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4867,8 +6190,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B11',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4878,8 +6204,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B12',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4889,8 +6218,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B13',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4900,8 +6232,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B14',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4911,8 +6246,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B15',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4922,8 +6260,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B16',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4933,8 +6274,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B17',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4944,8 +6288,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B18',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4955,8 +6302,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B19',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4966,8 +6316,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B20',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4977,8 +6330,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B21',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4988,8 +6344,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B22',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -4999,8 +6358,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B23',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5010,8 +6372,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'B24',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5021,8 +6386,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C01',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5032,8 +6400,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C02',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5043,8 +6414,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C03',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5054,8 +6428,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C04',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5065,8 +6442,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C05',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5076,8 +6456,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C06',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5087,8 +6470,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C07',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5098,8 +6484,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C08',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5109,8 +6498,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C09',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5120,8 +6512,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C10',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5131,8 +6526,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C11',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5142,8 +6540,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C12',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5153,8 +6554,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C13',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5164,8 +6568,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C14',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5175,8 +6582,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C15',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5186,8 +6596,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C16',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5197,8 +6610,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C17',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5208,8 +6624,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C18',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5219,8 +6638,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C19',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5230,8 +6652,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C20',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5241,8 +6666,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C21',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5252,8 +6680,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C22',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5263,8 +6694,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C23',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5274,8 +6708,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'C24',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5285,8 +6722,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D01',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5296,8 +6736,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D02',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5307,8 +6750,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D03',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5318,8 +6764,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D04',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5329,8 +6778,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D05',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5340,8 +6792,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D06',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5351,8 +6806,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D07',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5362,8 +6820,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D08',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5373,8 +6834,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D09',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5384,8 +6848,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D10',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5395,8 +6862,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D11',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5406,8 +6876,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D12',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5417,8 +6890,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D13',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5428,8 +6904,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D14',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5439,8 +6918,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D15',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5450,8 +6932,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D16',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5461,8 +6946,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D17',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5472,8 +6960,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D18',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5483,8 +6974,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D19',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5494,8 +6988,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D20',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5505,8 +7002,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D21',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5516,8 +7016,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D22',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5527,8 +7030,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D23',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5538,8 +7044,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'D24',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5549,8 +7058,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E01',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5560,8 +7072,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E02',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5571,8 +7086,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E03',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5582,8 +7100,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E04',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5593,8 +7114,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E05',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5604,8 +7128,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E06',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5615,8 +7142,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E07',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5626,8 +7156,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E08',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5637,8 +7170,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E09',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5648,8 +7184,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E10',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5659,8 +7198,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E11',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5670,8 +7212,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E12',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5681,8 +7226,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E13',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5692,8 +7240,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E14',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5703,8 +7254,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E15',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5714,8 +7268,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E16',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5725,8 +7282,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E17',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5736,8 +7296,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E18',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5747,8 +7310,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E19',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5758,8 +7324,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E20',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5769,8 +7338,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E21',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5780,8 +7352,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E22',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5791,8 +7366,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E23',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5802,8 +7380,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'4',
       'nama'=>'E24',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5813,8 +7394,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B01',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5824,8 +7408,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B02',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5835,8 +7422,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B03',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5846,8 +7436,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B04',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5857,8 +7450,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B05',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5868,8 +7464,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B06',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5879,8 +7478,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B07',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5890,8 +7492,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B08',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5901,8 +7506,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B09',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5912,8 +7520,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B10',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5923,8 +7534,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B11',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5934,8 +7548,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B12',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5945,8 +7562,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B13',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5956,8 +7576,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B14',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5967,8 +7590,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B15',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5978,8 +7604,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B16',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -5989,8 +7618,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B17',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6000,8 +7632,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B18',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6011,8 +7646,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B19',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6022,8 +7660,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B20',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6033,8 +7674,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B21',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6044,8 +7688,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B22',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6055,8 +7702,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B23',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6066,8 +7716,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'B24',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6077,8 +7730,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C01',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6088,8 +7744,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C02',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6099,8 +7758,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C03',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6110,8 +7772,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C04',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6121,8 +7786,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C05',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6132,8 +7800,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C06',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6143,8 +7814,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C07',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6154,8 +7828,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C08',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6165,8 +7842,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C09',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6176,8 +7856,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C10',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6187,8 +7870,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C11',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6198,8 +7884,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C12',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6209,8 +7898,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C13',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6220,8 +7912,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C14',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6231,8 +7926,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C15',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6242,8 +7940,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C16',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6253,8 +7954,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C17',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6264,8 +7968,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C18',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6275,8 +7982,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C19',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6286,8 +7996,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C20',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6297,8 +8010,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C21',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6308,8 +8024,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C22',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6319,8 +8038,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C23',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6330,8 +8052,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'C24',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6341,8 +8066,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D01',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6352,8 +8080,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D02',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6363,8 +8094,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D03',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6374,8 +8108,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D04',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6385,8 +8122,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D05',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6396,8 +8136,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D06',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6407,8 +8150,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D07',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6418,8 +8164,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D08',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6429,8 +8178,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D09',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6440,8 +8192,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D10',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6451,8 +8206,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D11',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6462,8 +8220,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D12',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6473,8 +8234,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D13',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6484,8 +8248,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D14',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6495,8 +8262,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D15',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6506,8 +8276,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D16',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6517,8 +8290,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D17',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6528,8 +8304,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D18',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6539,8 +8318,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D19',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6550,8 +8332,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D20',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6561,8 +8346,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D21',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6572,8 +8360,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D22',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6583,8 +8374,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D23',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6594,8 +8388,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'D24',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6605,8 +8402,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E01',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6616,8 +8416,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E02',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6627,8 +8430,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E03',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6638,8 +8444,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E04',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6649,8 +8458,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E05',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6660,8 +8472,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E06',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6671,8 +8486,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E07',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6682,8 +8500,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E08',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6693,8 +8514,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E09',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6704,8 +8528,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E10',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6715,8 +8542,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E11',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6726,8 +8556,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E12',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6737,8 +8570,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E13',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6748,8 +8584,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E14',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6759,8 +8598,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E15',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6770,8 +8612,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E16',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6781,8 +8626,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E17',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6792,8 +8640,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E18',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6803,8 +8654,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E19',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6814,8 +8668,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E20',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6825,8 +8682,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E21',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6836,8 +8696,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E22',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6847,8 +8710,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E23',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6858,8 +8724,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'5',
       'nama'=>'E24',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -6869,8 +8738,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'A01',
       'kapasitas'=>1,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -6880,8 +8752,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'A02',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -6891,8 +8766,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'A03',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -6902,8 +8780,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'A04',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -6913,8 +8794,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'A05',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -6924,8 +8808,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'A06',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -6935,8 +8822,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'A07',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -6946,8 +8836,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'A08',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -6957,8 +8850,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'A09',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -6968,8 +8864,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'A10',
       'kapasitas'=>1,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -6979,8 +8878,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'A11',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -6990,8 +8892,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'A12',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -7001,8 +8906,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'B01',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -7012,8 +8920,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'B02',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -7023,8 +8934,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'B03',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -7034,8 +8948,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'B04',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -7045,8 +8962,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'B05',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -7056,8 +8976,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'B06',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -7067,8 +8990,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'B07',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -7078,8 +9004,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'B08',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -7089,8 +9018,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'B09',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -7100,8 +9032,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'B10',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -7111,8 +9046,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'1',
       'nama'=>'B11',
       'kapasitas'=>2,
-      'status'=>'Non Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
       ] );
 
 
@@ -7122,8 +9060,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C01',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7133,8 +9074,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C02',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7144,8 +9088,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C03',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7155,8 +9102,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C04',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7166,8 +9116,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C05',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7177,8 +9130,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C06',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7188,8 +9144,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C07',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7199,8 +9158,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C08',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7210,8 +9172,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C09',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7221,8 +9186,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C10',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7232,8 +9200,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C11',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7243,8 +9214,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C12',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7254,8 +9228,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C13',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7265,8 +9242,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C14',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7276,8 +9256,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C15',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7287,8 +9270,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C16',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7298,8 +9284,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C17',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7309,8 +9298,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C18',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7320,8 +9312,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C19',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7331,8 +9326,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C20',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7342,8 +9340,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C21',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7353,8 +9354,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C22',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7364,8 +9368,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C23',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7375,8 +9382,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C24',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7386,8 +9396,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C25',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7397,8 +9410,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C26',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7408,8 +9424,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C27',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7419,8 +9438,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C28',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7430,8 +9452,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C29',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7441,8 +9466,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C30',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7452,8 +9480,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C31',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7463,8 +9494,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C32',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7474,8 +9508,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C33',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7485,8 +9522,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C34',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7496,8 +9536,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C35',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7507,8 +9550,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C36',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7518,8 +9564,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C37',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7529,8 +9578,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C38',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7540,8 +9592,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C39',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7551,8 +9606,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C40',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7562,8 +9620,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C41',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7573,8 +9634,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C42',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7584,8 +9648,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C43',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7595,8 +9662,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C44',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7606,8 +9676,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C45',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7617,8 +9690,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C46',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7628,8 +9704,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C47',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7639,8 +9718,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C48',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7650,8 +9732,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C49',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7661,8 +9746,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C50',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7672,8 +9760,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C51',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7683,8 +9774,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C52',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7694,8 +9788,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C53',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7705,8 +9802,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C54',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7716,8 +9816,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C55',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7727,8 +9830,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C56',
       'kapasitas'=>1,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7738,8 +9844,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C57',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7749,8 +9858,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C59',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7760,8 +9872,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C60',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7771,8 +9886,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C61',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7782,8 +9900,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C62',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7793,8 +9914,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C63',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7804,8 +9928,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C64',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7815,8 +9942,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C65',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7826,8 +9956,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C66',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7837,8 +9970,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C67',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7848,8 +9984,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C68',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7859,8 +9998,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C69',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7870,8 +10012,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C70',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7881,8 +10026,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C71',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7892,8 +10040,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D01',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7903,8 +10054,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D02',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7914,8 +10068,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D03',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7925,8 +10082,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D04',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7936,8 +10096,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D05',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7947,8 +10110,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D06',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7958,8 +10124,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D07',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7969,8 +10138,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D08',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7980,8 +10152,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D09',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -7991,8 +10166,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D10',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8002,8 +10180,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D11',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8013,8 +10194,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D12',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8024,8 +10208,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D13',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8035,8 +10222,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D14',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8046,8 +10236,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D15',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8057,8 +10250,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D16',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8068,8 +10264,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D17',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8079,8 +10278,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D18',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8090,8 +10292,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D19',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8101,8 +10306,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D20',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8112,8 +10320,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D21',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8123,8 +10334,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D22',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8134,8 +10348,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D23',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8145,8 +10362,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D24',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8156,8 +10376,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D25',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8167,8 +10390,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D26',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8178,8 +10404,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D27',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8189,8 +10418,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D28',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8200,8 +10432,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D29',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8211,8 +10446,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D30',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8222,8 +10460,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D31',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8233,8 +10474,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D32',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8244,8 +10488,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D33',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8255,8 +10502,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D34',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8266,8 +10516,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D35',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8277,8 +10530,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D36',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8288,8 +10544,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D37',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8299,8 +10558,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D38',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8310,8 +10572,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D39',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8321,8 +10586,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D40',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8332,8 +10600,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D41',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8343,8 +10614,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D42',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8354,8 +10628,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D43',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8365,8 +10642,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D44',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8376,8 +10656,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D45',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8387,8 +10670,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D46',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8398,8 +10684,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D47',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8409,8 +10698,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D48',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8420,8 +10712,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D49',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8431,8 +10726,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D50',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8442,8 +10740,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D51',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8453,8 +10754,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D52',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8464,8 +10768,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D53',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8475,8 +10782,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D54',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8486,8 +10796,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D55',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8497,8 +10810,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D56',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8508,8 +10824,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D57',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8519,8 +10838,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D58',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8530,8 +10852,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D59',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8541,8 +10866,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D60',
       'kapasitas'=>1,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8552,8 +10880,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D61',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8563,8 +10894,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D62',
       'kapasitas'=>2,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8574,8 +10908,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D63',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8585,8 +10922,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D64',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8596,8 +10936,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D65',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8607,8 +10950,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D66',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8618,8 +10964,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D67',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8629,8 +10978,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D68',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8640,8 +10992,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D69',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8651,8 +11006,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'17',
       'nama'=>'D70',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'L'
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
 
 
@@ -8662,8 +11020,11 @@ class KamarSeeder extends Seeder
       'id_gedung'=>'16',
       'nama'=>'C58',
       'kapasitas'=>3,
-      'status'=>'Reguler',
-      'gender'=>'P'
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '1',
+      'is_difable' => '0',
       ] );
     }
 }

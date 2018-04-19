@@ -19,6 +19,7 @@ class CreateBeritaTable extends Migration
           $table->foreign('id_penulis')->references('id')->on('users');
           $table->string('title');
           $table->text('isi');
+          $table->text('file')->comment('hanya ekstensi gambar/foto');
           $table->timestamps();
       });
     }

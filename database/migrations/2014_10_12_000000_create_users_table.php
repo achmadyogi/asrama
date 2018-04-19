@@ -17,8 +17,16 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('username')->unique();
             $table->string('password');
+            $table->boolean('verification');
+            $table->string('token_verification')->nullable();
             $table->rememberToken();
+            $table->boolean('is_penghuni');
+            $table->boolean('is_pengelola');
+            $table->boolean('is_sekretariat');
+            $table->boolean('is_pimpinan');
+            $table->boolean('is_admin');
             $table->timestamps();
         });
     }

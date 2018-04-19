@@ -16,30 +16,17 @@ class CreateDaftarRegulerTable extends Migration
         Schema::create('daftar_asrama_reguler', function (Blueprint $table) {
             $table->increments('id_daftar');
             $table->unsignedInteger('id_user');
-            $table->foreign('id_user')->references('id')->on('users');
-            $table->string('nomor_identitas');
-            $table->string('jenis_identitas');
-            $table->string('tempat_lahir');
-            $table->date('tanggal_lahir');
-            $table->string('gol_darah', 2);
-            $table->char('jenis_kelamin', 1);
-            $table->string('alamat');
-            $table->string('agama');
-            $table->string('pekerjaan');
-            $table->string('warga_negara');
-            $table->string('telepon');
-            $table->string('instansi');
-            $table->string('nama_ortu_wali');
-            $table->string('pekerjaan_ortu_wali');
-            $table->string('alamat_ortu_wali');
-            $table->string('telepon_ortu_wali');
-            $table->string('kontak_darurat');
-            $table->string('asrama');
+            $table->unsignedInteger('id_periode');
+            $table->tinyInteger('preference')->comment('1: sendiri. 2: berdua. 3: bertiga');
+            $table->boolean('verification')->comment('disahkan atau belum');
+            $table->string('status_beasiswa')->comment('bidikmisi, afirmasi, non-beasiswa, atau lainnya');
+            $table->string('status_mahasiswa')->comment('ganesha, jatinangor, atau cirebon');
+            $table->string('kepenghunian')->comment('tutor, karyawan, lainnya');
+            $table->boolean('is_difable');
+            $table->boolean('is_international');
             $table->date('tanggal_masuk');
-            $table->date('tanggal_keluar');
-            $table->string('status');
-			$table->string('status_penghuni');
             $table->timestamps();
+            $table->foreign('id_user','id_periode')->references('id','id_periode')->on('users','periode');
         });
     }
 

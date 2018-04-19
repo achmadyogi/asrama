@@ -16,10 +16,10 @@ class CreateUserNimTable extends Migration
         Schema::create('user_nim', function (Blueprint $table) {
             $table->increments('id_nim');
             $table->unsignedInteger('id_user');
-            $table->unsignedInteger('id_fakultas');
+            $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
             $table->unsignedInteger('id_prodi');
             $table->string('nim');
-            $table->boolean('status_nim');
+            $table->boolean('status_nim')->comment('0=aktif;1=mati');
             $table->timestamps();
         });
     }

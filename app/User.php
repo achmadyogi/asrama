@@ -18,7 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'nama', 'username', 'email', 'password', 
+        'name', 'username', 'email', 'password', 'verification', 'token_verification',
         'is_penghuni', 'is_pengelola', 'is_sekretariat', 'is_pimpinan', 'is_admin',
     ];
 
@@ -32,7 +32,7 @@ class User extends Authenticatable
     ];
 
     public function user_penghuni() {
-        return $this->hasOne('App\UserPenghuni', 'id_user');
+        return $this->hasOne('App\User_penghuni', 'id_user');
     }
 
     public function pengelola() {
@@ -44,18 +44,12 @@ class User extends Authenticatable
 	}
 
     public function user_nim() {
-        return $this->hasMany('App\UserNIM', 'id_user');
+        return $this->hasMany('App\User_nim', 'id_user');
     }
-
-    public function valid_nim() {
-        return $this->hasMany('App\UserNIM', 'id_user')->where('status_nim', 1)->orderBy('created_at', 'desc')->take(1);
+    public function daftar_asrama_reguler(){
+        return $this->hasMany('App\Daftar_asrama_reguler', 'id_user');
     }
-
-    public function daftar_reguler() {
-        return $this->hasMany('App\DaftarAsramaReguler', 'id_user');
-    }
-
-    public function daftar_non_reguler() {
-        return $this->hasMany('App\DaftarAsramaNonReguler', 'id_user');
+    public function daftar_asrama_non_reguler(){
+        return $this->hasMany('App\Daftar_asrama_non_reguler', 'id_user');
     }
 }

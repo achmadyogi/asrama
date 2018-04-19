@@ -17,6 +17,7 @@ class GedungSeeder extends Seeder
           'nama'=>'Gedung Internasional',
           'gender'=>'L',
           ] );
+          
           DB::table('Gedung')->insert([
           'id_gedung'=>'2',
           'id_asrama'=>'2',
@@ -44,21 +45,23 @@ class GedungSeeder extends Seeder
           'nama'=>'TB4',
           'gender'=>'L',
           ] );
+
           DB::table('Gedung')->insert([
           'id_gedung'=>'6',
           'id_asrama'=>'3',
           'nama'=>'Gedung Lama',
           'gender'=>'P',
           ] );
+
           DB::table('Gedung')->insert([
           'id_gedung'=>'7',
           'id_asrama'=>'3',
           'nama'=>'Gedung Baru',
           'gender'=>'P',
           ] );
+
           DB::table('Gedung')->insert([
           'id_gedung'=>'8',
-
           'id_asrama'=>'4',
           'nama'=>'Gedung A',
           'gender'=>'P',
@@ -67,7 +70,6 @@ class GedungSeeder extends Seeder
 
           DB::table('Gedung')->insert([
           'id_gedung'=>'9',
-
           'id_asrama'=>'4',
           'nama'=>'Gedung B',
           'gender'=>'L',
@@ -99,6 +101,7 @@ class GedungSeeder extends Seeder
           'nama'=>'Gedung F',
           'gender'=>'L',
           ] );
+
           DB::table('Gedung')->insert([
           'id_gedung'=>'14',
 
@@ -110,14 +113,13 @@ class GedungSeeder extends Seeder
 
           DB::table('Gedung')->insert([
           'id_gedung'=>'15',
-
           'id_asrama'=>'5',
           'nama'=>'Sangkuriang Gedung B',
           'gender'=>'L',
           ] );
+
           DB::table('Gedung')->insert([
           'id_gedung'=>'16',
-
           'id_asrama'=>'6',
           'nama'=>'Sangkuriang Gedung C',
           'gender'=>'P',
@@ -126,7 +128,6 @@ class GedungSeeder extends Seeder
 
           DB::table('Gedung')->insert([
           'id_gedung'=>'17',
-
           'id_asrama'=>'6',
           'nama'=>'Sangkuriang Gedung D',
           'gender'=>'L',

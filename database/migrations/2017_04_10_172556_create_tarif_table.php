@@ -14,10 +14,15 @@ class CreateTarifTable extends Migration
     public function up()
     {
       Schema::create('tarif', function (Blueprint $table) {
-          $table->string('id_tarif');
-          $table->primary('id_tarif');
-          $table->string('deskripsi');
-          $table->unsignedInteger('nilai_tarif');
+          $table->increments('id_tarif');
+          $table->unsignedInteger('id_asrama');
+          $table->foreign('id_asrama')->references('id_asrama')->on('asrama');
+          $table->integer('kapasitas_kamar');
+          $table->string('tempo')->comment('bulanan/harian');
+          $table->integer('tarif_sarjana')->nullable();
+          $table->integer('tarif_pasca_sarjana')->nullable();
+          $table->integer('tarif_international')->nullable();
+          $table->integer('tarif_umum')->nullable();
       });
     }
 

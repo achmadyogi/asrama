@@ -16,7 +16,7 @@ class CreateBlacklistTable extends Migration
         Schema::create('blacklists', function (Blueprint $table) {
             $table->unsignedInteger('id_user');
 			$table->primary('id_user');
-			$table->foreign('id_user')->references('id')->on('users');
+			$table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
             $table->string('alasan');
         });
     }

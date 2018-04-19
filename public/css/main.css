@@ -352,6 +352,22 @@ h3.no-margin-top{
   color: #333;
   background-color: #e7e7e7;
 }  
+.alert_fail {
+	color: black;
+	padding: 5px;
+	background-color: #F5CBCC;
+	border-radius: 5px;
+	border: 1px solid #FF3D40;
+	width: 100%;
+}
+.alert_success {
+	color: black;
+	padding: 5px;
+	background-color: #C1E2F7;
+	border-radius: 5px;
+	border: 1px solid #083688;
+	width: 100%;
+}
 /*cGridView*/
 .grid-view-loading
 {

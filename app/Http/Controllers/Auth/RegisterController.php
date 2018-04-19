@@ -3,9 +3,13 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use Illuminate\Support\Str;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Mail;
+use App\Mail\emailVerification;
+use Session;
 
 class RegisterController extends Controller
 {
@@ -27,7 +31,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/dashboard';
+    protected $redirectTo = '/register';
 
     /**
      * Create a new controller instance.
@@ -48,7 +52,7 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'nama' => 'required|max:255',
+            'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
             'username' => 'required|max:255|unique:users'
@@ -63,17 +67,44 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'nama' => $data['nama'],
+        $user = User::create([
+            'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
             'username' => $data['username'],
-            'is_penghuni' => 1,
+            'verification' => 0,
+            'token_verification'=> Str::random(40),
+            'is_penghuni' => 0,
             'is_pengelola' => 0,
             'is_sekretariat' => 0,
             'is_pimpinan' => 0,
             'is_admin' => 0,
 
         ]);
+        $thisUser = User::findOrFail($user->id);
+        $this->sendEmail($thisUser);
+        return $user;
+    }
+
+    public function sendEmail($thisUser){
+        Mail::to($thisUser['email'])->send(new emailVerification($thisUser));
+    }
+
+    public function VerificationEmail()
+    {
+        return view('email.verificationEmail');
+    }
+
+    public function sendEmailDone($email,$token_verification)
+    {
+        $user = User::where(['email'=>$email,'token_verification'=>$token_verification])->first();
+        if($user){
+            User::where(['email'=>$email,'token_verification'=>$token_verification])->update(['verification'=>'1','token_verification'=>NULL]);
+            $message = 'Akun dengan email '.$email.' berhasil diverifikasi. Anda sudah dapat melakukan login dan melanjutkan ke aplikasi selanjutnya.';
+            return view('email.verificationSuccess',['email'=>$email,'message'=>$message]);
+        } else{
+            $message = 'Akun dengan email '.$email.' sudah teraktivasi. Silahkan login untuk melihat aplikasi selanjutnya.';
+            return view('email.verificationSuccess',['email'=>$email,'message'=>$message]);
+        }
     }
 }

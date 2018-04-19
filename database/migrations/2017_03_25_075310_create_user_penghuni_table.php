@@ -14,14 +14,22 @@ class CreateUserPenghuniTable extends Migration
     public function up()
     {
         Schema::create('user_penghuni', function (Blueprint $table) {
-            $table->increments('id_user');
+            $table->increments('id_penghuni');
+            $table->unsignedInteger('id_user');
+            $table->foreign('id_user')
+                ->references('id')->on('users')
+                ->onDelete('cascade');
             $table->string('nomor_identitas');
             $table->string('jenis_identitas');
             $table->string('tempat_lahir');
             $table->date('tanggal_lahir');
             $table->string('gol_darah', 2);
             $table->char('jenis_kelamin', 1);
-            $table->string('alamat');
+            $table->string('alamat')->comment('nama jalan detail');
+            $table->string('kota');
+            $table->string('propinsi');
+            $table->string('kodepos');
+            $table->string('negara');
             $table->string('agama');
             $table->string('pekerjaan');
             $table->string('warga_negara');

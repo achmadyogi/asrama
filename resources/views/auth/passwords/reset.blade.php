@@ -1,7 +1,18 @@
-@extends('layouts.app')
+@extends('layouts.default')
+
+@section('title','Reset Password')
+
+@section('main_menu')
+    @parent
+
+@endsection
+
+@section('header_title','Reset Password')
+@section('content')
 
 @section('content')
 <div class="container">
+    <br><br><br><br>
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
@@ -72,5 +83,6 @@
             </div>
         </div>
     </div>
+    <br><br><br><br><br><br><br>
 </div>
 @endsection

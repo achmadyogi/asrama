@@ -13,40 +13,43 @@ class FakultasSeeder extends Seeder
     {
     	/***** FAKULTAS *****/
         DB::table('fakultas')->insert([
-		            'nama' => 'Fakultas Matematika dan Ilmu Pengetahuan Alam',
+		            'nama' => '(FMIPA) Fakultas Matematika dan Ilmu Pengetahuan Alam',
 		        ]);
 		DB::table('fakultas')->insert([
-		            'nama' => 'Sekolah Ilmu dan Teknologi Hayati',
+		            'nama' => '(SITHS) Sekolah Ilmu dan Teknologi Hayati - Program Sains',
 		        ]);
 		DB::table('fakultas')->insert([
-		            'nama' => 'Sekolah Farmasi',
+		            'nama' => '(SITHR) Sekolah Ilmu dan Teknologi Hayati - Program Rekayasa',
 		        ]);
 		DB::table('fakultas')->insert([
-		            'nama' => 'Fakultas Teknik Pertambangan dan Perminyakan',
+		            'nama' => '(SF) Sekolah Farmasi',
 		        ]);
 		DB::table('fakultas')->insert([
-		            'nama' => 'Fakultas Ilmu dan Teknologi Kebumian',
+		            'nama' => '(FTTM) Fakultas Teknik Pertambangan dan Perminyakan',
 		        ]);
 		DB::table('fakultas')->insert([
-		            'nama' => 'Fakultas Teknologi Industri',
+		            'nama' => '(FITB) Fakultas Ilmu dan Teknologi Kebumian',
 		        ]);
 		DB::table('fakultas')->insert([
-		            'nama' => 'Sekolah Teknik Elektro dan Informatika',
+		            'nama' => '(FTI) Fakultas Teknologi Industri',
 		        ]);
 		DB::table('fakultas')->insert([
-		            'nama' => 'Fakultas Teknik Mesin dan Dirgantara',
+		            'nama' => '(STEI) Sekolah Teknik Elektro dan Informatika',
 		        ]);
 		DB::table('fakultas')->insert([
-		            'nama' => 'Fakultas Teknik Sipil dan Lingkungan',
+		            'nama' => '(FTMD) Fakultas Teknik Mesin dan Dirgantara',
 		        ]);
 		DB::table('fakultas')->insert([
-		            'nama' => 'Sekolah Arsitektur',
+		            'nama' => '(FTSL) Fakultas Teknik Sipil dan Lingkungan',
 		        ]);
 		DB::table('fakultas')->insert([
-		            'nama' => 'Fakultas Seni Rupa dan Desain',
+		            'nama' => '(SAPPK) Sekolah Arsitektur dan Perencanaan Pengembangan Kebijakan',
 		        ]);
 		DB::table('fakultas')->insert([
-		            'nama' => 'Sekolah Bisnis dan Manajemen',
+		            'nama' => '(FSRD) Fakultas Seni Rupa dan Desain',
+		        ]);
+		DB::table('fakultas')->insert([
+		            'nama' => '(SBM) Sekolah Bisnis dan Manajemen',
 		        ]);
 
 

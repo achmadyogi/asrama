@@ -14,12 +14,11 @@ class CreateProdiTable extends Migration
     public function up()
     {
         Schema::create('prodi', function (Blueprint $table) {
-            $table->increments('id_prodi');
-            $table->string('nim_prodi');
-            $table->string('nim_fakultas');
-            $table->foreign('nim_fakultas')->references('id_fakultas')->on('fakultas');
-            $table->string('nama');
-            $table->string('strata');
+            $table->unsignedInteger('id_prodi')->primary();
+            $table->unsignedInteger('id_fakultas');
+            $table->foreign('id_fakultas')->references('id_fakultas')->on('fakultas');
+            $table->string('nama_prodi');
+            $table->tinyInteger('strata')->comment('1:Sarjana, 2:Magister, 3:Profesi');
         });
     }
 

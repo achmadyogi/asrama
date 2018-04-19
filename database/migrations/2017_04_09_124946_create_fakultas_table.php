@@ -14,9 +14,8 @@ class CreateFakultasTable extends Migration
     public function up()
     {
         Schema::create('fakultas', function (Blueprint $table) {
-            $table->string('id_fakultas');
-            $table->primary('id_fakultas');
-    		    $table->string('nama');
+            $table->increments('id_fakultas');
+    		$table->string('nama');
         });
     }
 
