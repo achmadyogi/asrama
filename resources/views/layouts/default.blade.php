@@ -89,7 +89,7 @@
                             </li>
                         </div>
 					@endif
-					<li><a class="@yield('menu_tentang')" href="#" class="li_menu">Tentang</a></li>
+					<li><a class="@yield('menu_tentang')" href="/about" class="li_menu">Tentang</a></li>
 					<li><a class="@yield('menu_asrama')" href="#" class="li_menu">Asrama</a></li>
 					<li><a class="@yield('menu_pembinaan')" href="/pembinaan" class="li_menu">Pembinaan</a></li>
 					<li><a class="@yield('menu_informasi')" href="#" class="li_menu">Informasi</a></li>
@@ -200,7 +200,7 @@
 			<div class="row">
 				<div class="col-md-2">
 					<b>Tentang</b><hr style="margin: 2px 0px 5px 0px">
-					<a class="link_footer" href="#">rganisasi</a><br>
+					<a class="link_footer" href="#">Organisasi</a><br>
 					<a class="link_footer" href="#">Sejarah</a><br>
 					<a class="link_footer" href="#">Visi dan Misi</a><br>
 					<a class="link_footer" href="#">Proyek</a><br><br><br>

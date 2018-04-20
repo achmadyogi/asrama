@@ -32,3 +32,9 @@ Route::get('/dashboard/sekretariat/editPeriode', 'sekretariat\editPeriodeControl
 // Halaman Utama
 Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index');
+
+
+//-------------- TENTANG ------------- //
+rOUTE::GET('/about', function() {
+	return view('about.index');
+});
