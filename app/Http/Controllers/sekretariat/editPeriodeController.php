@@ -29,3 +29,5 @@ class editPeriodeController extends Controller
     	return view('dashboard.sekretariat.edit_periode', $this->getEditPeriode());
     }
 }
+	
+    

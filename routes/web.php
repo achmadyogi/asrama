@@ -38,3 +38,9 @@ Route::post('/tambah_periode','sekretariat\tambahPeriodeController@index')->name
 // Halaman Utama
 Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index');
+
+
+//-------------- TENTANG ------------- //
+rOUTE::GET('/about', function() {
+	return view('about.index');
+});
