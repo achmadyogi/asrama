@@ -16,10 +16,10 @@ class CreatePeriodeTable extends Migration
         Schema::create('periodes', function (Blueprint $table) {
             $table->increments('id_periode');
             $table->string('nama_periode');
-            $table->date('tanggal_buka_daftar');
-            $table->date('tanggal_tutup_daftar');
-            $table->date('tanggal_mulai_tinggal');
-            $table->date('tanggal_selesai_tinggal');
+            $table->timestampTz('tanggal_buka_daftar')->nullable();
+            $table->timestampTz('tanggal_tutup_daftar')->nullable();
+            $table->timestampTz('tanggal_mulai_tinggal')->nullable();
+            $table->timestampTz('tanggal_selesai_tinggal')->nullable();
             $table->integer('jumlah_bulan')->comment('untuk perhitungan tagihan');
             $table->text('keterangan')->comment('informasi tambahan bila perlu');
             $table->timestamps();

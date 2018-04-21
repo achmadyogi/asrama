@@ -15,6 +15,7 @@
         "knplabs/knp-snappy": "^0.4.3",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
+        "nesbot/carbon": "^1.26",
         "unisharp/laravel-filemanager": "^1.7",
         "wemersonjanuario/wkhtmltopdf-windows": "0.12.2.3"
     },

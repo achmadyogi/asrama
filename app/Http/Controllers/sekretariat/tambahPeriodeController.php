@@ -19,13 +19,24 @@ use App\Periode;
 use dateTime;
 use Carbon\Carbon;
 
-class editPeriodeController extends Controller
+class tambahPeriodeController extends Controller
 {
 	use initialDashboard;
 	use tanggalWaktu;
 	use editPeriode;
-    // Memanggil Periode
-    function index(){
-    	return view('dashboard.sekretariat.edit_periode', $this->getEditPeriode());
+
+	protected function index(Request $request)
+    {
+        $this->Validate($request, [
+            'nama_periode' => 'required|max:255',
+            'tanggal_buka_daftar' => 'required|date',
+            'tanggal_tutup_daftar' => 'required|date',
+            'tanggal_mulai_tinggal' => 'required|date',
+            'tanggal_selesai_tinggal' => 'required|date',
+            'ammount of month' => 'required|numeric'
+        ]);
+
+
+    	return view('dashboard.sekretariat.edit_periode', $this->getEditPeriod());
     }
 }

@@ -21,10 +21,16 @@ Route::get('/pembinaan',function(){
 // --------------- DASHBOARD ----------------- //
 // Masuk Dashboard
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
-// Penghuni: Mendaftarkan data diri penghuni
-Route::post('dashboard/createPenghuni', 'dataPenghuniController@createPenghuni')->name('daftar_penghuni');
-// Sekretariat: Buat/edit periode pendaftaran
+
+// DASHBOARD PENGHUNI
+// Mendaftarkan data diri penghuni
+Route::post('dashboard/createPenghuni', 'penghuni\dataPenghuniController@createPenghuni')->name('daftar_penghuni');
+
+// DASHBOARD SEKRETARIAT
+// Buat/edit periode pendaftaran
 Route::get('/dashboard/sekretariat/editPeriode', 'sekretariat\editPeriodeController@index')->name('edit_periode');
+// Buat tambah periode
+Route::post('/tambah_periode','sekretariat\tambahPeriodeController@index')->name('tambah_periode');
 
 
 
