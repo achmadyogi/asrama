@@ -34,7 +34,9 @@ Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index');
 
 
-//-------------- TENTANG ------------- //
-rOUTE::GET('/about', function() {
+//-------------- MENU ------------- //
+route::get('/about', function() {
 	return view('about.index');
 });
+
+route::get('/asrama', 'AsramaController@index');
