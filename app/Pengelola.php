@@ -19,7 +19,7 @@ class Pengelola extends Model
         'id_user', 'id_asrama',
     ];
 
-    public function user()
+    /* public function user()
     {
         $this->belongsTo('App\User','id_user');
     }
@@ -27,5 +27,5 @@ class Pengelola extends Model
     public function asrama()
     {
         $this->belongsTo('App\Asrama','id_asrama');
-    }
+    } */
 }
