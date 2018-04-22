@@ -40,3 +40,7 @@ route::get('/about', function() {
 });
 
 route::get('/asrama', 'AsramaController@index');
+
+// file download
+Route::get('/download', 'DownloadController@show_all_downloadable_file');
+Route::get('/download/{id}', 'DownloadController@download_file');

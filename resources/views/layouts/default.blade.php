@@ -93,7 +93,7 @@
 					<li><a class="@yield('menu_asrama')" href="/asrama" class="li_menu">Asrama</a></li>
 					<li><a class="@yield('menu_pembinaan')" href="/pembinaan" class="li_menu">Pembinaan</a></li>
 					<li><a class="@yield('menu_informasi')" href="#" class="li_menu">Informasi</a></li>
-					<li><a class="@yield('menu_download')" href="#" class="li_menu">Download</a></li>
+					<li><a class="@yield('menu_download')" href="/download" class="li_menu">Download</a></li>
 				</ul>
 			</nav>
 		</div>
