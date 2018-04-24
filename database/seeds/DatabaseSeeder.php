@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
         $this->call(AsramaSeeder::class);
         $this->call(GedungSeeder::class);
         $this->call(KamarSeeder::class);
-        $this->call(TarifSeeder::class);    
+        $this->call(TarifSeeder::class);
+        $this->call(FileDownloadSeeder::class);    
     }
 }

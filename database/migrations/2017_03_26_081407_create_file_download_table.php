@@ -15,8 +15,6 @@ class CreateFileDownloadTable extends Migration
     {
       Schema::create('file_download', function (Blueprint $table) {
           $table->increments('id_file');
-          $table->unsignedInteger('id_user');
-          $table->foreign('id_user')->references('id')->on('users');
           $table->string('nama_file');
           $table->text('deskripsi');
           $table->string('url_file');
