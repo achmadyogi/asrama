@@ -7,7 +7,7 @@
 		<i>Username</i><br>
 		<b><span class="fa fa-user"></span> {{$user->username}}</b><br>
 		<i>Nama Lengkap</i><br>
-		<b><span class="fa fa-drivers-license-o""></span>  {{$user->name}}</b><br>
+		<b><span class="fa fa-drivers-license-o"></span>  {{$user->name}}</b><br>
 		<i>Email</i><br>
 		<b><span class="fa fa-envelope"></span> {{$user->email}}</b><br>
 	</div>

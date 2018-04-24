@@ -44,3 +44,9 @@ route::get('/asrama', 'AsramaController@index');
 // file download
 Route::get('/download', 'DownloadController@show_all_downloadable_file');
 Route::get('/download/{id}', 'DownloadController@download_file');
+
+
+//Pendaftaran
+//Reguler
+Route::get('/daftar_reguler', 'DaftarAsramaController@showFormReguler');
+Route::post('/daftar_reguler', 'DaftarAsramaController@daftarReguler')->name('daftar_reguler');
