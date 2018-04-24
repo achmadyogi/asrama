@@ -14,6 +14,7 @@ use App\Prodi;
 use Session;
 use App\Http\Controllers\Traits\initialDashboard;
 use App\Http\Controllers\Traits\tanggalWaktu;
+use App\Http\Controllers\Traits\tanggal;
 use App\Http\Controllers\Traits\editPeriode;
 use App\Periode;
 use dateTime;
@@ -23,6 +24,7 @@ class editPeriodeController extends Controller
 {
 	use initialDashboard;
 	use tanggalWaktu;
+	use tanggal;
 	use editPeriode;
     // Memanggil Periode
     function index(){

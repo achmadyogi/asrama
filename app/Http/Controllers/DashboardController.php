@@ -16,6 +16,7 @@ use App\Keluar_asrama;
 use App\kerusakan_kamar;
 use App\Pengelola;
 use App\Http\Controllers\Traits\initialDashboard;
+use Session;
 
 class DashboardController extends Controller
 {
@@ -35,6 +36,7 @@ class DashboardController extends Controller
      */
     use initialDashboard;
     public function index(){
+        Session::flash('menu','dashboard');
         return view('dashboard.dashboard', $this->getInitialDashboard());
     }
 }

@@ -18,8 +18,8 @@ class CreatePeriodeTable extends Migration
             $table->string('nama_periode');
             $table->timestampTz('tanggal_buka_daftar')->nullable();
             $table->timestampTz('tanggal_tutup_daftar')->nullable();
-            $table->timestampTz('tanggal_mulai_tinggal')->nullable();
-            $table->timestampTz('tanggal_selesai_tinggal')->nullable();
+            $table->date('tanggal_mulai_tinggal')->nullable();
+            $table->date('tanggal_selesai_tinggal')->nullable();
             $table->integer('jumlah_bulan')->comment('untuk perhitungan tagihan');
             $table->text('keterangan')->comment('informasi tambahan bila perlu');
             $table->timestamps();

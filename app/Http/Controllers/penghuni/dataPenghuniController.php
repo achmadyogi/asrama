@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Penghuni;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -19,36 +19,31 @@ class dataPenghuniController extends Controller
 	use initialDashboard;
 
     protected function createPenghuni(Request $data){
-    	/*
-		return Validator::make($data, [
-			'mahasiswa' => 'required',
-	    	'nim' => 'numeric|size:8|',
+    	// Memeriksa apakah mahasiswa atau bukan
+    	if($data->mahasiswa == 1){
+    		$this->Validate($data,['nim' => 'required|string|size:8']);
+    	}
+    	// Memeriksa input instansi apakah ITB atau bukan
+		if($data['instansi'] == NULL){
+			$instansi = 'Institut Teknologi Bandung';
+		}else{
+			$instansi = $data['instansi'];
+			$this->Validate($data,['instansi' => 'required']);
+		}
+		$this->Validate($data, [
 	    	'nomor_identitas' => 'required|unique:user_penghuni,nomor_identitas',
 	    	'jenis_identitas' => 'required',
 	    	'tempat_lahir' => 'required',
-	    	'tanggal_lahir' => 'required|date_format:YYYY-MM-DD',
-	    	'gol_darah' => 'required',
-	    	'kelamin' => 'required',
-	    	'negara' => 'required',
-	    	'propinsi' => 'required',
+	    	'tanggal_lahir' => 'required|date',
 	    	'kota' => 'required',
 	    	'alamat' => 'required|max:225',
 	    	'kodepos' => 'required',
 	    	'agama' => 'required',
 	    	'pekerjaan' => 'required',
-	    	'warga_negara' => 'required',
 	    	'telepon' => 'required',
 	    	'kontak_darurat' => 'required',
-	    	'instansi' => 'required',
 		]);
-		*/
-
-		// Memeriksa input instansi apakah ITB atau bukan
-		if($data['instansi'] == NULL){
-			$instansi = $data['instansi_itb'];
-		}else{
-			$instansi = $data['instansi'];
-		}
+		
 		// Memeriksa keberadaan penghuni dan memasukkannya bila belum ada
 		if(user_penghuni::where(['id_user'=>Auth::User()->id])->count() > 0){
     		Session::flash('status1', 'Status kepenghunian Anda sudah terdaftar. Untuk mengedit status kepenghunian Anda, silahkan edit di aplikasi kepenghunian.');
