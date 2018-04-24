@@ -25,12 +25,16 @@ Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 // DASHBOARD PENGHUNI
 // Mendaftarkan data diri penghuni
 Route::post('dashboard/createPenghuni', 'penghuni\dataPenghuniController@createPenghuni')->name('daftar_penghuni');
+// Pendaftaran penghuni
+Route::get('dashboard/penghuni/pendaftaran_penghuni', 'penghuni\pendaftaranPenghuniController@index')->name('pendaftaran_penghuni');
 
 // DASHBOARD SEKRETARIAT
 // Buat/edit periode pendaftaran
 Route::get('/dashboard/sekretariat/editPeriode', 'sekretariat\editPeriodeController@index')->name('edit_periode');
 // Buat tambah periode
 Route::post('/tambah_periode','sekretariat\tambahPeriodeController@index')->name('tambah_periode');
+// Buat edit periode
+Route::post('/edit_periode', 'sekretariat\tambahPeriodeController@editPeriode')->name('edit_lama');
 
 
 
@@ -40,8 +44,8 @@ Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index');
 
 
-//-------------- MENU ------------- //
-route::get('/about', function() {
+//-------------- TENTANG ------------- //
+Route::get('/about', function() {
 	return view('about.index');
 });
 

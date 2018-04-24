@@ -2,8 +2,8 @@
 namespace App\Http\Controllers\Traits;
 
 trait tanggal{
-	public function date($tanggal){
-		$dateArray = explode('-',$dateSpace[0]);
+	public function dateTanggal($tanggal){
+		$dateArray = explode('-',$tanggal);
 		// Nama Bulan
         if($dateArray[1] == '01'){
           $bulan = 'Januari';

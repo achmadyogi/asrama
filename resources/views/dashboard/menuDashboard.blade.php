@@ -45,78 +45,66 @@
 		<div class="sider_pan" onclick="dapatkanId('pan_akun')" style="cursor: pointer;"><b><i class="fa fa-angle-down"></i> Manajemen Akun</b></div>
 		<div class="sider_body" id="pan_akun" style="display: block;">
 			@if($userPenghuni != '0')
-            	<a class="tablinks" href="#" onclick="siderLoad(event)">Edit Data Diri</a><br>
+            	<a href="#">Edit Data Diri</a><br>
             	@if($userNim != '0')
-            		<a class="tablinks" href="#" onclick="siderLoad(event)">Edit NIM</a><br>
+            		<a href="#">Edit NIM</a><br>
             	@endif
             @endif
-            <a class="tablinks" href="#" onclick="siderLoad(event)">Ganti Username</a><br>
-            <a class="tablinks" href="#" onclick="siderLoad(event)">Ganti Password</a><br>
+            <a href="#">Ganti Username</a><br>
+            <a href="#">Ganti Password</a><br>
 		</div>
 	@if($userPenghuni != '0')
 		<div class="sider_pan" onclick="dapatkanId('pan_penghuni')" style="cursor: pointer;"><b><i class="fa fa-angle-down"></i> Penghuni</b></div>
 		<div class="sider_body" id="pan_penghuni" style="display: none">
-			<a class="tablinks" href="#" onclick="siderLoad(event)">Pendaftaran</a><br>
+			@if(session()->has('menu') && session('menu') == 'penghuni/pendaftaran_penghuni')
+				<a class="active" href="{{ route('pendaftaran_penghuni') }}">Pendaftaran</a><br>
+			@else
+				<a href="{{ route('pendaftaran_penghuni') }}">Pendaftaran</a><br>
+			@endif
+			
 			@if($user->is_penghuni == 1)
-			<a class="tablinks" href="#" onclick="siderLoad(event)">Informasi Pembayaran</a><br>
-			<a class="tablinks" href="#" onclick="siderLoad(event)">Lapor Kerusakan</a><br>
-			<a class="tablinks" href="#" onclick="siderLoad(event)">Pindah Kamar</a><br>
-			<a class="tablinks" href="#" onclick="siderLoad(event)">Keluar Asrama</a><br>
+			<a href="#">Informasi Pembayaran</a><br>
+			<a href="#">Lapor Kerusakan</a><br>
+			<a href="#">Pindah Kamar</a><br>
+			<a href="#">Keluar Asrama</a><br>
 			@endif
 		</div>
 	@endif 
 	@if($user->is_pengelola == 1)
 		<div class="sider_pan" onclick="dapatkanId('pan_pengelola')" style="cursor: pointer;"><b><i class="fa fa-angle-down"></i> Pengelola Asrama</b></div>
 		<div class="sider_body" id="pan_pengelola" style="display: none">
-			<a class="tablinks" href="#" onclick="siderLoad(event)">Utama</a><br>
-			<a class="tablinks" href="#" onclick="siderLoad(event)">Informasi Pembayaran</a><br>
-			<a class="tablinks" href="#" onclick="siderLoad(event)">Lapor Kerusakan</a><br>
+			<a href="#">Utama</a><br>
+			<a href="#">Informasi Pembayaran</a><br>
+			<a href="#">Lapor Kerusakan</a><br>
 		</div>
 	@endif
 	@if($user->is_sekretariat == 1)
 		<div class="sider_pan" onclick="dapatkanId('pan_sekretariat')" style="cursor: pointer;"><b><i class="fa fa-angle-down"></i> Sekretariat</b></div>
 		<div class="sider_body" id="pan_sekretariat" style="display: none">
-			<a class="tablinks" href="#" onclick="siderLoad(event)">Utama</a><br>
-			<a class="tablinks" href="#" onclick="siderLoad(event)">Informasi Pembayaran</a><br>
-			<a class="tablinks" href="#" onclick="siderLoad(event)">Lapor Kerusakan</a><br>
-			<a class="tablinks" href="{{ route('edit_periode') }}" onclick="siderLoad(event)" id="edit_periode">Buat/Edit Periode</a><br>
+			<a href="#">Utama</a><br>
+			<a href="#">Informasi Pembayaran</a><br>
+			<a href="#">Lapor Kerusakan</a><br>
+			@if(session()->has('menu') && session('menu') == 'sekretariat_buat/edit_periode')
+				<a class="active" href="{{ route('edit_periode') }}" id="edit_periode">Buat/Edit Periode</a><br>
+			@else
+				<a href="{{ route('edit_periode') }}" id="edit_periode">Buat/Edit Periode</a><br>
+			@endif
 		</div>
 	@endif
 	@if($user->is_pimpinan == 1)
 		<div class="sider_pan" onclick="dapatkanId('pan_pimpinan')" style="cursor: pointer;"><b><i class="fa fa-angle-down"></i> Pimpinan</b></div>
 		<div class="sider_body" id="pan_pimpinan" style="display: none">
-			<a class="tablinks" href="#" onclick="siderLoad(event)">Utama</a><br>
-			<a class="tablinks" href="#" onclick="siderLoad(event)">Informasi Pembayaran</a><br>
-			<a class="tablinks" href="#" onclick="siderLoad(event)">Lapor Kerusakan</a><br>
+			<a href="#">Utama</a><br>
+			<a href="#">Informasi Pembayaran</a><br>
+			<a href="#">Lapor Kerusakan</a><br>
 		</div>
 	@endif
 	@if($user->is_admin == 1)
 		<div class="sider_pan" onclick="dapatkanId('pan_admin')" style="cursor: pointer;"><b><i class="fa fa-angle-down"></i> Admin</b></div>
 		<div class="sider_body" id="pan_admin" style="display: none">
-			<a class="tablinks" href="#" onclick="siderLoad(event)">Utama</a><br>
-			<a class="tablinks" href="#" onclick="siderLoad(event)">Informasi Pembayaran</a><br>
-			<a class="tablinks" href="#" onclick="siderLoad(event)">Lapor Kerusakan</a><br>
+			<a href="#">Utama</a><br>
+			<a href="#">Informasi Pembayaran</a><br>
+			<a href="#">Lapor Kerusakan</a><br>
 		</div>
 	@endif
 </div><br><br>
-<script>
-	$(document).ready(function(){
-		$(document).ajaxStart(function(){
-			$("#wait").css("display", "block");
-		});
-		$(document).ajaxComplete(function(){
-			$("#wait").css("display", "none");
-		});
-		// PENGHUNI
-		$("#data_diri").click(function(){
-		});
-		// SEKRETARIAT
-		$("#edit_periode").click(function(){
-			$.ajax({
-				type: 'POST',
-				url: '/sekretariat',
-			});
-			$("#content").load("resources/views/sekretariat/edit_periode");
-		});
-	});
-</script>
