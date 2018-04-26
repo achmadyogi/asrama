@@ -60,50 +60,44 @@ class GedungSeeder extends Seeder
           'gender'=>'P',
           ] );
 
+          
+
           DB::table('Gedung')->insert([
           'id_gedung'=>'8',
-          'id_asrama'=>'4',
-          'nama'=>'Gedung A',
-          'gender'=>'P',
-
-          ] );
-
-          DB::table('Gedung')->insert([
-          'id_gedung'=>'9',
           'id_asrama'=>'4',
           'nama'=>'Gedung B',
           'gender'=>'L',
           ] );
           DB::table('Gedung')->insert([
-          'id_gedung'=>'10',
+          'id_gedung'=>'9',
           'id_asrama'=>'4',
           'nama'=>'Gedung C',
           'gender'=>'L',
           ] );
 
           DB::table('Gedung')->insert([
-          'id_gedung'=>'11',
+          'id_gedung'=>'10',
           'id_asrama'=>'4',
           'nama'=>'Gedung D',
           'gender'=>'L',
           ] );
 
           DB::table('Gedung')->insert([
-          'id_gedung'=>'12',
+          'id_gedung'=>'11',
           'id_asrama'=>'4',
           'nama'=>'Gedung E',
           'gender'=>'L',
           ] );
 
           DB::table('Gedung')->insert([
-          'id_gedung'=>'13',
+          'id_gedung'=>'12',
           'id_asrama'=>'4',
           'nama'=>'Gedung F',
           'gender'=>'L',
           ] );
 
           DB::table('Gedung')->insert([
-          'id_gedung'=>'14',
+          'id_gedung'=>'13',
 
           'id_asrama'=>'5',
           'nama'=>'Sangkuriang Gedung A',
@@ -112,14 +106,14 @@ class GedungSeeder extends Seeder
           ] );
 
           DB::table('Gedung')->insert([
-          'id_gedung'=>'15',
+          'id_gedung'=>'14',
           'id_asrama'=>'5',
           'nama'=>'Sangkuriang Gedung B',
           'gender'=>'L',
           ] );
 
           DB::table('Gedung')->insert([
-          'id_gedung'=>'16',
+          'id_gedung'=>'15',
           'id_asrama'=>'6',
           'nama'=>'Sangkuriang Gedung C',
           'gender'=>'P',
@@ -127,7 +121,7 @@ class GedungSeeder extends Seeder
           ] );
 
           DB::table('Gedung')->insert([
-          'id_gedung'=>'17',
+          'id_gedung'=>'16',
           'id_asrama'=>'6',
           'nama'=>'Sangkuriang Gedung D',
           'gender'=>'L',
