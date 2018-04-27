@@ -114,7 +114,7 @@ class GedungSeeder extends Seeder
 
           DB::table('Gedung')->insert([
           'id_gedung'=>'15',
-          'id_asrama'=>'6',
+          'id_asrama'=>'5',
           'nama'=>'Sangkuriang Gedung C',
           'gender'=>'P',
 
@@ -122,7 +122,7 @@ class GedungSeeder extends Seeder
 
           DB::table('Gedung')->insert([
           'id_gedung'=>'16',
-          'id_asrama'=>'6',
+          'id_asrama'=>'5',
           'nama'=>'Sangkuriang Gedung D',
           'gender'=>'L',
           ] );
