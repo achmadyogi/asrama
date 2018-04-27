@@ -6165,7 +6165,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -6179,7 +6179,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -6193,7 +6193,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -6207,7 +6207,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -6221,7 +6221,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -6235,7 +6235,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -6249,7 +6249,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -6263,7 +6263,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -7397,7 +7397,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -7411,7 +7411,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -7425,7 +7425,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -7439,7 +7439,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -7453,7 +7453,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -7481,7 +7481,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -7495,7 +7495,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -7509,7 +7509,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -7523,7 +7523,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
