@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Validator;
+use App\Asrama;
 use App\User_penghuni;
 use App\User;
 use App\User_nim;
@@ -16,6 +17,7 @@ use Session;
 use App\Http\Controllers\Traits\initialDashboard;
 use App\Http\Controllers\Traits\tanggalWaktu;
 use App\Http\Controllers\Traits\tanggal;
+use App\Http\Controllers\Traits\editPeriode;
 use App\Periode;
 use dateTime;
 use Carbon\Carbon;
@@ -24,7 +26,8 @@ class pendaftaranPenghuniController extends Controller
 {
 	use initialDashboard;
     use tanggalWaktu;
-    use tanggal;
+	use tanggal;
+	use editPeriode;
 
     public function index(){
     	$dashboard = $this->getInitialDashboard();
@@ -99,6 +102,26 @@ class pendaftaranPenghuniController extends Controller
 	    											'pass_periode' => $pass_periode,
 	    											'tarif' => $tarif]);
 	    }
+	}
+	
+	public function showFormReguler() {
+    	if (Auth::guest()) {
+            return redirect('/login');
+        } 
+        else {
+            $user_penghuni_info = Auth::user()->user_penghuni;
+            if ($user_penghuni_info->status_daftar == NULL) {
+                $list_asrama = Asrama::all();
+				$list_periode = $this->getEditPeriode();
+
+                return view('dashboard.penghuni.daftar_reguler')
+                    ->with(['list_asrama' => $list_asrama,
+                            'list_periode' => $list_periode]);
+            }
+            else {
+                return redirect('/dashboard');
+            }
+        }
     }
 
 }
