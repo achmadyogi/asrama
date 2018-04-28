@@ -387,3 +387,7 @@ select{
 .table table tr:nth-child(odd) {
 	background-color: #C9C9C9;
 }
+#active{
+	font-style: italic;
+	font-weight: bold;
+}

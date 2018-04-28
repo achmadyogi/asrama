@@ -18,7 +18,7 @@ class HomeController extends Controller
         $berita = Berita::all()->sortByDesc("updated_at")->take(4);
         $i = 0;
         foreach($berita as $date){
-          $dateResult[$i] = date($date->updated_at);
+          $dateResult[$i] = $this->date($date->updated_at);
           $i += 1;
         }
       }else{
@@ -30,7 +30,7 @@ class HomeController extends Controller
         $pengumuman = Pengumuman::all()->sortByDesc("updated_at")->take(5);
         $i = 0;
         foreach($pengumuman as $info){
-          $dateInfo[$i] = date($info->updated_at);
+          $dateInfo[$i] = $this->date($info->updated_at);
           $i += 1;
         }
       }else{

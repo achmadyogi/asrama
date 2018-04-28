@@ -5,6 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UPT Asrama ITB | @yield('title')</title>
+<!-- untuk chart -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- next -->
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -92,7 +97,7 @@
 					<li><a class="@yield('menu_tentang')" href="/about" class="li_menu">Tentang</a></li>
 					<li><a class="@yield('menu_asrama')" href="#" class="li_menu">Asrama</a></li>
 					<li><a class="@yield('menu_pembinaan')" href="/pembinaan" class="li_menu">Pembinaan</a></li>
-					<li><a class="@yield('menu_informasi')" href="#" class="li_menu">Informasi</a></li>
+					<li><a class="@yield('menu_informasi')" href="/informasi/pendaftaran" class="li_menu">Informasi</a></li>
 					<li><a class="@yield('menu_download')" href="#" class="li_menu">Download</a></li>
 				</ul>
 			</nav>
