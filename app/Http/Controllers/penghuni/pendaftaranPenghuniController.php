@@ -9,6 +9,7 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Validator;
 use App\Asrama;
 use App\User_penghuni;
+use App\Daftar_asrama_reguler;
 use App\User;
 use App\User_nim;
 use App\Prodi;
@@ -105,23 +106,56 @@ class pendaftaranPenghuniController extends Controller
 	}
 	
 	public function showFormReguler() {
-    	if (Auth::guest()) {
+		$dashboard = $this->getInitialDashboard();
+		if (Auth::guest()) {
             return redirect('/login');
         } 
         else {
             $user_penghuni_info = Auth::user()->user_penghuni;
             if ($user_penghuni_info->status_daftar == NULL) {
                 $list_asrama = Asrama::all();
-				$list_periode = $this->getEditPeriode();
+                //$list_periode = $this->getEditPeriode();
 
-                return view('dashboard.penghuni.daftar_reguler')
-                    ->with(['list_asrama' => $list_asrama,
-                            'list_periode' => $list_periode]);
+                return view('dashboard.penghuni.daftar_reguler', $this->getEditPeriode())
+                    ->with(['list_asrama' => $list_asrama]);
             }
             else {
                 return redirect('/dashboard');
             }
         }
+	}
+
+	public function daftarReguler(Request $request) {
+        $user = Auth::user();
+
+        $user_penghuni = $user->user_penghuni;
+        $user_penghuni->status_daftar = 'Reguler';
+        $user_penghuni->save();
+
+		$daftar_reguler = Daftar_asrama_reguler::create([
+			'id_user' => $user_penghuni->id_user,
+			'preference' => $request->preference,
+			'verification' => 'Menunggu',
+			'status_beasiswa' => $request->beasiswa,
+			'status_mahasiswa' => $request->mahasiswa,
+			'kepenghunian' => 'Penghuni',
+			'is_difable' => $request->difable == 'Sehat' ? '0' : '1',
+			'is_international' => $request->internasional == 'Mahasiswa Internasional' ? '1' : '0',
+		]);
+
+        $list_periode = Periode::all();
+        foreach ($list_periode as $data) {
+            $periode = $data->nama . " (" . $data->tanggal_awal. " s.d. " . $data->tanggal_akhir . ")";
+            echo $periode;
+            if ($periode == $request->periode) {
+				$daftar_asrama_reguler->id_periode = $data->id_periode;
+                $daftar_asrama_reguler->tanggal_masuk = $data->tanggal_mulai_tinggal;
+            }
+        }
+
+        $daftar_asrama_reguler->save();
+
+        return redirect('/dashboard');
     }
 
 }
