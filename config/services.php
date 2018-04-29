@@ -15,7 +15,7 @@ return [
     */
 
     'mailgun' => [
-        'domain' => 'sandbox83fbaa720c3f42dd8d2c67c2890969e8.mailgun.org',
+        'domain' => 'itbmun.com',
         'secret' => 'key-6613488e5ff44a70146263c55b1a1d26',
     ],
 

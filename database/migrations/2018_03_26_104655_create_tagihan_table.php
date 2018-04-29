@@ -18,8 +18,6 @@ class CreateTagihanTable extends Migration
             $table->unsignedInteger('daftar_asrama_id')->references('id_daftar','id_daftar')->on('daftar_asrama_non_reguler','daftar_asrama_reguler');
             $table->string('daftar_asrama_type')->comment('laravel model class polymorphic r.');
             $table->integer('jumlah_tagihan');
-            $table->string('tempo')->comment('harian/bulanan');
-            $table->integer('lama_tinggal')->comment('angka kelipatan tempo');
             $table->timestamps();
         });
     }

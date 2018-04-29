@@ -97,7 +97,7 @@
 									  	{{ csrf_field() }}
 									  	<input type="Hidden" name="id_periode" value="{{$id_periode[$urut]}}">
 									  	<div class="form-group{{ $errors->has('tanggal_pendaftaran_dibuka') ? ' has-error' : '' }}">
-										  	<input id="tanggal_pendaftaran_dibuka" class="input" type="text" name="tanggal_buka_daftar" placeholder="Tanggal Pendaftaran Dibuka"><br><br>
+										  	<input id="tanggal_pendaftaran_dibuka" class="input" type="datetime-local" name="tanggal_buka_daftar" placeholder="Tanggal Pendaftaran Dibuka"><br><br>
 										  	@if ($errors->has('tanggal_pendaftaran_dibuka'))
 				                                <span class="help-block">
 				                                    <strong>{{ $errors->first('tanggal_pendaftaran_dibuka') }}</strong>
@@ -105,7 +105,7 @@
 				                            @endif
 										</div>
 										<div class="form-group{{ $errors->has('tanggal_pendaftaran_dibuka') ? ' has-error' : '' }}">
-										  	<input id="tanggal_pendaftaran_ditutup" class="input" type="text" name="tanggal_tutup_daftar" placeholder="Tanggal Pendaftaran Ditutup"><br><br>
+										  	<input id="tanggal_pendaftaran_ditutup" class="input" type="datetime-local" name="tanggal_tutup_daftar" placeholder="Tanggal Pendaftaran Ditutup"><br><br>
 										  	@if ($errors->has('tanggal_pendaftaran_ditutup'))
 				                                <span class="help-block">
 				                                    <strong>{{ $errors->first('tanggal_pendaftaran_ditutup') }}</strong>

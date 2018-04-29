@@ -11,13 +11,6 @@ Route::get('/resendEmail/{email}/{token_verification}','Auth\RegisterController@
 
 
 
-// --------------- WEBSITE BLOGS --------------//
-Route::get('/pembinaan',function(){
-	return view('pembinaan');
-});
-
-
-
 // --------------- DASHBOARD ----------------- //
 // Masuk Dashboard
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
@@ -27,6 +20,12 @@ Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::post('dashboard/createPenghuni', 'penghuni\dataPenghuniController@createPenghuni')->name('daftar_penghuni');
 // Pendaftaran penghuni
 Route::get('dashboard/penghuni/pendaftaran_penghuni', 'penghuni\pendaftaranPenghuniController@index')->name('pendaftaran_penghuni');
+
+// Form Pendaftaran Non Reguler
+Route::get('dashboard/penghuni/pendaftaran_penghuni/non_reguler', 'penghuni\daftarNonRegulerController@index')->name('daftar_non_reguler');
+// Pendaftaran Non Reguler
+Route::post('dashboard/penghuni/pendaftaran_penghuni/waiting', 'penghuni\daftarNonRegulerController@daftar')->name('form_non_reguler');
+
 // pendaftaran reguler
 Route::get('dashboard/penghuni/daftar_reguler', 'penghuni\pendaftaranPenghuniController@showFormReguler')->name('daftar_reguler');
 Route::post('dashboard/penghuni/daftar_reguler', 'penghuni\pendaftaranPenghuniController@daftarReguler')->name('daftar_reguler');
@@ -51,6 +50,20 @@ Route::get('/home', 'HomeController@index');
 Route::get('/about', function() {
 	return view('about.index');
 });
+
+Route::get('/about/struktur_organisasi', function(){
+	return view('about.struktur');
+});
+
+
+// ------------ PEMBINAAN -------------//
+Route::get('/pembinaan',function(){
+	return view('pembinaan.pembinaan');
+});
+
+
+// ------------ INFORMASI ------------//
+Route::get('/informasi/pendaftaran','informasi\pendaftaranController@index');
 
 route::get('/asrama', 'AsramaController@index');
 
