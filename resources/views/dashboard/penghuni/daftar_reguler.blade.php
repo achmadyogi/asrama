@@ -98,15 +98,17 @@
                         <div class="form-group">
                             <label for="periode" class="col-md-3 control-label">Periode</label>
                             <div class="col-md-9">
+                               
                                 <select id="periode" class="form-control" name="periode" required>
-                                    <?php $i = 0; ?>
-                                    @foreach ($nama_periodes as $nama_periode)
-                                        {{$i + 1}}
-                                        <option value="{{$nama_periode}} ({{$t_mulai_tinggal[$i]}} s.d. {{$t_selesai_tinggal[$i]}})">
-                                            {{$nama_periode}} ({{$t_mulai_tinggal[$i]}} s.d. {{$t_selesai_tinggal[$i]}})
-                                        </option>
+                                    @foreach ($list_periode as $nama_periode)
+                                    <option value="{{$nama_periode->id_periode}}">
+                                        {{$nama_periode->nama_periode}}
+                                    </option>
                                     @endforeach
                                 </select>
+                                @foreach ($list_periode as $nama_periode)
+                                    <input id="tanggal_mulai" type="hidden"  name="tanggal_mulai" value="{{$nama_periode->tanggal_mulai_tinggal}}">
+                                @endforeach
                             </div>
                         </div>
 
@@ -124,6 +126,7 @@
         </div>
     </div>
 </div>
+<script>
 $(document).ready(function(){
     $('#difable').on('change', function() {
         if(this.value== 'Berkebutuhan Khusus') {

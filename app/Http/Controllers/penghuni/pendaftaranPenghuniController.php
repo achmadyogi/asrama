@@ -114,10 +114,11 @@ class pendaftaranPenghuniController extends Controller
             $user_penghuni_info = Auth::user()->user_penghuni;
             if ($user_penghuni_info->status_daftar == NULL) {
                 $list_asrama = Asrama::all();
-                //$list_periode = $this->getEditPeriode();
+                $list_periode = Periode::all();
 
-                return view('dashboard.penghuni.daftar_reguler', $this->getEditPeriode())
-                    ->with(['list_asrama' => $list_asrama]);
+                return view('dashboard.penghuni.daftar_reguler')
+					->with(['list_asrama' => $list_asrama,
+							'list_periode' => $list_periode]);
             }
             else {
                 return redirect('/dashboard');
@@ -132,26 +133,40 @@ class pendaftaranPenghuniController extends Controller
         $user_penghuni->status_daftar = 'Reguler';
         $user_penghuni->save();
 
-		$daftar_reguler = Daftar_asrama_reguler::create([
-			'id_user' => $user_penghuni->id_user,
-			'preference' => $request->preference,
-			'verification' => 'Menunggu',
-			'status_beasiswa' => $request->beasiswa,
-			'status_mahasiswa' => $request->mahasiswa,
-			'kepenghunian' => 'Penghuni',
-			'is_difable' => $request->difable == 'Sehat' ? '0' : '1',
-			'is_international' => $request->internasional == 'Mahasiswa Internasional' ? '1' : '0',
-		]);
+		$daftar_asrama_reguler = new Daftar_asrama_reguler();
+		$daftar_asrama_reguler->id_user = $user_penghuni->id_user;
+		if ($request->preference == "Sendiri") {
+			$daftar_asrama_reguler->preference = 1;
+		} else if($request->preference == "Berdua") {
+			$daftar_asrama_reguler->preference = 2;
+		} else {
+			$daftar_asrama_reguler->preference = 3;	
+		};
+		$daftar_asrama_reguler->verification = 0;
+		$daftar_asrama_reguler->status_beasiswa = $request->beasiswa;
+		$daftar_asrama_reguler->status_mahasiswa = $request->mahasiswa;
+		$daftar_asrama_reguler->kepenghunian = 'Penghuni';
+		$daftar_asrama_reguler->is_difable = $request->difable == 'Sehat' ? '0' : '1';
+		$daftar_asrama_reguler->is_international = $request->internasional == 'Mahasiswa Internasional' ? '1' : '0';
+		$daftar_asrama_reguler->id_periode = $request->periode;
+		$daftar_asrama_reguler->tanggal_masuk = $request->tanggal_mulai;
+		// $tanggal_masuk = Periode::where('id_periode', $request->periode)->pluck('tanggal_mulai_tinggal');
+		// $daftar_asrama_reguler->tanggal_masuk = date($tanggal_masuk);
 
-        $list_periode = Periode::all();
-        foreach ($list_periode as $data) {
-            $periode = $data->nama . " (" . $data->tanggal_awal. " s.d. " . $data->tanggal_akhir . ")";
-            echo $periode;
-            if ($periode == $request->periode) {
-				$daftar_asrama_reguler->id_periode = $data->id_periode;
-                $daftar_asrama_reguler->tanggal_masuk = $data->tanggal_mulai_tinggal;
-            }
-        }
+		// $daftar_reguler = Daftar_asrama_reguler::create([
+		// 	'id_user' => $user_penghuni->id_user,
+		// 	'id_periode' => ''
+		// 	'preference' => $request->preference,
+		// 	'verification' => 'Menunggu',
+		// 	'status_beasiswa' => $request->beasiswa,
+		// 	'status_mahasiswa' => $request->mahasiswa,
+		// 	'kepenghunian' => 'Penghuni',
+		// 	'is_difable' => $request->difable == 'Sehat' ? '0' : '1',
+		// 	'is_international' => $request->internasional == 'Mahasiswa Internasional' ? '1' : '0',
+		// 	'tanggal_masuk' => $tanggal_masuk,
+		// ]);
+
+       
 
         $daftar_asrama_reguler->save();
 
