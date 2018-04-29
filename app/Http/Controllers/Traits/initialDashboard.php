@@ -16,6 +16,8 @@ use App\Blacklist;
 use App\Keluar_asrama;
 use App\kerusakan_kamar;
 use App\Pengelola;
+use App\Http\Controllers\Traits\tanggalWaktu;
+use App\Http\Controllers\Traits\tanggal;
 
 trait initialDashboard{
 	public function getInitialDashboard(){

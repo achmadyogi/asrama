@@ -30,17 +30,10 @@ class daftarNonRegulerController extends Controller
     public function index(){
     	$dashboard = $this->getInitialDashboard();
     	Session::flash('menu','penghuni/pendaftaran_penghuni');
-    	return view('dashboard.penghuni.formNonReguler', ['user' => $dashboard['user'],
-	    											'reguler'=>$dashboard['reguler'],
-								        	        'nonReguler'=>$dashboard['nonReguler'],
-									        		'userNim'=>$dashboard['userNim'],
-									        		'userPenghuni'=>$dashboard['userPenghuni'],
-								                    'pengelola'=>$dashboard['pengelola'],
-								        			'pengelolaAsrama'=>$dashboard['pengelolaAsrama']]);
+    	return view('dashboard.penghuni.formNonReguler', $this->getInitialDashboard());
     }
 
     public function daftar(Request $request){
-    	$dashboard = $this->getInitialDashboard();
     	$this->Validate($request, [
 	    	'jumlah' => 'required|numeric',
 	    	'tanggal_masuk' => 'required|date',
@@ -48,15 +41,17 @@ class daftarNonRegulerController extends Controller
 		]);
 		// Memeriksa keberadaan pendaftaran pada database
 		if(Daftar_asrama_non_reguler::where(['id_user'=>Auth::User()->id])->count() > 0){
-			$nonReguler = Daftar_asrama_non_reguler::where(['id_user'=>Auth::User()->id]);
-			return view('dashboard.penghuni.infoPendaftaran', ['user' => $dashboard['user'],
-	    											'reguler'=>$dashboard['reguler'],
-								        	        'nonReguler'=>$dashboard['nonReguler'],
-									        		'userNim'=>$dashboard['userNim'],
-									        		'userPenghuni'=>$dashboard['userPenghuni'],
-								                    'pengelola'=>$dashboard['pengelola'],
-								        			'pengelolaAsrama'=>$dashboard['pengelolaAsrama'],
-								        			'check' => $nonReguler]);
+    		$dashboard = $this->getInitialDashboard();
+			// Mengotak-atik tanggal
+			$i = 0;
+			foreach ($dashboard['nonReguler'] as $nonReg) {
+				$tanggal_daftar[$i] = $this->date($nonReg->created_at);
+				$tanggal_masuk[$i] = $this->dateTanggal($nonReg->tanggal_masuk);
+				$i += 1;
+			}
+			return view('dashboard.penghuni.infoPendaftaran', $this->getInitialDashboard())->with([
+								        			'tanggal_daftar' => $tanggal_daftar,
+								        			'tanggal_masuk' => $tanggal_masuk]);
 		}else{
 			Daftar_asrama_non_reguler::create([
 				'id_user' => Auth::User()->id,
@@ -69,17 +64,18 @@ class daftarNonRegulerController extends Controller
 				'tempo' => $request->tempo,
 				'lama_tinggal' => $request->jumlah,
 			]);
-			$daftarNonReguler = Daftar_asrama_non_reguler::where(['id_user' => Auth::User()->id]);
+    		$dashboard = $this->getInitialDashboard();
+			// Mengotak-atik display tanggal
+			$i = 0;
+			foreach ($dashboard['nonReguler'] as $nonReg) {
+				$tanggal_daftar[$i] = $this->date($nonReg->created_at);
+				$tanggal_masuk[$i] = $this->dateTanggal($nonReg->tanggal_masuk);
+				$i += 1;
+			}
 			Session::flash('status2','Pendaftaran berhasil dilakukan, silahkan lakukan pembayaran dan lakukan konfirmasi pada petugas kami untuk bisa melakukan aktivasi dan finalisasi.');
-			return view('dashboard.penghuni.infoPendaftaran', ['daftar'=> $daftarNonReguler,
-																'user' => $dashboard['user'],
-				    											'reguler'=>$dashboard['reguler'],
-											        	        'nonReguler'=>$dashboard['nonReguler'],
-												        		'userNim'=>$dashboard['userNim'],
-												        		'userPenghuni'=>$dashboard['userPenghuni'],
-											                    'pengelola'=>$dashboard['pengelola'],
-											        			'pengelolaAsrama'=>$dashboard['pengelolaAsrama'],
-											        			'check' => $daftarNonReguler]);
+			return view('dashboard.penghuni.infoPendaftaran', $this->getInitialDashboard())->with([
+											        			'tanggal_daftar' => $tanggal_daftar,
+								        						'tanggal_masuk' => $tanggal_masuk]);
 		};
 
     }

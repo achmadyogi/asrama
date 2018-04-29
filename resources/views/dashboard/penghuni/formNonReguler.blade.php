@@ -60,7 +60,7 @@
 	                            @endif
 	                        </div>
 	                        <div class="form-group{{ $errors->has('tanggal_masuk') ? ' has-error' : '' }}">
-								<input class="input" id="tanggal_masuk" type="text" name="tanggal_masuk" placeholder="Tanggal Masuk Asrama" value="{{ old('tanggal_masuk') }}" required autofocus>
+								<input class="input" id="tanggal_masuk" type="date" name="tanggal_masuk" placeholder="Tanggal Masuk Asrama" value="{{ old('tanggal_masuk') }}" required autofocus>
 	                            @if ($errors->has('tanggal_masuk'))
 	                                <span class="help-block">
 	                                    <strong>{{ $errors->first('tanggal_masuk') }}</strong>
