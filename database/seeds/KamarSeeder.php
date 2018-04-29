@@ -979,7 +979,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>70,
-      'id_gedung'=>'9',
+      'id_gedung'=>'8',
       'nama'=>'B01',
       'kapasitas'=>4,
       'status'=>'1',
@@ -993,7 +993,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>71,
-      'id_gedung'=>'9',
+      'id_gedung'=>'8',
       'nama'=>'B02',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1007,7 +1007,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>72,
-      'id_gedung'=>'9',
+      'id_gedung'=>'8',
       'nama'=>'B03',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1021,7 +1021,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>73,
-      'id_gedung'=>'9',
+      'id_gedung'=>'8',
       'nama'=>'B04',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1035,7 +1035,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>74,
-      'id_gedung'=>'9',
+      'id_gedung'=>'8',
       'nama'=>'B05',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1049,7 +1049,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>75,
-      'id_gedung'=>'9',
+      'id_gedung'=>'8',
       'nama'=>'B06',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1063,7 +1063,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>76,
-      'id_gedung'=>'9',
+      'id_gedung'=>'8',
       'nama'=>'B07',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1077,7 +1077,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>77,
-      'id_gedung'=>'9',
+      'id_gedung'=>'8',
       'nama'=>'B08',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1091,7 +1091,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>78,
-      'id_gedung'=>'9',
+      'id_gedung'=>'8',
       'nama'=>'B09',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1105,7 +1105,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>79,
-      'id_gedung'=>'9',
+      'id_gedung'=>'8',
       'nama'=>'B10',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1119,7 +1119,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>80,
-      'id_gedung'=>'10',
+      'id_gedung'=>'9',
       'nama'=>'C01',
       'kapasitas'=>4,
       'status'=>'1',
@@ -1133,7 +1133,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>81,
-      'id_gedung'=>'10',
+      'id_gedung'=>'9',
       'nama'=>'C02',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1147,7 +1147,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>82,
-      'id_gedung'=>'10',
+      'id_gedung'=>'9',
       'nama'=>'C03',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1161,7 +1161,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>83,
-      'id_gedung'=>'10',
+      'id_gedung'=>'9',
       'nama'=>'C04',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1175,7 +1175,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>84,
-      'id_gedung'=>'10',
+      'id_gedung'=>'9',
       'nama'=>'C05',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1189,7 +1189,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>85,
-      'id_gedung'=>'10',
+      'id_gedung'=>'9',
       'nama'=>'C06',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1203,7 +1203,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>86,
-      'id_gedung'=>'10',
+      'id_gedung'=>'9',
       'nama'=>'C07',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1217,7 +1217,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>87,
-      'id_gedung'=>'10',
+      'id_gedung'=>'9',
       'nama'=>'C08',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1231,7 +1231,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>88,
-      'id_gedung'=>'10',
+      'id_gedung'=>'9',
       'nama'=>'C09',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1245,7 +1245,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>89,
-      'id_gedung'=>'10',
+      'id_gedung'=>'9',
       'nama'=>'C10',
       'kapasitas'=>4,
       'status'=>'1',
@@ -1259,7 +1259,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>90,
-      'id_gedung'=>'10',
+      'id_gedung'=>'9',
       'nama'=>'C11',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1273,7 +1273,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>91,
-      'id_gedung'=>'10',
+      'id_gedung'=>'9',
       'nama'=>'C12',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1287,7 +1287,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>92,
-      'id_gedung'=>'10',
+      'id_gedung'=>'9',
       'nama'=>'C13',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1301,7 +1301,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>93,
-      'id_gedung'=>'10',
+      'id_gedung'=>'9',
       'nama'=>'C14',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1315,7 +1315,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>94,
-      'id_gedung'=>'10',
+      'id_gedung'=>'9',
       'nama'=>'C15',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1329,7 +1329,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>95,
-      'id_gedung'=>'10',
+      'id_gedung'=>'9',
       'nama'=>'C16',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1343,7 +1343,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>96,
-      'id_gedung'=>'10',
+      'id_gedung'=>'9',
       'nama'=>'C17',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1357,7 +1357,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>97,
-      'id_gedung'=>'10',
+      'id_gedung'=>'9',
       'nama'=>'C18',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1371,7 +1371,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>98,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D01',
       'kapasitas'=>4,
       'status'=>'1',
@@ -1385,7 +1385,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>99,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D02',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1399,7 +1399,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>100,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D03',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1413,7 +1413,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>101,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D04',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1427,7 +1427,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>102,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D05',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1441,7 +1441,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>103,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D06',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1455,7 +1455,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>104,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D07',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1469,7 +1469,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>105,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D08',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1483,7 +1483,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>106,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D09',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1497,7 +1497,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>107,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D10',
       'kapasitas'=>4,
       'status'=>'1',
@@ -1511,7 +1511,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>108,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D11',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1525,7 +1525,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>109,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D12',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1539,7 +1539,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>110,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D13',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1553,7 +1553,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>111,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D14',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1567,7 +1567,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>112,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D15',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1581,7 +1581,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>113,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D16',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1595,7 +1595,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>114,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D17',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1609,7 +1609,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>115,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D18',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1623,7 +1623,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>116,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D19',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1637,7 +1637,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>117,
-      'id_gedung'=>'11',
+      'id_gedung'=>'10',
       'nama'=>'D20',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1651,7 +1651,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>118,
-      'id_gedung'=>'12',
+      'id_gedung'=>'11',
       'nama'=>'E01',
       'kapasitas'=>4,
       'status'=>'1',
@@ -1665,7 +1665,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>119,
-      'id_gedung'=>'12',
+      'id_gedung'=>'11',
       'nama'=>'E02',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1679,7 +1679,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>120,
-      'id_gedung'=>'12',
+      'id_gedung'=>'11',
       'nama'=>'E03',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1693,7 +1693,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>121,
-      'id_gedung'=>'12',
+      'id_gedung'=>'11',
       'nama'=>'E04',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1707,7 +1707,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>122,
-      'id_gedung'=>'12',
+      'id_gedung'=>'11',
       'nama'=>'E05',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1721,7 +1721,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>123,
-      'id_gedung'=>'12',
+      'id_gedung'=>'11',
       'nama'=>'E06',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1735,7 +1735,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>124,
-      'id_gedung'=>'12',
+      'id_gedung'=>'11',
       'nama'=>'E07',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1749,7 +1749,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>125,
-      'id_gedung'=>'12',
+      'id_gedung'=>'11',
       'nama'=>'E08',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1763,7 +1763,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>126,
-      'id_gedung'=>'12',
+      'id_gedung'=>'11',
       'nama'=>'E09',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1777,7 +1777,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>127,
-      'id_gedung'=>'12',
+      'id_gedung'=>'11',
       'nama'=>'E10',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1791,7 +1791,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>128,
-      'id_gedung'=>'12',
+      'id_gedung'=>'11',
       'nama'=>'E11',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1805,7 +1805,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>129,
-      'id_gedung'=>'12',
+      'id_gedung'=>'11',
       'nama'=>'E12',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1819,7 +1819,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>130,
-      'id_gedung'=>'12',
+      'id_gedung'=>'11',
       'nama'=>'E13',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1833,7 +1833,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>131,
-      'id_gedung'=>'12',
+      'id_gedung'=>'11',
       'nama'=>'E14',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1847,7 +1847,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>132,
-      'id_gedung'=>'12',
+      'id_gedung'=>'11',
       'nama'=>'E15',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1861,7 +1861,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>133,
-      'id_gedung'=>'12',
+      'id_gedung'=>'11',
       'nama'=>'E16',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1875,7 +1875,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>134,
-      'id_gedung'=>'13',
+      'id_gedung'=>'12',
       'nama'=>'F01',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1889,7 +1889,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>135,
-      'id_gedung'=>'13',
+      'id_gedung'=>'12',
       'nama'=>'F02',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1903,7 +1903,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>136,
-      'id_gedung'=>'13',
+      'id_gedung'=>'12',
       'nama'=>'F03',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1917,7 +1917,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>137,
-      'id_gedung'=>'13',
+      'id_gedung'=>'12',
       'nama'=>'F04',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1931,7 +1931,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>138,
-      'id_gedung'=>'13',
+      'id_gedung'=>'12',
       'nama'=>'F05',
       'kapasitas'=>4,
       'status'=>'1',
@@ -1945,7 +1945,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>139,
-      'id_gedung'=>'13',
+      'id_gedung'=>'12',
       'nama'=>'F06',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1959,7 +1959,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>140,
-      'id_gedung'=>'13',
+      'id_gedung'=>'12',
       'nama'=>'F07',
       'kapasitas'=>3,
       'status'=>'1',
@@ -1973,13 +1973,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>141,
-      'id_gedung'=>'13',
+      'id_gedung'=>'12',
       'nama'=>'F08',
       'kapasitas'=>3,
-      'status'=>'1',
+      'status'=>'2',
       'gender'=>'L',
-      'keterangan' => '',
-      'which_user' => '1',
+      'keterangan' => 'Gudang',
+      'which_user' => '0',
       'is_difable' => '0',
       ] );
 
@@ -1987,7 +1987,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>142,
-      'id_gedung'=>'13',
+      'id_gedung'=>'12',
       'nama'=>'F09',
       'kapasitas'=>3,
       'status'=>'1',
@@ -2001,7 +2001,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>143,
-      'id_gedung'=>'13',
+      'id_gedung'=>'12',
       'nama'=>'F10',
       'kapasitas'=>3,
       'status'=>'1',
@@ -2015,7 +2015,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>144,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A01',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2029,7 +2029,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>145,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A02',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2043,7 +2043,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>146,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A03',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2057,7 +2057,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>147,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A04',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2071,7 +2071,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>148,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A05',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2085,7 +2085,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>149,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A06',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2099,7 +2099,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>150,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A07',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2113,7 +2113,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>151,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A08',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2127,7 +2127,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>152,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A09',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2141,7 +2141,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>153,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A10',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2155,7 +2155,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>154,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A11',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2169,7 +2169,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>155,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A12',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2183,7 +2183,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>156,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A13',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2197,7 +2197,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>157,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A14',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2211,7 +2211,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>158,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A15',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2225,7 +2225,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>159,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A16',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2239,7 +2239,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>160,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A17',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2253,7 +2253,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>161,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A18',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2267,7 +2267,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>162,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A19',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2281,7 +2281,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>163,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A20',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2295,7 +2295,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>164,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A21',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2309,7 +2309,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>165,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A22',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2323,7 +2323,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>166,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A23',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2337,7 +2337,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>167,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A24',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2351,7 +2351,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>168,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A25',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2365,7 +2365,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>169,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A26',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2379,7 +2379,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>170,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A27',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2393,7 +2393,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>171,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A28',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2407,7 +2407,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>172,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A29',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2421,7 +2421,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>173,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A30',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2435,7 +2435,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>174,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A31',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2449,7 +2449,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>175,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A32',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2463,7 +2463,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>176,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A33',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2477,7 +2477,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>177,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A34',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2491,7 +2491,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>178,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A35',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2505,7 +2505,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>179,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A36',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2519,7 +2519,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>180,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A37',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2533,7 +2533,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>181,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A38',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2547,7 +2547,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>182,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A39',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2561,7 +2561,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>183,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A40',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2575,7 +2575,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>184,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A41',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2589,7 +2589,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>185,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A42',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2603,7 +2603,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>186,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A43',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2617,7 +2617,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>187,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A44',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2631,7 +2631,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>188,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A45',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2645,7 +2645,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>189,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A46',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2659,7 +2659,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>190,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A47',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2673,7 +2673,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>191,
-      'id_gedung'=>'14',
+      'id_gedung'=>'13',
       'nama'=>'A48',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2687,7 +2687,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>192,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B01',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2701,7 +2701,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>193,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B02',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2715,7 +2715,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>194,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B03',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2729,7 +2729,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>195,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B04',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2743,7 +2743,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>196,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B05',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2757,7 +2757,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>197,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B06',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2771,7 +2771,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>198,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B07',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2785,7 +2785,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>199,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B08',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2799,7 +2799,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>200,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B09',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2813,7 +2813,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>201,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B10',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2827,7 +2827,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>202,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B11',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2841,7 +2841,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>203,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B12',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2855,7 +2855,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>204,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B13',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2869,7 +2869,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>205,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B14',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2883,7 +2883,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>206,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B15',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2897,7 +2897,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>207,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B16',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2911,7 +2911,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>208,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B17',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2925,7 +2925,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>209,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B18',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2939,7 +2939,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>210,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B19',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2953,7 +2953,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>211,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B20',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2967,7 +2967,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>212,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B21',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2981,7 +2981,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>213,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B22',
       'kapasitas'=>2,
       'status'=>'1',
@@ -2995,7 +2995,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>214,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B23',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3009,7 +3009,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>215,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B24',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3023,7 +3023,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>216,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B25',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3037,7 +3037,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>217,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B26',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3051,7 +3051,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>218,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B27',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3065,7 +3065,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>219,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B28',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3079,7 +3079,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>220,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B29',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3093,7 +3093,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>221,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B30',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3107,7 +3107,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>222,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B31',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3121,7 +3121,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>223,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B32',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3135,7 +3135,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>224,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B33',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3149,7 +3149,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>225,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B34',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3163,7 +3163,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>226,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B35',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3177,7 +3177,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>227,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B36',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3191,7 +3191,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>228,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B37',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3205,7 +3205,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>229,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B38',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3219,7 +3219,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>230,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B39',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3233,7 +3233,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>231,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B40',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3247,7 +3247,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>232,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B41',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3261,7 +3261,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>233,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B42',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3275,7 +3275,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>234,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B43',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3289,7 +3289,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>235,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B44',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3303,7 +3303,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>236,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B45',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3317,7 +3317,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>237,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B46',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3331,7 +3331,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>238,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B47',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3345,7 +3345,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>239,
-      'id_gedung'=>'15',
+      'id_gedung'=>'14',
       'nama'=>'B48',
       'kapasitas'=>2,
       'status'=>'1',
@@ -3448,8 +3448,8 @@ class KamarSeeder extends Seeder
       'kapasitas'=>2,
       'status'=>'1',
       'gender'=>'L',
-      'keterangan' => '',
-      'which_user' => '1',
+      'keterangan' => 'Dapur Bersama',
+      'which_user' => '0',
       'is_difable' => '0',
       ] );
 
@@ -3784,8 +3784,8 @@ class KamarSeeder extends Seeder
       'kapasitas'=>2,
       'status'=>'1',
       'gender'=>'L',
-      'keterangan' => '',
-      'which_user' => '1',
+      'keterangan' => 'Dapur Bersama',
+      'which_user' => '0',
       'is_difable' => '0',
       ] );
 
@@ -4120,8 +4120,8 @@ class KamarSeeder extends Seeder
       'kapasitas'=>2,
       'status'=>'1',
       'gender'=>'L',
-      'keterangan' => '',
-      'which_user' => '1',
+      'keterangan' => 'Dapur Bersama',
+      'which_user' => '0',
       'is_difable' => '0',
       ] );
 
@@ -4456,8 +4456,8 @@ class KamarSeeder extends Seeder
       'kapasitas'=>2,
       'status'=>'1',
       'gender'=>'L',
-      'keterangan' => '',
-      'which_user' => '1',
+      'keterangan' => 'Dapur Bersama',
+      'which_user' => '0',
       'is_difable' => '0',
       ] );
 
@@ -4792,8 +4792,8 @@ class KamarSeeder extends Seeder
       'kapasitas'=>2,
       'status'=>'1',
       'gender'=>'P',
-      'keterangan' => '',
-      'which_user' => '1',
+      'keterangan' => 'Dapur Bersama',
+      'which_user' => '0',
       'is_difable' => '0',
       ] );
 
@@ -5128,8 +5128,8 @@ class KamarSeeder extends Seeder
       'kapasitas'=>2,
       'status'=>'1',
       'gender'=>'P',
-      'keterangan' => '',
-      'which_user' => '1',
+      'keterangan' => 'Dapur Bersama',
+      'which_user' => '0',
       'is_difable' => '0',
       ] );
 
@@ -5464,8 +5464,8 @@ class KamarSeeder extends Seeder
       'kapasitas'=>2,
       'status'=>'1',
       'gender'=>'P',
-      'keterangan' => '',
-      'which_user' => '1',
+      'keterangan' => 'Dapur Bersama',
+      'which_user' => '0',
       'is_difable' => '0',
       ] );
 
@@ -5800,8 +5800,8 @@ class KamarSeeder extends Seeder
       'kapasitas'=>2,
       'status'=>'1',
       'gender'=>'P',
-      'keterangan' => '',
-      'which_user' => '1',
+      'keterangan' => 'Dapur Bersama',
+      'which_user' => '0',
       'is_difable' => '0',
       ] );
 
@@ -6165,7 +6165,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -6179,7 +6179,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -6193,7 +6193,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -6207,7 +6207,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -6221,7 +6221,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -6235,7 +6235,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -6249,7 +6249,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -6263,7 +6263,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -6304,8 +6304,8 @@ class KamarSeeder extends Seeder
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'P',
-      'keterangan' => '',
-      'which_user' => '1',
+      'keterangan' => 'Dapur Bersama',
+      'which_user' => '0',
       'is_difable' => '0',
       ] );
 
@@ -6640,8 +6640,8 @@ class KamarSeeder extends Seeder
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'P',
-      'keterangan' => '',
-      'which_user' => '1',
+      'keterangan' => 'Dapur Bersama',
+      'which_user' => '0',
       'is_difable' => '0',
       ] );
 
@@ -6976,8 +6976,8 @@ class KamarSeeder extends Seeder
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'P',
-      'keterangan' => '',
-      'which_user' => '1',
+      'keterangan' => 'Dapur Bersama',
+      'which_user' => '0',
       'is_difable' => '0',
       ] );
 
@@ -7312,8 +7312,8 @@ class KamarSeeder extends Seeder
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'P',
-      'keterangan' => '',
-      'which_user' => '1',
+      'keterangan' => 'Dapur Bersama',
+      'which_user' => '0',
       'is_difable' => '0',
       ] );
 
@@ -7397,7 +7397,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -7411,7 +7411,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -7425,7 +7425,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -7439,7 +7439,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -7453,7 +7453,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -7466,8 +7466,8 @@ class KamarSeeder extends Seeder
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'L',
-      'keterangan' => '',
-      'which_user' => '1',
+      'keterangan' => 'Dapur Bersama',
+      'which_user' => '0',
       'is_difable' => '0',
       ] );
 
@@ -7481,7 +7481,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -7495,7 +7495,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -7509,7 +7509,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -7523,7 +7523,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -7537,7 +7537,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -7551,7 +7551,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -7565,7 +7565,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -7579,7 +7579,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -7593,7 +7593,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -7607,7 +7607,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -7621,7 +7621,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -7635,7 +7635,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -7649,7 +7649,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -7663,7 +7663,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -7677,7 +7677,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -7691,7 +7691,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -7705,7 +7705,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -7719,7 +7719,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -7802,8 +7802,8 @@ class KamarSeeder extends Seeder
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'L',
-      'keterangan' => '',
-      'which_user' => '1',
+      'keterangan' => 'Dapur Bersama',
+      'which_user' => '0',
       'is_difable' => '0',
       ] );
 
@@ -8138,8 +8138,8 @@ class KamarSeeder extends Seeder
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'L',
-      'keterangan' => '',
-      'which_user' => '1',
+      'keterangan' => 'Dapur Bersama',
+      'which_user' => '0',
       'is_difable' => '0',
       ] );
 
@@ -8474,8 +8474,8 @@ class KamarSeeder extends Seeder
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'L',
-      'keterangan' => '',
-      'which_user' => '1',
+      'keterangan' => 'Dapur Bersama',
+      'which_user' => '0',
       'is_difable' => '0',
       ] );
 
@@ -8741,7 +8741,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -8755,7 +8755,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -8769,7 +8769,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -8783,7 +8783,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -8797,7 +8797,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -8811,7 +8811,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -8825,7 +8825,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -8839,7 +8839,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -8853,7 +8853,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -8867,7 +8867,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -8881,7 +8881,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -8895,7 +8895,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -8909,7 +8909,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -8923,7 +8923,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -8937,7 +8937,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -8951,7 +8951,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -8965,7 +8965,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -8979,7 +8979,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -8993,7 +8993,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -9007,7 +9007,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -9021,7 +9021,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -9035,7 +9035,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -9049,7 +9049,7 @@ class KamarSeeder extends Seeder
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '3',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -9057,7 +9057,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>647,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C01',
       'kapasitas'=>2,
       'status'=>'1',
@@ -9071,7 +9071,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>648,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C02',
       'kapasitas'=>2,
       'status'=>'1',
@@ -9085,7 +9085,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>649,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C03',
       'kapasitas'=>2,
       'status'=>'1',
@@ -9099,7 +9099,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>650,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C04',
       'kapasitas'=>2,
       'status'=>'1',
@@ -9113,7 +9113,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>651,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C05',
       'kapasitas'=>2,
       'status'=>'1',
@@ -9127,7 +9127,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>652,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C06',
       'kapasitas'=>2,
       'status'=>'1',
@@ -9141,7 +9141,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>653,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C07',
       'kapasitas'=>2,
       'status'=>'1',
@@ -9155,7 +9155,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>654,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C08',
       'kapasitas'=>2,
       'status'=>'1',
@@ -9169,7 +9169,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>655,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C09',
       'kapasitas'=>2,
       'status'=>'1',
@@ -9183,7 +9183,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>656,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C10',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9197,7 +9197,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>657,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C11',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9211,7 +9211,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>658,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C12',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9225,7 +9225,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>659,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C13',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9239,7 +9239,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>660,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C14',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9253,7 +9253,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>661,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C15',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9267,7 +9267,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>662,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C16',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9281,7 +9281,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>663,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C17',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9295,7 +9295,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>664,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C18',
       'kapasitas'=>2,
       'status'=>'1',
@@ -9309,7 +9309,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>665,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C19',
       'kapasitas'=>2,
       'status'=>'1',
@@ -9323,7 +9323,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>666,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C20',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9337,7 +9337,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>667,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C21',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9351,7 +9351,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>668,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C22',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9365,7 +9365,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>669,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C23',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9379,7 +9379,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>670,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C24',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9393,7 +9393,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>671,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C25',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9407,7 +9407,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>672,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C26',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9421,7 +9421,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>673,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C27',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9435,7 +9435,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>674,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C28',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9449,7 +9449,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>675,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C29',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9463,7 +9463,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>676,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C30',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9477,7 +9477,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>677,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C31',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9491,7 +9491,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>678,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C32',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9505,7 +9505,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>679,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C33',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9519,7 +9519,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>680,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C34',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9533,7 +9533,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>681,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C35',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9547,7 +9547,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>682,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C36',
       'kapasitas'=>2,
       'status'=>'1',
@@ -9561,7 +9561,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>683,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C37',
       'kapasitas'=>2,
       'status'=>'1',
@@ -9575,7 +9575,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>684,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C38',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9589,7 +9589,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>685,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C39',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9603,7 +9603,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>686,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C40',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9617,7 +9617,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>687,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C41',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9631,7 +9631,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>688,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C42',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9645,7 +9645,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>689,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C43',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9659,7 +9659,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>690,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C44',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9673,7 +9673,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>691,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C45',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9687,7 +9687,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>692,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C46',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9701,7 +9701,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>693,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C47',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9715,7 +9715,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>694,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C48',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9729,7 +9729,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>695,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C49',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9743,7 +9743,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>696,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C50',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9757,7 +9757,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>697,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C51',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9771,7 +9771,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>698,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C52',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9785,7 +9785,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>699,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C53',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9799,7 +9799,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>700,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C54',
       'kapasitas'=>2,
       'status'=>'1',
@@ -9813,7 +9813,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>701,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C55',
       'kapasitas'=>2,
       'status'=>'1',
@@ -9827,13 +9827,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>702,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C56',
       'kapasitas'=>1,
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -9841,7 +9841,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>703,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C57',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9855,7 +9855,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>704,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C59',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9869,7 +9869,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>705,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C60',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9883,7 +9883,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>706,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C61',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9897,7 +9897,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>707,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C62',
       'kapasitas'=>3,
       'status'=>'1',
@@ -9911,13 +9911,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>708,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C63',
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -9925,13 +9925,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>709,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C64',
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -9939,13 +9939,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>710,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C65',
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -9953,13 +9953,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>711,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C66',
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -9967,13 +9967,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>712,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C67',
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -9981,13 +9981,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>713,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C68',
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -9995,13 +9995,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>714,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C69',
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -10009,13 +10009,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>715,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C70',
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -10023,13 +10023,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>716,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C71',
       'kapasitas'=>2,
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -10037,7 +10037,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>717,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D01',
       'kapasitas'=>2,
       'status'=>'1',
@@ -10051,7 +10051,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>718,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D02',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10065,7 +10065,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>719,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D03',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10079,7 +10079,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>720,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D04',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10093,7 +10093,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>721,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D05',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10107,7 +10107,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>722,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D06',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10121,7 +10121,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>723,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D07',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10135,7 +10135,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>724,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D08',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10149,7 +10149,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>725,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D09',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10163,7 +10163,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>726,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D10',
       'kapasitas'=>2,
       'status'=>'1',
@@ -10177,7 +10177,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>727,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D11',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10191,7 +10191,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>728,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D12',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10205,7 +10205,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>729,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D13',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10219,7 +10219,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>730,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D14',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10233,7 +10233,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>731,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D15',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10247,7 +10247,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>732,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D16',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10261,7 +10261,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>733,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D17',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10275,7 +10275,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>734,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D18',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10289,7 +10289,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>735,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D19',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10303,7 +10303,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>736,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D20',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10317,7 +10317,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>737,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D21',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10331,7 +10331,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>738,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D22',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10345,7 +10345,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>739,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D23',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10359,7 +10359,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>740,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D24',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10373,7 +10373,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>741,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D25',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10387,7 +10387,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>742,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D26',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10401,7 +10401,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>743,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D27',
       'kapasitas'=>2,
       'status'=>'1',
@@ -10415,7 +10415,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>744,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D28',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10429,7 +10429,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>745,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D29',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10443,7 +10443,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>746,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D30',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10457,7 +10457,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>747,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D31',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10471,7 +10471,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>748,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D32',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10485,7 +10485,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>749,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D33',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10499,7 +10499,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>750,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D34',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10513,7 +10513,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>751,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D35',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10527,7 +10527,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>752,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D36',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10541,7 +10541,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>753,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D37',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10555,7 +10555,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>754,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D38',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10569,7 +10569,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>755,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D39',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10583,7 +10583,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>756,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D40',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10597,7 +10597,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>757,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D41',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10611,7 +10611,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>758,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D42',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10625,7 +10625,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>759,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D43',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10639,7 +10639,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>760,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D44',
       'kapasitas'=>2,
       'status'=>'1',
@@ -10653,7 +10653,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>761,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D45',
       'kapasitas'=>2,
       'status'=>'1',
@@ -10667,7 +10667,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>762,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D46',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10681,7 +10681,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>763,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D47',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10695,7 +10695,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>764,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D48',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10709,7 +10709,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>765,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D49',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10723,7 +10723,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>766,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D50',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10737,7 +10737,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>767,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D51',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10751,7 +10751,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>768,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D52',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10765,7 +10765,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>769,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D53',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10779,7 +10779,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>770,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D54',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10793,7 +10793,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>771,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D55',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10807,7 +10807,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>772,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D56',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10821,7 +10821,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>773,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D57',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10835,7 +10835,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>774,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D58',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10849,7 +10849,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>775,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D59',
       'kapasitas'=>3,
       'status'=>'1',
@@ -10863,13 +10863,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>776,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D60',
       'kapasitas'=>1,
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '3',
       'is_difable' => '0',
       ] );
 
@@ -10877,7 +10877,7 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>777,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D61',
       'kapasitas'=>2,
       'status'=>'1',
@@ -10891,13 +10891,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>778,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D62',
       'kapasitas'=>2,
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -10905,13 +10905,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>779,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D63',
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -10919,13 +10919,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>780,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D64',
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -10933,13 +10933,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>781,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D65',
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -10947,13 +10947,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>782,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D66',
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -10961,13 +10961,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>783,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D67',
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -10975,13 +10975,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>784,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D68',
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -10989,13 +10989,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>785,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D69',
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -11003,13 +11003,13 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>786,
-      'id_gedung'=>'17',
+      'id_gedung'=>'16',
       'nama'=>'D70',
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'L',
       'keterangan' => '',
-      'which_user' => '1',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
 
@@ -11017,13 +11017,248 @@ class KamarSeeder extends Seeder
 
       DB::table('Kamar')->insert([
       'id_kamar'=>787,
-      'id_gedung'=>'16',
+      'id_gedung'=>'15',
       'nama'=>'C58',
       'kapasitas'=>3,
       'status'=>'1',
       'gender'=>'P',
       'keterangan' => '',
       'which_user' => '1',
+      'is_difable' => '0',
+      ] );
+
+
+      DB::table('Kamar')->insert([
+      'id_kamar'=>788,
+      'id_gedung'=>'2',
+      'nama'=>'A05',
+      'kapasitas'=>2,
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
+      ] );
+
+
+
+      DB::table('Kamar')->insert([
+      'id_kamar'=>789,
+      'id_gedung'=>'2',
+      'nama'=>'A06',
+      'kapasitas'=>2,
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
+      ] );
+
+
+
+      DB::table('Kamar')->insert([
+      'id_kamar'=>790,
+      'id_gedung'=>'2',
+      'nama'=>'A07',
+      'kapasitas'=>2,
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
+      ] );
+
+
+
+     DB::table('Kamar')->insert([
+      'id_kamar'=>791,
+      'id_gedung'=>'2',
+      'nama'=>'A08',
+      'kapasitas'=>2,
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
+      ] );
+
+
+
+      DB::table('Kamar')->insert([
+      'id_kamar'=>792,
+      'id_gedung'=>'2',
+      'nama'=>'A09',
+      'kapasitas'=>2,
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
+      ] );
+
+
+
+      DB::table('Kamar')->insert([
+      'id_kamar'=>793,
+      'id_gedung'=>'2',
+      'nama'=>'A10',
+      'kapasitas'=>2,
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
+      ] );
+
+
+
+      DB::table('Kamar')->insert([
+      'id_kamar'=>794,
+      'id_gedung'=>'2',
+      'nama'=>'A11',
+      'kapasitas'=>2,
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
+      ] );
+
+
+
+      DB::table('Kamar')->insert([
+      'id_kamar'=>795,
+      'id_gedung'=>'2',
+      'nama'=>'A12',
+      'kapasitas'=>2,
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
+      ] );
+
+
+
+      DB::table('Kamar')->insert([
+      'id_kamar'=>796,
+      'id_gedung'=>'2',
+      'nama'=>'A13',
+      'kapasitas'=>2,
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '3',
+      'is_difable' => '0',
+      ] );
+
+
+
+      DB::table('Kamar')->insert([
+      'id_kamar'=>797,
+      'id_gedung'=>'5',
+      'nama'=>'A01',
+      'kapasitas'=>3,
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '2',
+      'is_difable' => '0',
+      ] );
+
+
+
+      DB::table('Kamar')->insert([
+      'id_kamar'=>798,
+      'id_gedung'=>'5',
+      'nama'=>'A02',
+      'kapasitas'=>3,
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '2',
+      'is_difable' => '0',
+      ] );
+
+
+
+      DB::table('Kamar')->insert([
+      'id_kamar'=>799,
+      'id_gedung'=>'5',
+      'nama'=>'A03',
+      'kapasitas'=>3,
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '2',
+      'is_difable' => '0',
+      ] );
+
+
+
+      DB::table('Kamar')->insert([
+      'id_kamar'=>800,
+      'id_gedung'=>'5',
+      'nama'=>'A04',
+      'kapasitas'=>3,
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '2',
+      'is_difable' => '0',
+      ] );
+
+
+
+      DB::table('Kamar')->insert([
+      'id_kamar'=>801,
+      'id_gedung'=>'5',
+      'nama'=>'A05',
+      'kapasitas'=>3,
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '2',
+      'is_difable' => '0',
+      ] );
+
+
+
+      DB::table('Kamar')->insert([
+      'id_kamar'=>802,
+      'id_gedung'=>'5',
+      'nama'=>'A06',
+      'kapasitas'=>3,
+      'status'=>'1',
+      'gender'=>'L',
+      'keterangan' => '',
+      'which_user' => '2',
+      'is_difable' => '0',
+      ] );
+
+
+
+      DB::table('Kamar')->insert([
+      'id_kamar'=>803,
+      'id_gedung'=>'5',
+      'nama'=>'A07',
+      'kapasitas'=>3,
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '2',
+      'is_difable' => '0',
+      ] );
+
+      DB::table('Kamar')->insert([
+      'id_kamar'=>804,
+      'id_gedung'=>'5',
+      'nama'=>'A08',
+      'kapasitas'=>3,
+      'status'=>'1',
+      'gender'=>'P',
+      'keterangan' => '',
+      'which_user' => '2',
       'is_difable' => '0',
       ] );
     }

@@ -66,32 +66,21 @@ class AsramaSeeder extends Seeder
 
          DB::table('Asrama')->insert([
            'id_asrama'=>'5',
-         'nama'=>'Asrama Sangkuriang Lama (A dan B)',
+         'nama'=>'Asrama Sangkuriang',
          'alamat'=>'
          Jalan Sangkuriang Dalam No.55, Kelurahan Dago, Kecamatan Coblong, Kota Bandung.',
 
          'deskripsi'=>'
          Asrama Sangkuriang adalah asrama yang diperuntukkan bagi mahasiswa ITB yang terletak di daerah Sangkuriang. Asrama Sangkuriang Lama terdiri dari 2 gedung, yaitu Gedung A untuk mahasiswa TPB Laki-laki dan Gedung B untuk mahsiswa TPB Perempuan dengan masing-masing gedung mempunyai 48 kamar (5 Lantai). Satu Kamar terdiri dari 2 mahasiswa dengan fasilitas 2 kamar mandi di dalam, 1 dapur, 1 lemari pakaian, 2 meja belajar, 2 kursi belajar, 2 spring bed, jemuran pakaian, dan listrik perkamar daya 450 watt.
-         Saat ini juga telah dioperasikan 2 gedung asrama baru di Asrama Sangkuriang, yaitu Gedung C (Perempuan) dan Gedung D (laki-laki) dengan kamar berkapasitas 2-3 orang.
+         Saat ini juga telah dioperasikan 2 gedung asrama baru di Asrama Sangkuriang, yaitu Gedung C (Perempuan) dan Gedung D (laki-laki) dengan kamar berkapasitas 2-3 orang. Pembangunan Gedung C , Gedung D dan Lanskape Asrama dimulai sejak tahun 2015 dan sudah mulai difungsikan awal tahun 2017, dengan dana dari Kementrian Risert Teknologi dan Pendidikan Tinggi (Kemenristek DIKTI).
+         Peruntukan Asrama yang baru dibangung tersebut untuk :
+         1. Tower C sebanyak 70 Kamar menampung 194 mahasiswa, dengan ditambah 1 (satu) kamar Petugas Asrama di Lt. 4 dan 1 (Satu) kamar di ruang security di Lt.3;
+         2. Tower D Sebanyak 70 Kamar menampung 202 mahasiswa, dengan ditambah 1 (satu) kamar Petugas Asrama di Lt. 4 dan 1 (satu) kamar di ruang security di Lt.3;
+         Total Kamar mahasiswa ada 140 kamar dan 396 mahasiswa ditambah 2 (Dua) orang petugas asrama dan 2 (Dua) orang security Jadi total keseluruhan penghuni asrama sebanyak 400 orang.
+         Asrama Sangkuriang merupakan 2 gedung asrama baru di Asrama Sangkuriang, yaitu Gedung C (Perempuan) dan Gedung D (laki-laki) dengan kamar berkapasitas 2-3 orang.
          Kegiatan-kegiatan yang dilakukan adalah Tutorial, Diskusi dan beberapa event lainnya yang menarik.',
          'filename'=>'sangkuriang lama.jpg'
          ] );
 
-
-         DB::table('Asrama')->insert([
-           'id_asrama'=>'6',
-         'nama'=>'Asrama Sangkuriang Baru (C (Putri) / D (Putra)) ',
-         'alamat'=>'
-         Jalan Sangkuriang Dalam No.55, Kelurahan Dago, Kecamatan Coblong, Kota Bandung.',
-
-         'deskripsi'=>'Pembangunan Asrama Tower C , Tower D dan Lanskape Asrama dimulai sejak tahun 2015 dan sudah mulai difungsikan awal tahun 2017, dengan dana dari Kementrian Risert Teknologi dan Pendidikan Tinggi (Kemenristek DIKTI).
-         Peruntukan Asrama untuk :
-         1. Tower C sebanyak 70 Kamar menampung 194 mahasiswa, dengan ditambah 1 (satu) kamar Petugas Asrama di Lt. 4 dan 1 (Satu) kamar di ruang security di Lt.3;<br>
-         2. Tower D Sebanyak 70 Kamar menampung 202 mahasiswa, dengan ditambah 1 (satu) kamar Petugas Asrama di Lt. 4 dan 1 (satu) kamar di ruang security di Lt.3;<br>
-         Total Kamar mahasiswa ada 140 kamar dan 396 mahasiswa ditambah 2 (Dua) orang petugas asrama dan 2 (Dua) orang security Jadi total keseluruhan penghuni asrama sebanyak 400 orang.
-         Asrama Sangkuriang merupakan 2 gedung asrama baru di Asrama Sangkuriang, yaitu Gedung C (Perempuan) dan Gedung D (laki-laki) dengan kamar berkapasitas 2-3 orang.
-         Kegiatan-kegiatan yang dilakukan adalah Tutorial, Diskusi dan beberapa event lainnya yang menarik.',
-         'filename'=>'sangkuriang baru.jpg'
-         ] );
     }
 }

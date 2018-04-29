@@ -172,7 +172,7 @@
 	                            @endif
 	                        </div>
 	                        <div class="form-group{{ $errors->has('tanggal_buka_daftar') ? ' has-error' : '' }}">
-								<input class="input" id="tanggal_buka_daftar" type="text" name="tanggal_buka_daftar" placeholder="Tanggal Pendaftaran Dibuka" value="{{ old('tanggal_buka_daftar') }}" required autofocus>
+								<input class="input" id="tanggal_buka_daftar" type="text" onfocus="(this.type='date')" name="tanggal_buka_daftar" placeholder="Tanggal Pendaftaran Dibuka" value="{{ old('tanggal_buka_daftar') }}" required autofocus>
 	                            @if ($errors->has('tanggal_buka_daftar'))
 	                                <span class="help-block">
 	                                    <strong>{{ $errors->first('tanggal_buka_daftar') }}</strong>
@@ -180,7 +180,7 @@
 	                            @endif
 	                        </div>
 	                        <div class="form-group{{ $errors->has('tanggal_tutup_daftar') ? ' has-error' : '' }}">
-								<input class="input" id="tanggal_tutup_daftar" type="text" name="tanggal_tutup_daftar" placeholder="Tanggal Pendaftaran Ditutup" value="{{ old('tanggal_tutup_daftar') }}" required autofocus>
+								<input class="input" id="tanggal_tutup_daftar" type="text" onfocus="(this.type='date')" name="tanggal_tutup_daftar" placeholder="Tanggal Pendaftaran Ditutup" value="{{ old('tanggal_tutup_daftar') }}" required autofocus>
 	                            @if ($errors->has('tanggal_tutup_daftar'))
 	                                <span class="help-block">
 	                                    <strong>{{ $errors->first('tanggal_tutup_daftar') }}</strong>
@@ -188,7 +188,7 @@
 	                            @endif
 	                        </div>
 	                        <div class="form-group{{ $errors->has('tanggal_mulai_tinggal') ? ' has-error' : '' }}">
-								<input class="input" id="tanggal_mulai_tinggal" type="text" name="tanggal_mulai_tinggal" placeholder="Tanggal Mulai Tinggal" value="{{ old('tanggal_mulai_tinggal') }}" required autofocus>
+								<input class="input" id="tanggal_mulai_tinggal" type="text" onfocus="(this.type='date')" name="tanggal_mulai_tinggal" placeholder="Tanggal Mulai Tinggal" value="{{ old('tanggal_mulai_tinggal') }}" required autofocus>
 	                            @if ($errors->has('tanggal_mulai_tinggal'))
 	                                <span class="help-block">
 	                                    <strong>{{ $errors->first('tanggal_mulai_tinggal') }}</strong>
@@ -196,7 +196,7 @@
 	                            @endif
 	                        </div>
 	                        <div class="form-group{{ $errors->has('tanggal_selesai_tinggal') ? ' has-error' : '' }}">
-								<input class="input" id="tanggal_selesai_tinggal" type="text" name="tanggal_selesai_tinggal" placeholder="Tanggal Selesai Tinggal" value="{{ old('tanggal_selesai_tinggal') }}" required autofocus>
+								<input class="input" id="tanggal_selesai_tinggal" type="text" onfocus="(this.type='date')" name="tanggal_selesai_tinggal" placeholder="Tanggal Selesai Tinggal" value="{{ old('tanggal_selesai_tinggal') }}" required autofocus>
 	                            @if ($errors->has('tanggal_selesai_tinggal'))
 	                                <span class="help-block">
 	                                    <strong>{{ $errors->first('tanggal_selesai_tinggal') }}</strong>

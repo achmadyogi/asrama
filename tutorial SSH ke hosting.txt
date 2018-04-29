@@ -1,0 +1,14 @@
+menggunakan ssh untuk akses hosting
+1. install bitvise (atau software ssh lainnya)
+2. buka bitvise
+3. pilih "Client key manager"
+4. pilih import 
+5. ganti file type ke Putty Private Key Files(*.ppk) pada jendela yg terbua
+6. pilih file test.ppk pada folder asrama
+7. klik button import
+8. pada jendela utama bitvise masukan Host : asrama.itb.ac.id
+9. port : 22
+10. username : asrama
+11. initial menthode : publickey
+12. Client Key : Profile 1 (atau nama profile yang dimasukan saat import key)
+13. klik login
