@@ -27,6 +27,9 @@ Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::post('dashboard/createPenghuni', 'penghuni\dataPenghuniController@createPenghuni')->name('daftar_penghuni');
 // Pendaftaran penghuni
 Route::get('dashboard/penghuni/pendaftaran_penghuni', 'penghuni\pendaftaranPenghuniController@index')->name('pendaftaran_penghuni');
+// pendaftaran reguler
+Route::get('dashboard/penghuni/daftar_reguler', 'penghuni\pendaftaranPenghuniController@showFormReguler')->name('daftar_reguler');
+Route::post('dashboard/penghuni/daftar_reguler', 'penghuni\pendaftaranPenghuniController@daftarReguler')->name('daftar_reguler');
 
 // DASHBOARD SEKRETARIAT
 // Buat/edit periode pendaftaran

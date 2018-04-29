@@ -74,7 +74,7 @@
 									<div class="input-group-addon" >
 										<i class="fa fa-calendar"></i>
 									</div>
-									<input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="width: 100%;" class="form-control" id=tanggal_lahir" name="tanggal_lahir" placeholder="Tanggal Lahir (YYYY-MM-DD)" type="text" value="{{old('tanggal_lahir')}}" required>
+									<input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="width: 100%;" class="form-control" id=tanggal_lahir" name="tanggal_lahir" placeholder="Tanggal Lahir (YYYY-MM-DD)" type="text" onfocus="(this.type='date')" value="{{old('tanggal_lahir')}}" required>
 								</div>
 								@if ($errors->has('tanggal_lahir'))
 		                            <span class="help-block">

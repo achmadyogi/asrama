@@ -95,6 +95,7 @@
 					</div>
 					<div class="col-md-6" style="text-align: center;">
 						<h3><b>Pendaftaran Reguler</b></h3>
+					<div style="text-align: center;"><a href="{{url('/dashboard/penghuni/daftar_reguler')}}"><button class="button">Daftar Sekarang</button></a></div>
 					</div>
 				</div>
 			</div>

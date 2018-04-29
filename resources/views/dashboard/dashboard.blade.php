@@ -41,7 +41,7 @@
 						<h4><b>PENGHUNI REGULER</b></h4>Penghuni reguler adalah penghuni dengan status mahasiswa ITB. Seorang penghuni reguler hanya dapat mendaftar pada periode tertentu yang waktunya telah ditetapkan oleh pihak asrama.<br>
 						<h4><b>PENGHUNI NON REGULER</b></h4>Penghuni Non Reguler terbuka bagi siapa saja yang ingin mendaftar ke asrama. Penghuni Non Reguler dapat menetapkan tanggal masuk dan tanggal keluar dari asrama sesuai keperluan tinggal.
 					</p>
-					<div style="text-align: center;"><a href="#"><button class="button">Daftar Sekarang</button></a>
+				<div style="text-align: center;"><a href="{{url('/dashboard/penghuni/pendaftaran_penghuni')}}"><button class="button">Daftar Sekarang</button></a>
 					</div>
 				@else
 					<!-- TRIGER UNTUK MASUK APLIKASI -->
