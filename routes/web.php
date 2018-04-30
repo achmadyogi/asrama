@@ -70,3 +70,7 @@ route::get('/asrama', 'AsramaController@index');
 // file download
 Route::get('/download', 'DownloadController@show_all_downloadable_file');
 Route::get('/download/{id}', 'DownloadController@download_file');
+
+//ADMIN
+Route::get('/users/grid', 'admin\UsersController@grid');
+Route::resource('/users', 'admin\UsersController');

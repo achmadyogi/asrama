@@ -102,7 +102,7 @@
 	@if($user->is_admin == 1)
 		<div class="sider_pan" onclick="dapatkanId('pan_admin')" style="cursor: pointer;"><b><i class="fa fa-angle-down"></i> Admin</b></div>
 		<div class="sider_body" id="pan_admin" style="display: none">
-			<a href="#">Utama</a><br>
+			<a href="{{route("users.index")}}">Manage User</a><br>
 			<a href="#">Informasi Pembayaran</a><br>
 			<a href="#">Lapor Kerusakan</a><br>
 		</div>
