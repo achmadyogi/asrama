@@ -31,7 +31,7 @@ class TarifSeeder extends Seeder
               'tarif_umum' => NULL,
         ]);
         DB::table('tarif')->insert([
-              'id_asrama' => '6',
+              'id_asrama' => '5',
               'kapasitas_kamar' => '3',
               'tempo' => 'bulanan',
               'tarif_sarjana' => 300000,
@@ -40,7 +40,7 @@ class TarifSeeder extends Seeder
               'tarif_umum' => NULL,
         ]);
         DB::table('tarif')->insert([
-              'id_asrama' => '6',
+              'id_asrama' => '5',
               'kapasitas_kamar' => '2',
               'tempo' => 'bulanan',
               'tarif_sarjana' => 450000,
@@ -104,7 +104,7 @@ class TarifSeeder extends Seeder
               'tarif_umum' => 90000,
         ]);
         DB::table('tarif')->insert([
-              'id_asrama' => '6',
+              'id_asrama' => '5',
               'kapasitas_kamar' => '2',
               'tempo' => 'harian',
               'tarif_sarjana' => 45000,
