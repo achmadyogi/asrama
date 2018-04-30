@@ -9,7 +9,7 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Validator;
 use App\Asrama;
 use App\User_penghuni;
-use App\Daftar_asrama_reguler;
+//use App\Daftar_asrama_reguler;
 use App\User;
 use App\User_nim;
 use App\Prodi;

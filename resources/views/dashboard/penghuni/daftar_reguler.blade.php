@@ -31,7 +31,7 @@
                                     </select>
                                 </div>
                             </div>
-                        </div> 
+                         
                         <div class="form-group">
                                 <label for="asrama" class="col-md-3 control-label">Beasiswa</label>
                                 <div class="col-md-9">
@@ -44,7 +44,7 @@
                                     </select>
                                 </div>
                             </div>
-                        </div> 
+                         
                         <div class="form-group">
                                 <label for="asrama" class="col-md-3 control-label">Status Mahasiswa</label>
                                 <div class="col-md-9">
@@ -56,7 +56,7 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>   
+                           
                         <div class="form-group">
                                 <label for="asrama" class="col-md-3 control-label">Kebutuhan Khusus</label>
                                 <div class="col-md-9">
@@ -67,14 +67,13 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
                        
-                        <div class="form-group" id="difable-form"
-                        >
+                       
+                        <div class="form-group" id="difable-form">
                             <div class="col-md-6 col-md-offset-4 well well-sm">
 
                                 <div class="row">
-                                    <label for="difable-form" class="col-md-3 control-label">Kekurangan *</label>
+                                    <label for="difable-form" class="col-md-3 control-label">Kebutuhan khusus *</label>
                                     <div class="col-md-8">
                                         <input id="ket_difable" type="text" class="form-control" name="ket_difable" value="">
                                     </div>
@@ -93,7 +92,7 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
+                        
 
                         <div class="form-group">
                             <label for="periode" class="col-md-3 control-label">Periode</label>
