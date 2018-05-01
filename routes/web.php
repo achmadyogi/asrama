@@ -74,3 +74,7 @@ Route::get('/download/{id}', 'DownloadController@download_file');
 //ADMIN
 Route::get('/users/grid', 'admin\UsersController@grid');
 Route::resource('/users', 'admin\UsersController');
+
+//Berita
+Route::get('/berita/{id_berita}', 'BeritaController@showBerita');
+Route::get('/berita', 'BeritaController@index');
