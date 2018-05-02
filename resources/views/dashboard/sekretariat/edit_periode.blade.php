@@ -9,7 +9,7 @@
 
 @section('header_title','Sekretariat | Edit Periode')
 @section('content')
-<div class="container">
+<div class="container">cxzcczxcxz
 	<br><br>
 	<div class="row">
 		<div class="col-md-3">
@@ -19,7 +19,7 @@
 		<div class="col-md-9">
 			<!-- KONTEN UTAMA-->
 			<div id="content">
-				<!-- ALERT -->
+				<!-- ALERT -->fhfhfghfg
 				@if (session()->has('status1'))
 					<div class="alert_fail">
 						{{session()->get('status1')}}

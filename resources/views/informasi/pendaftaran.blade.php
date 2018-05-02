@@ -14,6 +14,8 @@
         <ul class="sub_dir">
             <li class="sub_dir_list" id="active"><a href="/informasi/pendaftaran">Pendaftaran</a></li>
             <li class="sub_dir_list"><a href="#">Fasilitas</a></li>
+            <li class="sub_dir_list"><a href="{{url('/berita')}}">Berita</a></li>
+            <li class="sub_dir_list"><a href="#">Pengumuman</a></li>
             <li class="sub_dir_list"><a href="#">Peta</a></li>
             <li class="sub_dir_list"><a href="#">Hubungi Kami</a></li>
         </ul>
