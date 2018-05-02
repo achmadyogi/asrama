@@ -80,24 +80,50 @@ class validasiPendaftaranController extends Controller
                                 // Kalo dia pengen sendiri, harus cari kamar yang isi dua biar hemat
                                 if($kamar->kapasitas == 2){
                                     // Periksa apakah kamar masih dihuni penghuni sebelumnya
-                                    if(Kamar_penghuni::where(['id_kamar'=>$kamar->id_kamar])->count() < 1){
+                                    $cekKamar = DB::select("SELECT kamar_penghuni.id_kamar, kamar_penghuni.daftar_asrama_id, kamar_penghuni.daftar_asrama_type, checkout.id_checkout FROM kamar_penghuni LEFT JOIN checkout ON checkout.daftar_asrama_id = kamar_penghuni.daftar_asrama_id AND checkout.daftar_asrama_type = kamar_penghuni.daftar_asrama_type WHERE kamar_penghuni.id_kamar = :id_kamar AND checkout.id_checkout = NULL",[$kamar->id_kamar]);
+                                    // hitung penghuni dalam kamar tersebut
+                                    $hit = 0;
+                                    foreach ($cekKamar as $ck) {
+                                        $hit += 1;
+                                    }
+                                    // ambil kamarnya jika isinya nggak ada
+                                    if($hit == 0){
                                         $collect_id_kamar[$a] = $kamar->id_kamar;
+                                        $kapasitas_kamar[$a] = $kamar->kapasitas;
                                         $a += 1;
                                     }
                                 }
                             }elseif($preference == 2){
                                 // Kalo dia pengen berdua, harus cari kamar yang isi dua
                                 if($kamar->kapasitas == 2){
-                                    if(Kamar_penghuni::where(['id_kamar'=>$kamar->id_kamar])->count() < 2){
+                                    // Periksa apakah kamar masih dihuni penghuni sebelumnya
+                                    $cekKamar = DB::select("SELECT kamar_penghuni.id_kamar, kamar_penghuni.daftar_asrama_id, kamar_penghuni.daftar_asrama_type, checkout.id_checkout FROM kamar_penghuni LEFT JOIN checkout ON checkout.daftar_asrama_id = kamar_penghuni.daftar_asrama_id AND checkout.daftar_asrama_type = kamar_penghuni.daftar_asrama_type WHERE kamar_penghuni.id_kamar = :id_kamar AND checkout.id_checkout = NULL",[$kamar->id_kamar]);
+                                    // hitung penghuni dalam kamar tersebut
+                                    $hit = 0;
+                                    foreach ($cekKamar as $ck) {
+                                        $hit += 1;
+                                    }
+                                    // ambil kamarnya jika isinya nggak ada
+                                    if($hit < 2){
                                         $collect_id_kamar[$a] = $kamar->id_kamar;
+                                        $kapasitas_kamar[$a] = $kamar->kapasitas;
                                         $a += 1;
                                     }
                                 }
                             }elseif($preference == 3){
                                 // Kalo dia pengen bertiga, harus cari kamar yang isi tiga
                                 if($kamar->kapasitas == 3){
-                                    if(Kamar_penghuni::where(['id_kamar'=>$kamar->id_kamar])->count() < 3){
+                                    // Periksa apakah kamar masih dihuni penghuni sebelumnya
+                                    $cekKamar = DB::select("SELECT kamar_penghuni.id_kamar, kamar_penghuni.daftar_asrama_id, kamar_penghuni.daftar_asrama_type, checkout.id_checkout FROM kamar_penghuni LEFT JOIN checkout ON checkout.daftar_asrama_id = kamar_penghuni.daftar_asrama_id AND checkout.daftar_asrama_type = kamar_penghuni.daftar_asrama_type WHERE kamar_penghuni.id_kamar = :id_kamar AND checkout.id_checkout = NULL",[$kamar->id_kamar]);
+                                    // hitung penghuni dalam kamar tersebut
+                                    $hit = 0;
+                                    foreach ($cekKamar as $ck) {
+                                        $hit += 1;
+                                    }
+                                    // ambil kamarnya jika isinya nggak ada
+                                    if($hit < 3){
                                         $collect_id_kamar[$a] = $kamar->id_kamar;
+                                        $kapasitas_kamar[$a] = $kamar->kapasitas;
                                         $a += 1;
                                     }
                                 }
@@ -122,7 +148,7 @@ class validasiPendaftaranController extends Controller
                 $id_k = $kamar->id_gedung;
             }
             // Ambil tarif
-            $tarif = DB::select('SELECT * FROM tarif WHERE id_asrama = :id_asrama AND tempo = :tempo', ['id_asrama'=>$id_k,'tempo'=>$request->tempo]);       
+            $tarif = DB::select('SELECT * FROM tarif WHERE id_asrama = :id_asrama AND tempo = :tempo AND kapasitas_kamar = :kap', ['id_asrama'=>$id_k,'tempo'=>$request->tempo, 'kap'=>$kapasitas_kamar[$pick_kamar]]);       
             foreach ($tarif as $tarif){
                 $sarjana = $tarif->tarif_sarjana;
                 $pasca_sarjana = $tarif->tarif_pasca_sarjana;
@@ -137,7 +163,7 @@ class validasiPendaftaranController extends Controller
             if($stra == 1){
                 // Dapatkan harga tarif
                 $satuan_tagihan = $sarjana;
-            }elseif($stra == 2 || $strata == 9){
+            }elseif($stra == 2 || $stra == 9){
                 // Dapatkan harga tarif
                 $satuan_tagihan = $pasca_sarjana;
             }elseif($stra == 3){
@@ -150,14 +176,22 @@ class validasiPendaftaranController extends Controller
             // Hitung total tagihan
             if($satuan_tagihan == NULL){
                 if($umum != NULL){
-                    $tagihan_total = $umum*$request->lama_tinggal;
+                    if($preference == 1){
+                        $tagihan_total = $umum*$request->lama_tinggal*$kapasitas_kamar[$pick_kamar];
+                    }else{
+                        $tagihan_total = $umum*$request->lama_tinggal;
+                    }
                 }else{
                     Session::flash('status1','Kamar tidak tersedia atau tarif tidak tersedia.');
                     return view('dashboard.sekretariat.validasiPendaftaran', $this->getEditPeriode())->with($this->getPendaftaranPenghuni());
                 }
             }
             else{
-                $tagihan_total = $satuan_tagihan*$request->lama_tinggal;
+                if($preference == 1){
+                    $tagihan_total = $satuan_tagihan*$request->lama_tinggal*$kapasitas_kamar[$pick_kamar];
+                }else{
+                    $tagihan_total = $satuan_tagihan*$request->lama_tinggal;
+                }
             }
             // Masukkan tagihan ke database
             Tagihan::create([
