@@ -10,10 +10,10 @@ use Illuminate\Support\Facades\Auth;
 class pendaftaranController extends Controller
 {
 	public function index(){
-		if(Auth::User()->id){
-			$user = Auth::User()->id;
-		}else{
+		if(Auth::guest()){
 			$user = 0;
+		}else{
+			$user = Auth::User()->id;
 		}
 	    $tarif = DB::Select('select * from tarif left join asrama on tarif.id_asrama = asrama.id_asrama');
 	    return view('informasi.pendaftaran',['tarif' => $tarif, 'user' => $user]);

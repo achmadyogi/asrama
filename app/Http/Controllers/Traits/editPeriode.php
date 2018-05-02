@@ -50,7 +50,6 @@ trait editPeriode{
 	    		$i += 1;
 	    	}    	
 	    	$t_periode = 1;
-	    	Session::flash('menu','sekretariat_buat/edit_periode');
 	    	return (['user' => $dashboard['user'],
 	    											'reguler'=>$dashboard['reguler'],
 								        	        'nonReguler'=>$dashboard['nonReguler'],
@@ -71,7 +70,6 @@ trait editPeriode{
 	    											't_periode' => $t_periode]);
 	    }else{
 	    	$t_periode = 0;
-	    	Session::flash('menu','sekretariat_buat/edit_periode');
 	    	return (['user' => $dashboard['user'],
 	    											'reguler'=>$dashboard['reguler'],
 								        	        'nonReguler'=>$dashboard['nonReguler'],

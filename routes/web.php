@@ -37,6 +37,10 @@ Route::get('/dashboard/sekretariat/editPeriode', 'sekretariat\editPeriodeControl
 Route::post('/tambah_periode','sekretariat\tambahPeriodeController@index')->name('tambah_periode');
 // Buat edit periode
 Route::post('/edit_periode', 'sekretariat\tambahPeriodeController@editPeriode')->name('edit_lama');
+// Validasi Pendaftaran
+Route::get('/dashboard/sekretariat/validasi_pendaftaran', 'sekretariat\validasiPendaftaranController@index')->name('validasi_pendaftaran');
+// Persetujuan validasi, mengenerate kamar, dan jumlah tagihan
+Route::post('/dashboard/sekretariat/validasi_pendaftaran', 'sekretariat\validasiPendaftaranController@inboundNonReg')->name('inboundNonReg_approval');
 
 
 
@@ -70,3 +74,10 @@ route::get('/asrama', 'AsramaController@index');
 // file download
 Route::get('/download', 'DownloadController@show_all_downloadable_file');
 Route::get('/download/{id}', 'DownloadController@download_file');
+
+
+// -----TEST----------
+Route::get('test', function(){
+	return view('test');
+});
+Route::post('test','testController@index');

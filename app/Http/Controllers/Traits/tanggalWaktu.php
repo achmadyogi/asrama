@@ -1,10 +1,16 @@
 <?php
 namespace App\Http\Controllers\Traits;
+use Carbon\Carbon;
 
 trait tanggalWaktu{
   public function date($tanggal){
-        $dateSpace = explode(' ',$tanggal);
-        $dateArray = explode('-',$dateSpace[0]);
+        $dateSpace1 = explode(' ',$tanggal);
+        $dateArray1 = explode('-',$dateSpace1[0]);
+        $time1 = explode(':',$dateSpace1[1]);
+        $utc = Carbon::create($dateArray1[0],$dateArray1[1],$dateArray1[2],$time1[0],$time1[1],$time1[2]);
+        $wib = $utc->addHours(7);
+        $dateSpace = explode(' ',$wib);
+        $dateArray = explode('-',$dateSpace1[0]);
         $time = explode(':',$dateSpace[1]);
         // Nama Bulan
         if($dateArray[1] == '01'){
@@ -43,7 +49,7 @@ trait tanggalWaktu{
         if($dateArray[1] == '12'){
           $bulan = 'Desember';
         }
-        $dateResult = $dateArray[2]." ".$bulan." ".$dateArray[0].", at ".$time[0].":".$time[1];
+        $dateResult = $dateArray[2]." ".$bulan." ".$dateArray[0].", at ".$time[0].":".$time[1]." WIB";
         return $dateResult;
     }
 }

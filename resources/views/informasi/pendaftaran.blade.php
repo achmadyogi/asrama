@@ -105,22 +105,38 @@
                 <td style="text-align: center;">{{$bayar->kapasitas_kamar}}</td>
                 <td style="text-align: center;">{{$bayar->tempo}}</td>
                 @if($bayar->tarif_sarjana != NULL)
-                    <td>Rp<?php echo substr($bayar->tarif_sarjana, -6, 3).".".substr($bayar->tarif_sarjana, -3).",00"; ?></td>
+                    @if(strlen($bayar->tarif_sarjana) == 6)
+                        <td>Rp<?php echo substr($bayar->tarif_sarjana, -6, 3).".".substr($bayar->tarif_sarjana, -3).",00"; ?></td>
+                    @elseif(strlen($bayar->tarif_sarjana) == 5)
+                        <td>Rp<?php echo substr($bayar->tarif_sarjana, -6, 2).".".substr($bayar->tarif_sarjana, -3).",00"; ?></td>
+                    @endif
                 @else
                     <td>-</td>
                 @endif
                 @if($bayar->tarif_pasca_sarjana != NULL)
-                    <td>Rp<?php echo substr($bayar->tarif_pasca_sarjana, -6, 3).".".substr($bayar->tarif_pasca_sarjana, -3).",00"; ?></td>
+                    @if(strlen($bayar->tarif_pasca_sarjana) == 6)
+                        <td>Rp<?php echo substr($bayar->tarif_pasca_sarjana, -6, 3).".".substr($bayar->tarif_pasca_sarjana, -3).",00"; ?></td>
+                    @elseif(strlen($bayar->tarif_pasca_sarjana) == 5)
+                        <td>Rp<?php echo substr($bayar->tarif_pasca_sarjana, -6, 2).".".substr($bayar->tarif_pasca_sarjana, -3).",00"; ?></td>
+                    @endif
                 @else
                     <td>-</td>
                 @endif
                 @if($bayar->tarif_international != NULL)
-                    <td>Rp<?php echo substr($bayar->tarif_international, -6, 3).".".substr($bayar->tarif_international, -3).",00"; ?></td>
+                    @if(strlen($bayar->tarif_international) == 6)
+                        <td>Rp<?php echo substr($bayar->tarif_international, -6, 3).".".substr($bayar->tarif_international, -3).",00"; ?></td>
+                    @elseif(strlen($bayar->tarif_international) == 5)
+                        <td>Rp<?php echo substr($bayar->tarif_international, -6, 2).".".substr($bayar->tarif_international, -3).",00"; ?></td>
+                    @endif
                 @else
                     <td>-</td>
                 @endif
                 @if($bayar->tarif_umum != NULL)
-                    <td>Rp<?php echo substr($bayar->tarif_umum, -6, 3).".".substr($bayar->tarif_umum, -3).",00"; ?></td>
+                    @if(strlen($bayar->tarif_umum) == 6)
+                        <td>Rp<?php echo substr($bayar->tarif_umum, -6, 3).".".substr($bayar->tarif_umum, -3).",00"; ?></td>
+                    @elseif(strlen($bayar->tarif_umum) == 5)
+                        <td>Rp<?php echo substr($bayar->tarif_umum, -6, 2).".".substr($bayar->tarif_umum, -3).",00"; ?></td>
+                    @endif
                 @else
                     <td>-</td>
                 @endif

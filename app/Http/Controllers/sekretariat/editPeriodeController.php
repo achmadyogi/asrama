@@ -28,6 +28,7 @@ class editPeriodeController extends Controller
 	use editPeriode;
     // Memanggil Periode
     function index(){
+	    Session::flash('menu','sekretariat_buat/edit_periode');
     	return view('dashboard.sekretariat.edit_periode', $this->getEditPeriode());
     }
 }

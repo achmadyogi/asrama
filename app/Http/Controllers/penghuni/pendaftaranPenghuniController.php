@@ -22,7 +22,7 @@ use App\Periode;
 use dateTime;
 use Carbon\Carbon;
 use App\Daftar_asrama_non_reguler;
-use App\Daftar_asrama_reguler;
+use Illuminate\Support\Facades\DB;
 
 class pendaftaranPenghuniController extends Controller
 {
@@ -37,17 +37,23 @@ class pendaftaranPenghuniController extends Controller
     	// Memeriksa apakah sudah mendaftarkan diri di reguler
     	if(Daftar_asrama_reguler::where(['id_user'=>Auth::User()->id])->count() > 0){
 
-		}elseif(Daftar_asrama_non_reguler::where(['id_user'=>Auth::User()->id])->count() > 0){
-		// Mengotak-atik tanggal
-		$i = 0;
-		foreach ($dashboard['nonReguler'] as $nonReg) {
-			$tanggal_daftar[$i] = $this->date($nonReg->created_at);
-			$tanggal_masuk[$i] = $this->dateTanggal($nonReg->tanggal_masuk);
-			$i += 1;
 		}
-		return view('dashboard.penghuni.infoPendaftaran', $this->getInitialDashboard())->with(['tanggal_daftar' => $tanggal_daftar,
-								        			'tanggal_masuk' => $tanggal_masuk]);
-		}else{
+		// Memeriksa apakah sudah mendaftarkan diri di non reguler
+		if(Daftar_asrama_non_reguler::where(['id_user'=>Auth::User()->id])->count() > 0){
+			// Mengotak-atik tanggal
+			$i = 0;
+			foreach ($dashboard['nonReguler'] as $nonReg) {
+				$tanggal_daftar[$i] = $this->date($nonReg->created_at);
+				$tanggal_masuk[$i] = $this->dateTanggal($nonReg->tanggal_masuk);
+				$i += 1;
+			}
+			// Memeriksa bila sudah ada yang terverifikasi
+			Session::flash('menu','penghuni/pendaftaran_penghuni');
+			return view('dashboard.penghuni.infoPendaftaran', $this->getInitialDashboard())->with(['tanggal_daftar' => $tanggal_daftar,
+									        			'tanggal_masuk' => $tanggal_masuk]);
+		}
+		// Apabila belum daftar reguler dan non reguler
+		if(Daftar_asrama_reguler::where(['id_user'=>Auth::User()->id])->count() < 1 && Daftar_asrama_non_reguler::where(['id_user'=>Auth::User()->id])->count() < 1){
 	    	$now = Carbon::now();
 	    	if(Periode::all()->count() > 0){
 		    	$periode = Periode::all()->sortByDesc('id_periode');

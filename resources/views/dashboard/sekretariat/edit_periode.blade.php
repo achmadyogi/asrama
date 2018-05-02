@@ -95,17 +95,19 @@
 								  	  Pengeditan dilakukan untuk membuka kembali pendaftaran setelah sesi pendaftaran sebelumnya sudah ditutup.</p><hr>
 									  <form action="{{ route('edit_lama') }}" method="POST">
 									  	{{ csrf_field() }}
+									  	<label>Tanggal Pendaftaran Dibuka</label>
 									  	<input type="Hidden" name="id_periode" value="{{$id_periode[$urut]}}">
 									  	<div class="form-group{{ $errors->has('tanggal_pendaftaran_dibuka') ? ' has-error' : '' }}">
-										  	<input id="tanggal_pendaftaran_dibuka" class="input" type="datetime-local" name="tanggal_buka_daftar" placeholder="Tanggal Pendaftaran Dibuka"><br><br>
+										  	<input id="tanggal_pendaftaran_dibuka" class="input" type="datetime-local" name="tanggal_buka_daftar" placeholder="Tanggal Pendaftaran Dibuka">
 										  	@if ($errors->has('tanggal_pendaftaran_dibuka'))
 				                                <span class="help-block">
 				                                    <strong>{{ $errors->first('tanggal_pendaftaran_dibuka') }}</strong>
 				                                </span>
 				                            @endif
 										</div>
+										<label>Tanggal Pendaftaran Ditutup</label>
 										<div class="form-group{{ $errors->has('tanggal_pendaftaran_dibuka') ? ' has-error' : '' }}">
-										  	<input id="tanggal_pendaftaran_ditutup" class="input" type="datetime-local" name="tanggal_tutup_daftar" placeholder="Tanggal Pendaftaran Ditutup"><br><br>
+										  	<input id="tanggal_pendaftaran_ditutup" class="input" type="datetime-local" name="tanggal_tutup_daftar" placeholder="Tanggal Pendaftaran Ditutup">
 										  	@if ($errors->has('tanggal_pendaftaran_ditutup'))
 				                                <span class="help-block">
 				                                    <strong>{{ $errors->first('tanggal_pendaftaran_ditutup') }}</strong>
@@ -221,67 +223,4 @@
 	</div>
 	<br><br><br>
 </div>
-
-<style>
-/* The Modal (background) */
-.modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-	-webkit-animation-name: fadeIn; /* Fade in the background */
-	-webkit-animation-duration: 0.4s;
-	animation-name: fadeIn;
-	animation-duration: 0.4s
-}
-
-/* Modal Content */
-.modal-content {
-	position: fixed;
-	bottom: 20%;
-	left: 15%;
-	background-color: #fefefe;
-	width: 70%;
-	-webkit-animation-name: slideIn;
-	-webkit-animation-duration: 0.4s;
-	animation-name: slideIn;
-	animation-duration: 0.4s
-}
-
-.modal-header {
-	padding: 0px 15px 5px 15px;
-	background-color: #205081;
-	color: white;
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
-}
-
-.modal-body {padding: 2px 16px;}
-
-/* Add Animation */
-@-webkit-keyframes slideIn {
-	from {bottom: -300px; opacity: 0} 
-	to {bottom: 20%; opacity: 1}
-}
-
-@keyframes slideIn {
-	from {bottom: -300px; opacity: 0}
-	to {bottom: 20%; opacity: 1}
-}
-
-@-webkit-keyframes fadeIn {
-	from {opacity: 0} 
-	to {opacity: 1}
-}
-
-@keyframes fadeIn {
-	from {opacity: 0} 
-	to {opacity: 1}
-}
-</style>
 @endsection

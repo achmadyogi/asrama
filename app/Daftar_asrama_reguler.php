@@ -16,4 +16,10 @@ class Daftar_asrama_reguler extends Model
     public function user() {
         return $this->belongsTo('App\User', 'id_user');
     }
+    public function user_penghuni(){
+    	return $this->belongsTo('App\User_penghuni', 'id_user', 'id_user');
+    }
+    public function kamar_penghuni(){
+    	return $this->morphMany('App\kamar_penghuni','daftar_asrama');
+    }
 }
