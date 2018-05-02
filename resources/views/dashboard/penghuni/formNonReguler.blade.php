@@ -49,8 +49,8 @@
 	                        <input type="radio" name="difable" value="0" required> Tidak<br>
 	                        <input type="radio" name="difable" value="1" required> Iya<br><br>
 	                        <label>Pilih paket periode tinggal</label><br>
-	                        <input type="radio" name="tempo" value="harian" required> Bulanan<br>
-	                        <input type="radio" name="tempo" value="bulanan" required> Harian<br><br>
+	                        <input type="radio" name="tempo" value="harian" required> Harian<br>
+	                        <input type="radio" name="tempo" value="bulanan" required> Bulanan<br><br>
 	                        <div class="form-group{{ $errors->has('jumlah') ? ' has-error' : '' }}">
 								<input class="input" id="jumlah" type="number" name="jumlah" placeholder="Jumlah hari/bulan lama tinggal" value="{{ old('jumlah') }}" required autofocus>
 	                            @if ($errors->has('jumlah'))
