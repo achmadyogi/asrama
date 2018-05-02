@@ -76,8 +76,22 @@ Route::get('/download', 'DownloadController@show_all_downloadable_file');
 Route::get('/download/{id}', 'DownloadController@download_file');
 
 
+
 // -----TEST----------
 Route::get('test', function(){
 	return view('test');
 });
 Route::post('test','testController@index');
+
+//ADMIN
+Route::get('/users/grid', 'admin\UsersController@grid');
+Route::resource('/users', 'admin\UsersController');
+
+//Berita
+Route::get('/berita/{id_berita}', 'BeritaController@showBerita');
+Route::get('/berita', 'BeritaController@index');
+
+//Pengumuman
+Route::get('/pengumuman/{id_pengumuman}', 'PengumumanController@showPengumuman');
+Route::get('/pengumuman', 'PengumumanController@index');
+

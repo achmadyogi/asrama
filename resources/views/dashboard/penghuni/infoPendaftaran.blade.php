@@ -189,8 +189,43 @@
 						Belum ada riwayat pendaftaran non reguler hingga saat ini.
 					@endif<br>
 					<h3><b>Riwayat Pendaftaran Penghuni Reguler</b></h3>
-					@if($reguler != 0)
-
+					@if($reguler != '0')
+						<div class="table">
+							<table>
+								<tr>
+									<th>No.</th>
+									<th>Tanggal Daftar</th>
+									<th>Preference</th>
+									<th>Lokasi Asrama</th>
+									<th>Tanggal Masuk</th>
+									<th>Status</th>
+									<th>Kamar</th>
+								</tr>
+								<?php $a = 1; ?>
+								@foreach($reguler as $reg)
+								<tr>
+									<td>{{$a}}.</td>
+									<td>{{$tanggal_daftar[$a-1]}}</td>
+									@if($reg->preference == 1)
+										<td>Sendiri</td>
+									@elseif($reg->preference == 2)
+										<td>Berdua</td>
+									@else
+										<td>Bertiga</td>
+									@endif
+									<td>{{$reg->lokasi_asrama}}</td>
+									<td>{{$tanggal_masuk[$a-1]}}</td>
+									@if($reg->verification == 0)
+										<td>Belum Disetujui</td>
+										<td>Menunggu Persetujuan</td>
+									@else
+										<td style="color:green;">Sudah Disetujui</td>
+									@endif
+								</tr>
+								<?php $a += 1; ?>
+								@endforeach
+							</table>
+						</div>
 					@else
 						Belum ada riwayat pendaftaran reguler hingga saat ini.
 					@endif
