@@ -52,7 +52,8 @@
 	                        <input type="radio" name="tempo" value="harian" required> Harian<br>
 	                        <input type="radio" name="tempo" value="bulanan" required> Bulanan<br><br>
 	                        <div class="form-group{{ $errors->has('jumlah') ? ' has-error' : '' }}">
-								<input class="input" id="jumlah" type="number" name="jumlah" placeholder="Jumlah hari/bulan lama tinggal" value="{{ old('jumlah') }}" required autofocus>
+	                        	<label>Jumlah hari/bulan lama tinggal</label><br>
+								<input class="input" id="jumlah" type="number" name="jumlah" placeholder="Masukkan angka" value="{{ old('jumlah') }}" required autofocus>
 	                            @if ($errors->has('jumlah'))
 	                                <span class="help-block">
 	                                    <strong>{{ $errors->first('jumlah') }}</strong>
@@ -60,6 +61,7 @@
 	                            @endif
 	                        </div>
 	                        <div class="form-group{{ $errors->has('tanggal_masuk') ? ' has-error' : '' }}">
+	                        	<label>Tanggal Mulai Tinggal</label><br>
 								<input class="input" id="tanggal_masuk" type="date" name="tanggal_masuk" placeholder="Tanggal Masuk Asrama" value="{{ old('tanggal_masuk') }}" required autofocus>
 	                            @if ($errors->has('tanggal_masuk'))
 	                                <span class="help-block">
@@ -68,7 +70,8 @@
 	                            @endif
 	                        </div>
 							<div class="form-group{{ $errors->has('tujuan_tinggal') ? ' has-error' : '' }}">
-								<input class="input" id="tujuan_tinggal" type="text" name="tujuan_tinggal" placeholder="Tujuan Tinggal" value="{{ old('tujuan_tinggal') }}" required autofocus>
+								<label>Tujuan Tinggal</label><br>
+								<input class="input" id="tujuan_tinggal" type="text" name="tujuan_tinggal" placeholder="Alasan menginap sementara di asrama" value="{{ old('tujuan_tinggal') }}" required autofocus>
 	                            @if ($errors->has('tujuan_tinggal'))
 	                                <span class="help-block">
 	                                    <strong>{{ $errors->first('tujuan_tinggal') }}</strong>

@@ -70,13 +70,8 @@
 	                            @endif
 							</div>
 							<div class="form-group{{ $errors->has('tanggal_lahir') ? ' has-error' : '' }}">
-								<div class="input-group">
-									<div class="input-group-addon" >
-										<i class="fa fa-calendar"></i>
-									</div>
-									<input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" style="width: 100%;" class="form-control" id="tanggal_lahir" name="tanggal_lahir" placeholder="Tanggal Lahir (YYYY-MM-DD)" type="text" value="{{old('tanggal_lahir')}}" required>
-
-								</div>
+								<label>Tanggal Lahir</label><br>
+									<input class="input" id="tanggal_lahir" name="tanggal_lahir" placeholder="Tanggal Lahir (YYYY-MM-DD)" type="date" value="{{old('tanggal_lahir')}}" required>
 								@if ($errors->has('tanggal_lahir'))
 		                            <span class="help-block">
 		                                <strong>{{ $errors->first('tanggal_lahir') }}</strong>
@@ -154,7 +149,7 @@
 	                            @endif
 							</div>
 							<div class="form-group{{ $errors->has('kontak_darurat') ? ' has-error' : '' }}">
-								<input id="kontak_darurat" class="input" name="kontak_darurat" type="text" value="{{old('kontak_darurat')}}" placeholder="Telepon" required><br>
+								<input id="kontak_darurat" class="input" name="kontak_darurat" type="text" value="{{old('kontak_darurat')}}" placeholder="Telepon Darurat" required><br>
 								@if ($errors->has('kontak_darurat'))
 	                                <span class="help-block">
 	                                    <strong>{{ $errors->first('kontak_darurat') }}</strong>
