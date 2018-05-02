@@ -13,4 +13,5 @@ class Kamar extends Model
     public function gedung(){
     	$this->belongsTo('App\Gedung','id_gedung');
     }
+    
 }

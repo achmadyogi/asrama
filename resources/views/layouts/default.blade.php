@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UPT Asrama ITB | @yield('title')</title>
 <!-- untuk chart -->
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/yadcf/0.9.1/jquery.dataTables.yadcf.css">
 <!--
@@ -38,18 +39,16 @@
 
 <!--Font Awesome (added because you use icons in your prepend/append)-->
 <link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
-<!-- Inline CSS based on choices in "Settings" tab -->
-<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
 </head>
 <link rel="shorcut icon" href="{{ asset('img/logo/logo.png') }}"/>
-<body style="font-family: Century Gothic; color: black;">
+<body style="font-family: Century Gothic; color: black; background-color: white;">
 @section('main_menu')
 <div class="container">
 <div style="text-align: right; color:#979797; margin-top: 3px;">
 		<ul class="top_header">
 			@guest
 				<li><a href="{{ route('login') }}" style="color: #8B8B8B"><i class="fa fa-sign-in"></i> login</a></li>
-				<li><a href="{{ route('register') }}" style="color: #8B8B8B"><i class="fa fa-user"></i> register</a></li>
+				<li> <a href="{{ route('register') }}" style="color: #8B8B8B"><i class="fa fa-user"></i> register</a></li>
 			@else
 				<li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>{{ Auth::user()->username }} <span class="caret"></span></a>

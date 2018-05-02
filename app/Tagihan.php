@@ -8,5 +8,6 @@ class Tagihan extends Model
 {
     protected $table = 'tagihan';
     protected $primaryKey = 'id_tagihan';
+    protected $fillable = ['daftar_asrama_id','daftar_asrama_type','jumlah_tagihan'];
 
 }

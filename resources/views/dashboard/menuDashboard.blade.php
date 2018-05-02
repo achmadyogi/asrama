@@ -83,7 +83,11 @@
 		<div class="sider_body" id="pan_sekretariat" style="display: none">
 			<a href="#">Utama</a><br>
 			<a href="#">Informasi Pembayaran</a><br>
-			<a href="#">Lapor Kerusakan</a><br>
+			@if(session()->has('menu') && session('menu') == 'sekretariat/validasi_pendaftaran')
+				<a class="active" href="{{ route('validasi_pendaftaran') }}">Validasi Pendaftaran</a><br>
+			@else
+				<a href="{{ route('validasi_pendaftaran') }}">Validasi Pendaftaran</a><br>
+			@endif
 			@if(session()->has('menu') && session('menu') == 'sekretariat_buat/edit_periode')
 				<a class="active" href="{{ route('edit_periode') }}" id="edit_periode">Buat/Edit Periode</a><br>
 			@else

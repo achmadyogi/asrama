@@ -17,6 +17,7 @@ class CreateAsramaTable extends Migration
             $table->increments('id_asrama');
             $table->string('nama')->unique();
             $table->text('deskripsi');
+            $table->string('lokasi_asrama')->comment('ganesha/jatinangor');
             $table->text('alamat');
             $table->string('filename');
         });
