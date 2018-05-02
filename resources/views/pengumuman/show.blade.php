@@ -77,22 +77,22 @@
 </script>
 @endsection
 
-@section('header_title','Informasi | Berita')
+@section('header_title','Informasi | Pengumuman')
 
 @section('content')
 <div style="background-color: white; width: 100%; height: 500px; overflow: hidden;margin-top: 0px; position: relative;">
-    <img src="/img/berita/{{$berita->file}}" style="position: absolute;" class="img_center2" width="100%;" alt="user">
+   
 </div>
 <div class="container">
     <div class="row">
         <div class="col-md-3">
             <!-- MENU DASHBOARD -->
-            @include('berita.sider')
+            @include('pengumuman.sider')
         </div>
         <div class="col-md-9">
-            <h1><b>{{$berita->title}}</b></h1><hr>
+            <h1><b>{{$pengumuman->title}}</b></h1><hr>
             <p style="text-align: justify;">
-                {{$berita->isi}}
+                {{$pengumuman->isi}}
             </p>
         </div>
     </div>

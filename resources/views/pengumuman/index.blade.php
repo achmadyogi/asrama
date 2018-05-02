@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title','Informasi | Berita')
+@section('title','Informasi | Pengumuman')
 
 @section('menu_informasi','active')
 @section('main_menu')
@@ -80,30 +80,27 @@
 	<div class="panel panel-default">
 		<div class="panel-heading">
 				<h2 class="row">
-		    		<div class="col-md-10">List Berita</div>
+		    		<div class="col-md-10">List Pengumuman</div>
 				</h2>
         </div>
 		<div class="panel-body">
-            @foreach($list_berita as $berita)
+            @foreach($list_pengumuman as $pengumuman)
             <div class="row">
-                <div class="col-xs-6 col-md-3 left"  style="padding-top: 15px">
-                    <img class="thumbnail" src="img/berita/{{ $berita->file }}" style="width:100%">
-                </div> 
-                <div class="col-lg-9 left" style="padding-top: 0px">
+                <div class="col-lg-12 left" style="padding-top: 0px">
                     <h4 class="asrama judul-asrama">
                     <div class="row">
                         <div class="col-md-9">
-                            {{ $berita->title }}
+                            {{ $pengumuman->title }}
                         </div>
                         
                     </div>
                     </h4>
                     <p>
                         <?php
-                        echo substr($berita->isi,0,150).'...';
+                        echo substr($pengumuman->isi,0,150).'...';
                         ?>
                         <br><br>
-                    <a href="{{url('/berita')}}/{{$berita->id_berita}}">Cari Tahu >></a></p>
+                    <a href="{{url('/pengumuman')}}/{{$pengumuman->id_pengumuman}}">Cari Tahu >></a></p>
                 </div>
             </div>
             <hr>

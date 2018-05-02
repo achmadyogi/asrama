@@ -78,3 +78,7 @@ Route::resource('/users', 'admin\UsersController');
 //Berita
 Route::get('/berita/{id_berita}', 'BeritaController@showBerita');
 Route::get('/berita', 'BeritaController@index');
+
+//Pengumuman
+Route::get('/pengumuman/{id_pengumuman}', 'PengumumanController@showPengumuman');
+Route::get('/pengumuman', 'PengumumanController@index');
