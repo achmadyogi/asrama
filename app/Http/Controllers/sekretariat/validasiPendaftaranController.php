@@ -195,7 +195,7 @@ class validasiPendaftaranController extends Controller
             'tanggal_masuk' => 'required|date',
             'lama_tinggal' => 'required|numeric',
         ]);
-
+        
         // GENERATE KAMAR
         // memeriksa apakah id daftar sudah tersedia di kamar penghuni
         if(Kamar_penghuni::where(['daftar_asrama_id'=>$request->id_daftar,
