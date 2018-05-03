@@ -12,7 +12,7 @@
 			</div>
 			@if(Auth::user())
 				<div class="col-md-2" style="text-align:right; margin-top: 22px">
-				<a href="/download/{{$item->id_file}}/form"> <button class="btn btn-md btn-primary"> Generate </button> </a>
+				<a href="/download/{{$item->id_file}}"> <button class="btn btn-md btn-primary"> Generate </button> </a>
 				</div>
 			@endif
 		</div>			
