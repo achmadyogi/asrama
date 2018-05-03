@@ -208,7 +208,7 @@ class validasiPendaftaranController extends Controller
                 $kelamin_reguler = $daftar->user_penghuni->jenis_kelamin;
                 $lokasi_reguler = $daftar->lokasi_asrama;
             }
-            // Parameter 1 - Kamar untuk penghuni non reguler (v)
+            // Parameter 1 - Kamar untuk penghuni reguler (v)
             $kamarReguler = DB::select("SELECT asrama.id_asrama, asrama.lokasi_asrama, gedung.id_gedung, 
                                     room.id_kamar, room.id_gedung, room.nama, kapasitas, status, room.gender, which_user, 
                                     room.is_difable, idKamar, id_checkout, id_user, id_daftar FROM gedung 
