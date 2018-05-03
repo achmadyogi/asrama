@@ -1,11 +1,18 @@
 @extends('layouts.default')
 
+@section('title','Pendaftaran')
+
+@section('main_menu')
+    @parent
+
+@endsection
+
+@section('header_title','Penghuni | Pendaftaran Reguler')
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading"><h2>Daftar Penghuni Reguler</h2></div>
+        <div class="col-md-8">
+            <h2><b>Daftar Penghuni Reguler</b></h2>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('daftar_reguler') }}">
                         {{ csrf_field() }}
@@ -121,7 +128,6 @@
                         </div>
                     </form>
                 </div>
-            </div>
         </div>
     </div>
 </div>

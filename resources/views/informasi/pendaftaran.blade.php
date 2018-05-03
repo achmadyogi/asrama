@@ -13,11 +13,9 @@
     <button id="dir_up" style="border: none; background-color: transparent;"><b><i class="fa fa-angle-up" style="font-size: 24px;"></i></b></button>
         <ul class="sub_dir">
             <li class="sub_dir_list" id="active"><a href="/informasi/pendaftaran">Pendaftaran</a></li>
-            <li class="sub_dir_list"><a href="#">Fasilitas</a></li>
             <li class="sub_dir_list"><a href="{{url('/berita')}}">Berita</a></li>
             <li class="sub_dir_list"><a href="{{url('/pengumuman')}}">Pengumuman</a></li>
-            <li class="sub_dir_list"><a href="#">Peta</a></li>
-            <li class="sub_dir_list"><a href="#">Hubungi Kami</a></li>
+            <li class="sub_dir_list"><a href="{{ route('peta') }}">Peta</a></li>
         </ul>
     </div>
     </div>

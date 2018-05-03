@@ -22,6 +22,7 @@ use App\Periode;
 use dateTime;
 use Carbon\Carbon;
 use App\Daftar_asrama_non_reguler;
+use App\Daftar_asrama_reguler;
 use Illuminate\Support\Facades\DB;
 
 class pendaftaranPenghuniController extends Controller

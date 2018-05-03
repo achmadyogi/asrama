@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 
-@section('title','Informasi | Berita')
+@section('title','Informasi | Peta')
 
 @section('menu_informasi','active')
 @section('main_menu')
@@ -13,9 +13,9 @@
     <button id="dir_up" style="border: none; background-color: transparent;"><b><i class="fa fa-angle-up" style="font-size: 24px;"></i></b></button>
         <ul class="sub_dir">
             <li class="sub_dir_list"><a href="/informasi/pendaftaran">Pendaftaran</a></li>
-            <li class="sub_dir_list" id="active"><a href="{{url('/berita')}}">Berita</a></li>
+            <li class="sub_dir_list"><a href="{{url('/berita')}}">Berita</a></li>
             <li class="sub_dir_list"><a href="{{url('/pengumuman')}}">Pengumuman</a></li>
-            <li class="sub_dir_list"><a href="{{ route('peta') }}">Peta</a></li>
+            <li class="sub_dir_list" id="active"><a href="{{ route('peta') }}">Peta</a></li>
         </ul>
     </div>
     </div>
@@ -75,26 +75,38 @@
 </script>
 @endsection
 
-@section('header_title','Informasi | Berita')
+@section('header_title','Informasi | Peta')
 
 @section('content')
-<br><br>
 <div class="container">
-    <div class="row">
-        <div class="col-md-9">
-            <div style="width: 100%;">
-                <img src="/img/berita/{{$berita->file}}" width="100%;" alt="user">
-            </div>
-            <h1><b>{{$berita->title}}</b></h1><hr>
-            <p style="text-align: justify;">
-                {{$berita->isi}}
-            </p>
-        </div>
-        <div class="col-md-3">
-            <!-- MENU DASHBOARD -->
-            @include('berita.sider')
-        </div>
-    </div>
+    <br><br>
+    <div id='mapid' style='width: 100%; height: 500px; border-radius: 5px; border: 2px solid black; z-index: 0;'></div>
+    <script>
+    var mymap = L.map('mapid').setView([-6.878158, 107.614803], 16);
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox.streets',
+        accessToken: 'pk.eyJ1IjoiYWNobWFkeW9naSIsImEiOiJjamdxZHlobmQwdXU0MzFsa2t3Z2k4dmV3In0.K2Ri-W53I7_etKnOo5Fy0Q'
+    }).addTo(mymap);
+    var popup = L.popup();
+    </script>
+    @foreach($asrama as $asr)
+    <script type="text/javascript">
+        var marker{{$asr->id_asrama}} = L.marker([{{$asr->latitude}}, {{$asr->longitude}}]).addTo(mymap);
+        marker{{$asr->id_asrama}}.bindPopup("<b>{{$asr->nama}}</b>").closePopup();
+    </script>
+    @endforeach
+    <script type="text/javascript">
+    function onMapClick(e) {
+        popup
+            .setLatLng(e.latlng)
+            .setContent("You clicked the map at " + e.latlng.toString())
+            .openOn(mymap);
+    }
+
+    mymap.on('click', onMapClick);
+    </script>
+    <br><br>
 </div>
-<br><br>
 @endsection
