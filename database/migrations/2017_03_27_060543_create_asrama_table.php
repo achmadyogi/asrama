@@ -20,6 +20,8 @@ class CreateAsramaTable extends Migration
             $table->string('lokasi_asrama')->comment('ganesha/jatinangor');
             $table->text('alamat');
             $table->string('filename');
+            $table->double('latitude');
+            $table->double('longitude');
         });
     }
 

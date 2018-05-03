@@ -68,14 +68,21 @@ Route::get('/pembinaan',function(){
 
 // ------------ INFORMASI ------------//
 Route::get('/informasi/pendaftaran','informasi\pendaftaranController@index');
+//Berita
+Route::get('/berita/{id_berita}', 'BeritaController@showBerita');
+Route::get('/berita', 'BeritaController@index');
+//Pengumuman
+Route::get('/pengumuman/{id_pengumuman}', 'PengumumanController@showPengumuman');
+Route::get('/pengumuman', 'PengumumanController@index');
+//Peta
+Route::get('/informasi/peta', 'informasi\petaController@index')->name('peta');
 
+// ----------- ASRAMA --------------//
 route::get('/asrama', 'AsramaController@index');
 
 // file download
 Route::get('/download', 'DownloadController@show_all_downloadable_file');
 Route::get('/download/{id}', 'DownloadController@download_file');
-
-
 
 // -----TEST----------
 Route::get('test', function(){
@@ -86,12 +93,4 @@ Route::post('test','testController@index');
 //ADMIN
 Route::get('/users/grid', 'admin\UsersController@grid');
 Route::resource('/users', 'admin\UsersController');
-
-//Berita
-Route::get('/berita/{id_berita}', 'BeritaController@showBerita');
-Route::get('/berita', 'BeritaController@index');
-
-//Pengumuman
-Route::get('/pengumuman/{id_pengumuman}', 'PengumumanController@showPengumuman');
-Route::get('/pengumuman', 'PengumumanController@index');
 

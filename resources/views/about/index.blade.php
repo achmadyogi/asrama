@@ -13,7 +13,6 @@
     <button id="dir_up" style="border: none; background-color: transparent;"><b><i class="fa fa-angle-up" style="font-size: 24px;"></i></b></button>
         <ul class="sub_dir">
             <li class="sub_dir_list" id="active"><a href="/about">Gambaran Umum</a></li>
-            <li class="sub_dir_list"><a href="#">Sejarah</a></li>
             <li class="sub_dir_list"><a href="/about/struktur_organisasi">Struktur Organisasi</a></li>
         </ul>
     </div>
