@@ -30,7 +30,7 @@
 						{{session()->get('status2')}}
 					</div> 
 				@endif
-				<h2><b>Validasi Penghuni Reguler</b></h2>
+				<h2><b>Validasi Pendaftaran Reguler</b></h2>
 				@if($Reg != 0)
 					<div class="table">
 						<table>
@@ -41,91 +41,102 @@
 								<th>Detail</th>
 							</tr>
 							<?php $urut = 0; ?>
-							@foreach($Reg as $Regis)
+							@foreach($Reg as $reguler)
 							<tr>
 								<td>{{$urut+1}}.</td>
-								<td>{{$Regis->name}}</td>
+								<td>{{$reguler->name}}</td>
 								<td>{{$updated_at[$urut]}}</td>
-								<td><button class="button" id="btn{{$Regis->id_user}}" type="button">Edit</button>
+								<td><button class="button" id="btn{{$reguler->id_user}}" type="button">Edit</button>
 							</tr>
 							<!-- MODAL UNTUK EDIT PERIODE -->
 							<style type="text/css">
 								/* The Close Button */
-							.close{{$Regis->id_user}} {
+							.close{{$reguler->id_user}} {
 								color: white;
 								float: right;
 								font-size: 28px;
 								font-weight: bold;
 							}
 
-							.close{{$Regis->id_user}}:hover,
-							.close{{$Regis->id_user}}:focus {
+							.close{{$reguler->id_user}}:hover,
+							.close{{$reguler->id_user}}:focus {
 								color: #000;
 								text-decoration: none;
 								cursor: pointer;
 							}
 							</style>
-							<div id="myModal{{$Regis->id_user}}" class="modal">
+							<div id="myModal{{$reguler->id_user}}" class="modal">
 
 							  <!-- Modal content -->
 							  <div class="modal-content">
 								<div class="modal-header">
-								  <span class="close{{$Regis->id_user}}">&times;</span>
-								  <h3><b>Edit Periode</b></h3>
+								  <span class="close{{$reguler->id_user}}">&times;</span>
+								  <h3><b>Verifikasi Pendaftaran</b></h3>
 								</div>
 								<div class="modal-body">
-							  <br>
-							  	  <p><i>Nama Periode:</i> <b></b><br>
-							  	  Pengeditan dilakukan untuk membuka kembali pendaftaran setelah sesi pendaftaran sebelumnya sudah ditutup.</p><hr>
-								  <form action="{{$Regis->id_user}}" method="POST">
-								  	{{ csrf_field() }}
-								  	<input type="Hidden" name="id_periode" value="{{$Regis->id_user}}">
-								  	<div class="form-group{{ $errors->has('tanggal_pendaftaran_dibuka') ? ' has-error' : '' }}">
-									  	<input id="tanggal_pendaftaran_dibuka" class="input" type="datetime-local" name="tanggal_buka_daftar" placeholder="Tanggal Pendaftaran Dibuka"><br><br>
-									  	@if ($errors->has('tanggal_pendaftaran_dibuka'))
-			                                <span class="help-block">
-			                                    <strong>{{ $errors->first('tanggal_pendaftaran_dibuka') }}</strong>
-			                                </span>
-			                            @endif
-									</div>
-									<div class="form-group{{ $errors->has('tanggal_pendaftaran_dibuka') ? ' has-error' : '' }}">
-									  	<input id="tanggal_pendaftaran_ditutup" class="input" type="datetime-local" name="tanggal_tutup_daftar" placeholder="Tanggal Pendaftaran Ditutup"><br><br>
-									  	@if ($errors->has('tanggal_pendaftaran_ditutup'))
-			                                <span class="help-block">
-			                                    <strong>{{ $errors->first('tanggal_pendaftaran_ditutup') }}</strong>
-			                                </span>
-			                            @endif
-									</div>
-								  	<button class="button" type="submit">Edit</button><br><br>
-								  </form>
+							  		<br>
+							  	  	<p><span style="display: inline-block; width: 150px;">Nama</span><b>: {{$reguler->name}}</b><br>
+							  	  	<span style="display: inline-block; width: 150px;">Tanggal Daftar</span>: {{$updated_at[$urut]}}<br>
+							  	  	<span style="display: inline-block; width: 150px;">Lokasi Asrama</span>: {{$reguler->lokasi_asrama}}<br>
+							  	  	@if($reguler->preference == 1)
+							  	  		<span style="display: inline-block; width: 150px;">Preference</span>: Sendirian<br>
+							  	  	@elseif($reguler->preference == 2)
+							  	  		<span style="display: inline-block; width: 150px;">Preference</span>: Berdua<br>
+							  	  	@else
+							  	  		<span style="display: inline-block; width: 150px;">Preference</span>: Bertiga<br>
+							  	  	@endif
+							  	  	<span style="display: inline-block; width: 150px;">Tanggal Masuk</span>: {{$tanggal_masuk[$urut]}}<br>
+							  	  	<span style="display: inline-block; width: 150px;">Disabilitas</span>: 
+							  	  	@if($reguler->is_difable == 1)
+							  	  	 	Ya
+							  	  	@else
+							  	  		Tidak
+							  	  	@endif
+							  	  	</p><hr>
+							  	  	<h3><b>Form Verifikasi</b></h3>
+									  <form action="{{route('inboundReg_approval')}}" method="POST">
+									  	{{ csrf_field() }}
+									  	<input type="Hidden" name="id_daftar" value="{{$reguler->id_daftar}}">
+									  	<label>Tanggal Masuk</label><br>
+									  	<div class="form-group{{ $errors->has('tanggal_masuk') ? ' has-error' : '' }}">
+										  	<input id="tanggal_masuk" class="input" type="date" name="tanggal_masuk" value="{{$reguler->tanggal_masuk}}">
+										  	@if ($errors->has('tanggal_masuk'))
+				                                <span class="help-block">
+				                                    <strong>{{ $errors->first('tanggal_masuk') }}</strong>
+				                                </span>
+				                            @endif
+										</div>
+										<p><i>Catatan: form ini digunakan untuk memastikan bahwa data yang dimasukkan oleh calon penghuni sebelum disetujui masih dapat diedit kembali sesuai dengan keperluan. Setelah Anda melakukan verifikasi maka calon penghuni akan mendapatkan kamar dan data tagihan yang harus dibayar.<br></i></p>
+									  	<button class="button" type="submit">Verify</button><br><br>
+									  </form>
 								</div>
 							  </div>
 
 							</div>
 							<script>
 							// Get the modal
-							var modal{{$Regis->id_user}} = document.getElementById('myModal{{$Regis->id_user}}');
+							var modal{{$reguler->id_user}} = document.getElementById('myModal{{$reguler->id_user}}');
 
 							// Get the button that opens the modal
-							var btn{{$Regis->id_user}} = document.getElementById("btn{{$Regis->id_user}}");
+							var btn{{$reguler->id_user}} = document.getElementById("btn{{$reguler->id_user}}");
 
 							// Get the <span> element that closes the modal
-							var span{{$Regis->id_user}} = document.getElementsByClassName("close{{$Regis->id_user}}")[0];
+							var span{{$reguler->id_user}} = document.getElementsByClassName("close{{$reguler->id_user}}")[0];
 
 							// When the user clicks the button, open the modal 
-							btn{{$Regis->id_user}}.onclick = function() {
-								modal{{$Regis->id_user}}.style.display = "block";
+							btn{{$reguler->id_user}}.onclick = function() {
+								modal{{$reguler->id_user}}.style.display = "block";
 							}
 
 							// When the user clicks on <span> (x), close the modal
-							span{{$Regis->id_user}}.onclick = function() {
-								modal{{$Regis->id_user}}.style.display = "none";
+							span{{$reguler->id_user}}.onclick = function() {
+								modal{{$reguler->id_user}}.style.display = "none";
 							}
 
 							// When the user clicks anywhere outside of the modal, close it
 							window.onclick = function(event) {
-								if (event.target == modal{{$Regis->id_user}}) {
-									modal{{$Regis->id_user}}.style.display = "none";
+								if (event.target == modal{{$reguler->id_user}}) {
+									modal{{$reguler->id_user}}.style.display = "none";
 								}
 							}
 							</script>

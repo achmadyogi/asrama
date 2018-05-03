@@ -138,12 +138,12 @@ class UsersController extends Controller
 			$user = new User;
 		}
 
-	    $user->nama = $request->nama;
+	    $user->name = $request->nama;
 	    $user->email = $request->email;
 
 	    if ($request->reset_password) {
 	    	$user->password = bcrypt('asramaitb');
-	    }
+	    } 
 	    
 	    $user->username = $request->username;
 
@@ -151,8 +151,8 @@ class UsersController extends Controller
 	    $user->is_pengelola = ($request->pengelola_check) ? 1 : 0;
 	    $user->is_sekretariat = ($request->sekretariat_check) ? 1 : 0;
 	    $user->is_pimpinan = ($request->pimpinan_check) ? 1 : 0;
-	    $user->is_admin = ($request->admin_check) ? 1 : 0;
-	    $user->is_superuser = ($request->super_check) ? 1 : 0;
+		$user->is_admin = ($request->admin_check) ? 1 : 0;
+		$user->verification = 0;
 
 	    $user->save();
 

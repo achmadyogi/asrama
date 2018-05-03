@@ -25,11 +25,11 @@ trait pendaftaranPenghuni{
         	// Mendapatkan pendaftaran reguler yang belum tervalidasi
                 if(Daftar_asrama_reguler::where(['verification' => 0])->count() > 0){
                         $Reg = DB::select('SELECT * FROM `daftar_asrama_reguler` LEFT JOIN users ON daftar_asrama_reguler.id_user = users.id WHERE daftar_asrama_reguler.verification = 0');
-                        $i = 0;
-                        foreach ($Reg as $rega) {
-                                $tanggalMasuk[$i] = $this->dateTanggal($rega->tanggal_masuk);
-                                $updated_at[$i] = $this->date($rega->updated_at);
-                                $i += 1;
+                        $x = 0;
+                        foreach ($Reg as $reg) {
+                                $tanggalMasuk[$x] = $this->dateTanggal($reg->tanggal_masuk);
+                                $updated_at[$x] = $this->date($reg->updated_at);
+                                $x += 1;
 
                         }
                 }else{
@@ -52,7 +52,12 @@ trait pendaftaranPenghuni{
                         $tanggalMasuk2 = 0;
                         $updated_at2 = 0;
                 }
-                return (['tanggal_masuk' => $tanggalMasuk, 'updated_at' => $updated_at, 'tanggal_masuk2' => $tanggalMasuk2, 'updated_at2' => $updated_at2, 'nonReg' => $nonReg, 'Reg' => $Reg]);
+                return (['tanggal_masuk' => $tanggalMasuk, 
+                         'updated_at' => $updated_at, 
+                         'tanggal_masuk2' => $tanggalMasuk2, 
+                         'updated_at2' => $updated_at2, 
+                         'nonReg' => $nonReg, 
+                         'Reg' => $Reg]);
         }
 }
 

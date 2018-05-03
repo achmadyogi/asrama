@@ -18,11 +18,12 @@ class CreateDaftarRegulerTable extends Migration
             $table->unsignedInteger('id_user');
             $table->unsignedInteger('id_periode');
             $table->tinyInteger('preference')->comment('1: sendiri. 2: berdua. 3: bertiga');
+            $table->string('lokasi_asrama')->comment('rencana tinggal di ganesha atau jatinangor');
             $table->boolean('verification')->comment('disahkan atau belum');
             $table->string('status_beasiswa')->comment('bidikmisi, afirmasi, non-beasiswa, atau lainnya');
             $table->string('status_mahasiswa')->comment('ganesha, jatinangor, atau cirebon');
-            $table->string('kepenghunian')->comment('tutor, karyawan, lainnya');
             $table->boolean('is_difable');
+            $table->string('ket_difable');
             $table->boolean('is_international');
             $table->date('tanggal_masuk');
             $table->timestamps();
