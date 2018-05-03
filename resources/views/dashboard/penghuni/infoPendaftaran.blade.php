@@ -45,7 +45,7 @@
 						</div>
 						<div class="col-md-6" style="text-align: center;">
 							<h3><b>Pendaftaran Reguler</b></h3>
-							<div style="text-align: center;"><a href="{{url('/dashboard/penghuni/daftar_reguler')}}"><button class="button">Daftar Sekarang</button></a></div>
+							<div style="text-align: center;"><a href="{{route('daftar_reguler')}}"><button class="button">Daftar Sekarang</button></a></div>
 						</div>
 					</div>
 				@else
@@ -188,44 +188,135 @@
 					@else
 						Belum ada riwayat pendaftaran non reguler hingga saat ini.
 					@endif<br>
-					<h3><b>Riwayat Pendaftaran Penghuni Reguler</b></h3>
-					@if($reguler != '0')
+					<h3><b>Riwayat Pendaftaran Penghuni Reguler</b></h3> 
+						@if($reguler != '0')
 						<div class="table">
 							<table>
 								<tr>
 									<th>No.</th>
+									<th>Nama</th>
 									<th>Tanggal Daftar</th>
-									<th>Preference</th>
-									<th>Lokasi Asrama</th>
-									<th>Tanggal Masuk</th>
-									<th>Status</th>
-									<th>Kamar</th>
+									<th>Rincian</th>
 								</tr>
-								<?php $a = 1; ?>
+								<?php $i = 1; ?>
 								@foreach($reguler as $reg)
 								<tr>
-									<td>{{$a}}.</td>
-									<td>{{$tanggal_daftar[$a-1]}}</td>
-									@if($reg->preference == 1)
-										<td>Sendiri</td>
-									@elseif($reg->preference == 2)
-										<td>Berdua</td>
-									@else
-										<td>Bertiga</td>
-									@endif
-									<td>{{$reg->lokasi_asrama}}</td>
-									<td>{{$tanggal_masuk[$a-1]}}</td>
-									@if($reg->verification == 0)
-										<td>Belum Disetujui</td>
-										<td>Menunggu Persetujuan</td>
-									@else
-										<td style="color:green;">Sudah Disetujui</td>
-									@endif
+									<td>{{$i}}.</td>
+									<td>{{Auth::User()->name}}</td>
+									<td>{{$tanggal_daftar[$i-1]}}</td>
+									<td><button type="button" class="button" id="btn{{$reg->id_user}}">Rincian</button>
 								</tr>
-								<?php $a += 1; ?>
+								<!-- MODAL UNTUK EDIT PERIODE -->
+								<style type="text/css">
+									/* The Close Button */
+								.close{{$reg->id_user}} {
+									color: white;
+									float: right;
+									font-size: 28px;
+									font-weight: bold;
+								}
+
+								.close{{$reg->id_user}}:hover,
+								.close{{$reg->id_user}}:focus {
+									color: #000;
+									text-decoration: none;
+									cursor: pointer;
+								}
+								</style>
+								<div id="myModal{{$reg->id_user}}" class="modal">
+
+								  <!-- Modal content -->
+								  <div class="modal-content">
+									<div class="modal-header">
+									  <span class="close{{$reg->id_user}}">&times;</span>
+									  <h3><b>Rincian Pendaftaran</b></h3>
+									</div><br>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-md-6">
+												<p><span style="display: inline-block; width: 150px;">Nama</span><b>: {{Auth::User()->name}}</b><br>
+										  	  	<span style="display: inline-block; width: 150px;">Tanggal Daftar</span>: {{$tanggal_daftar[$i-1]}}<br>
+										  	  	<span style="display: inline-block; width: 150px;">Lokasi Asrama</span>: {{$reg->lokasi_asrama}}<br>
+										  	  	@if($reg->preference == 1)
+										  	  		<span style="display: inline-block; width: 150px;">Preference</span>: Sendirian<br>
+										  	  	@elseif($reg->preference == 2)
+										  	  		<span style="display: inline-block; width: 150px;">Preference</span>: Berdua<br>
+										  	  	@else
+										  	  		<span style="display: inline-block; width: 150px;">Preference</span>: Bertiga<br>
+										  	  	@endif
+										  	   <br></p>
+											</div>
+											<div class="col-md-6">
+												<span style="display: inline-block; width: 150px;">Tanggal Masuk</span>: {{$tanggal_masuk[$i-1]}}<br>
+										  	  	<span style="display: inline-block; width: 150px;">Disabilitas</span>: 
+										  	  	@if($reg->is_difable == 1)
+										  	  	 	Ya
+										  	  	@else
+										  	  		Tidak
+										  	  	@endif <br>
+										  	  	@if($reg->verification == 0)
+										  	  		<span style="display: inline-block; width: 150px;">Status</span>: Menunggu Verifikasi<br>
+										  	  	@elseif($reg->verification == 1)
+										  	  		@if($out_reguler[$i-1] == 'Aktif')
+										  	  			<span style="display: inline-block; width: 150px;">Status</span>: <span style="color:green;"><b>Aktif</b></span><br>
+										  	  		@else
+										  	  			<span style="display: inline-block; width: 150px;">Status</span>: <b>Checkout</b></span><br>
+										  	  		@endif
+										  	  		<span style="display: inline-block; width: 150px;">Asrama</span>: {{$nama_asrama_reguler[$i-1]}}<br>
+										  	  		<span style="display: inline-block; width: 150px;">Kamar</span>: {{$nama_kamar_reguler[$i-1]}}<br>
+										  	  		<span style="display: inline-block; width: 150px;">Total Tagihan</span>: {{$total_reguler[$i-1]}}<b></b><br>
+										  	  		@if($bill_reguler != 0)
+										  	  			<span style="display: inline-block; width: 150px;">Total Pembayaran</span>: {{$bill_reguler[$i-1]}}<b></b><br>
+										  	  		@else
+										  	  			<span style="display: inline-block; width: 150px;">Total Pembayaran</span>: Rp0,00<b></b><br>
+										  	  		@endif
+										  	  		@if($lunas_reguler == 'Belum lunas')
+										  	  			<span style="display: inline-block; width: 150px;">Keterangan</span>: <span style="color:red;"><b>Belum lunas</b></span><br>
+										  	  		@else
+										  	  			<span style="display: inline-block; width: 150px;">Keterangan</span>: <span style="color:green;"><b>Lunas</b></span><br>
+										  	  		@endif
+										  	  	@else
+										  	  		<span style="display: inline-block; width: 150px;">Status</span>: <span style="color:red"><b>Pendaftaran ditolak</b></span><br>
+										  	  	@endif
+											</div>
+										</div><hr>
+										<i>Pendaftaran Anda akan kami konfirmasikan dalam waktu 24 jam setelah pendaftaran pada jam kerja. Untuk mempercepat proses verifikasi, Anda dapat langsung menghubungi petugas kami atau datang langsung ke kantor kami bila kebutuhan bersifat segera.</i>
+									</div>
+								  </div>
+
+								</div>
+								<script>
+								// Get the modal
+								var modal{{$reg->id_user}} = document.getElementById('myModal{{$reg->id_user}}');
+
+								// Get the button that opens the modal
+								var btn{{$reg->id_user}} = document.getElementById("btn{{$reg->id_user}}");
+
+								// Get the <span> element that closes the modal
+								var span{{$reg->id_user}} = document.getElementsByClassName("close{{$reg->id_user}}")[0];
+
+								// When the user clicks the button, open the modal 
+								btn{{$reg->id_user}}.onclick = function() {
+									modal{{$reg->id_user}}.style.display = "block";
+								}
+
+								// When the user clicks on <span> (x), close the modal
+								span{{$reg->id_user}}.onclick = function() {
+									modal{{$reg->id_user}}.style.display = "none";
+								}
+
+								// When the user clicks anywhere outside of the modal, close it
+								window.onclick = function(event) {
+									if (event.target == modal{{$reg->id_user}}) {
+										modal{{$reg->id_user}}.style.display = "none";
+									}
+								}
+								</script>
+								<?php $i += 1; ?>
 								@endforeach
 							</table>
 						</div>
+					</div>
 					@else
 						Belum ada riwayat pendaftaran reguler hingga saat ini.
 					@endif

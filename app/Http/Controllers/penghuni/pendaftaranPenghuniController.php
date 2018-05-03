@@ -9,7 +9,7 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Validator;
 use App\Asrama;
 use App\User_penghuni;
-//use App\Daftar_asrama_reguler;
+use App\Daftar_asrama_reguler;
 use App\User;
 use App\User_nim;
 use App\Prodi;
@@ -37,7 +37,17 @@ class pendaftaranPenghuniController extends Controller
 	    $dashboard = $this->getInitialDashboard();
     	// Memeriksa apakah sudah mendaftarkan diri di reguler
     	if(Daftar_asrama_reguler::where(['id_user'=>Auth::User()->id])->count() > 0){
-
+			// Mengotak-atik tanggal
+			$i = 0;
+			foreach ($dashboard['reguler'] as $reg) {
+				$tanggal_daftar[$i] = $this->date($reg->created_at);
+				$tanggal_masuk[$i] = $this->dateTanggal($reg->tanggal_masuk);
+				$i += 1;
+			}
+			// Memeriksa bila sudah ada yang terverifikasi
+			Session::flash('menu','penghuni/pendaftaran_penghuni');
+			return view('dashboard.penghuni.infoPendaftaran', $this->getInitialDashboard())->with(['tanggal_daftar' => $tanggal_daftar,
+									        			'tanggal_masuk' => $tanggal_masuk]);
 		}
 		// Memeriksa apakah sudah mendaftarkan diri di non reguler
 		if(Daftar_asrama_non_reguler::where(['id_user'=>Auth::User()->id])->count() > 0){
@@ -161,6 +171,11 @@ class pendaftaranPenghuniController extends Controller
 			$daftar_asrama_reguler->is_international = $request->internasional == 'Mahasiswa Internasional' ? '1' : '0';
 			$daftar_asrama_reguler->id_periode = $request->periode;
 			$daftar_asrama_reguler->tanggal_masuk = $request->tanggal_mulai;
+			if($request->asrama == 'Asrama Jatinangor') {
+				$daftar_asrama_reguler->lokasi_asrama = 'jatinangor';
+			} else {
+				$daftar_asrama_reguler->lokasi_asrama = 'ganesha';
+			}
 			
 			$daftar_asrama_reguler->save();
     		$dashboard = $this->getInitialDashboard();

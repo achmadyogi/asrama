@@ -26,9 +26,13 @@ Route::get('dashboard/penghuni/pendaftaran_penghuni/non_reguler', 'penghuni\daft
 // Pendaftaran Non Reguler
 Route::post('dashboard/penghuni/pendaftaran_penghuni/waiting', 'penghuni\daftarNonRegulerController@daftar')->name('form_non_reguler');
 
-// pendaftaran reguler
-Route::get('dashboard/penghuni/daftar_reguler', 'penghuni\pendaftaranPenghuniController@showFormReguler')->name('daftar_reguler');
-Route::post('dashboard/penghuni/daftar_reguler', 'penghuni\pendaftaranPenghuniController@daftarReguler')->name('daftar_reguler');
+// Form Pendaftaran Reguler
+Route::get('dashboard/penghuni/pendaftaran_penghuni/reguler', 'penghuni\daftarRegulerController@index')->name('daftar_reguler');
+// Pendaftaran Reguler
+Route::post('dashboard/penghuni/pendaftaran_penghuni/waiting_reguler', 'penghuni\daftarRegulerController@daftar')->name('form_reguler');
+// // pendaftaran reguler
+// Route::get('dashboard/penghuni/daftar_reguler', 'penghuni\pendaftaranPenghuniController@showFormReguler')->name('daftar_reguler');
+// Route::post('dashboard/penghuni/daftar_reguler', 'penghuni\pendaftaranPenghuniController@daftarReguler')->name('daftar_reguler');
 
 // DASHBOARD SEKRETARIAT
 // Buat/edit periode pendaftaran
@@ -41,6 +45,7 @@ Route::post('/edit_periode', 'sekretariat\tambahPeriodeController@editPeriode')-
 Route::get('/dashboard/sekretariat/validasi_pendaftaran', 'sekretariat\validasiPendaftaranController@index')->name('validasi_pendaftaran');
 // Persetujuan validasi, mengenerate kamar, dan jumlah tagihan
 Route::post('/dashboard/sekretariat/validasi_pendaftaran', 'sekretariat\validasiPendaftaranController@inboundNonReg')->name('inboundNonReg_approval');
+Route::post('/dashboard/sekretariat/validasi_pendaftaran/reguler', 'sekretariat\validasiPendaftaranController@inboundReg')->name('inboundReg_approval');
 
 
 
