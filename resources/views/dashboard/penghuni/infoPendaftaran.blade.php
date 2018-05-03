@@ -198,12 +198,12 @@
 									<th>Tanggal Daftar</th>
 									<th>Rincian</th>
 								</tr>
-								<?php $a = 1; ?>
+								<?php $i = 1; ?>
 								@foreach($reguler as $reg)
 								<tr>
-									<td>{{$a}}.</td>
+									<td>{{$i}}.</td>
 									<td>{{Auth::User()->name}}</td>
-									<td>{{$tanggal_daftar[$a-1]}}</td>
+									<td>{{$tanggal_daftar[$i-1]}}</td>
 									<td><button type="button" class="button" id="btn{{$reg->id_user}}">Rincian</button>
 								</tr>
 								<!-- MODAL UNTUK EDIT PERIODE -->
@@ -235,7 +235,7 @@
 										<div class="row">
 											<div class="col-md-6">
 												<p><span style="display: inline-block; width: 150px;">Nama</span><b>: {{Auth::User()->name}}</b><br>
-										  	  	<span style="display: inline-block; width: 150px;">Tanggal Daftar</span>: {{$tanggal_daftar[$a-1]}}<br>
+										  	  	<span style="display: inline-block; width: 150px;">Tanggal Daftar</span>: {{$tanggal_daftar[$i-1]}}<br>
 										  	  	<span style="display: inline-block; width: 150px;">Lokasi Asrama</span>: {{$reg->lokasi_asrama}}<br>
 										  	  	@if($reg->preference == 1)
 										  	  		<span style="display: inline-block; width: 150px;">Preference</span>: Sendirian<br>
@@ -247,7 +247,7 @@
 										  	   <br></p>
 											</div>
 											<div class="col-md-6">
-												<span style="display: inline-block; width: 150px;">Tanggal Masuk</span>: {{$tanggal_masuk[$a-1]}}<br>
+												<span style="display: inline-block; width: 150px;">Tanggal Masuk</span>: {{$tanggal_masuk[$i-1]}}<br>
 										  	  	<span style="display: inline-block; width: 150px;">Disabilitas</span>: 
 										  	  	@if($reg->is_difable == 1)
 										  	  	 	Ya
@@ -257,20 +257,20 @@
 										  	  	@if($reg->verification == 0)
 										  	  		<span style="display: inline-block; width: 150px;">Status</span>: Menunggu Verifikasi<br>
 										  	  	@elseif($reg->verification == 1)
-										  	  		@if($out[$a-1] == 'Aktif')
+										  	  		@if($out_reguler[$i-1] == 'Aktif')
 										  	  			<span style="display: inline-block; width: 150px;">Status</span>: <span style="color:green;"><b>Aktif</b></span><br>
 										  	  		@else
 										  	  			<span style="display: inline-block; width: 150px;">Status</span>: <b>Checkout</b></span><br>
 										  	  		@endif
-										  	  		<span style="display: inline-block; width: 150px;">Asrama</span>: {{$nama_asrama[$a-1]}}<br>
-										  	  		<span style="display: inline-block; width: 150px;">Kamar</span>: {{$nama_kamar[$a-1]}}<br>
-										  	  		<span style="display: inline-block; width: 150px;">Total Tagihan</span>: {{$total[$a-1]}}<b></b><br>
-										  	  		@if($bill != 0)
-										  	  			<span style="display: inline-block; width: 150px;">Total Pembayaran</span>: {{$bill[$a-1]}}<b></b><br>
+										  	  		<span style="display: inline-block; width: 150px;">Asrama</span>: {{$nama_asrama_reguler[$i-1]}}<br>
+										  	  		<span style="display: inline-block; width: 150px;">Kamar</span>: {{$nama_kamar_reguler[$i-1]}}<br>
+										  	  		<span style="display: inline-block; width: 150px;">Total Tagihan</span>: {{$total_reguler[$i-1]}}<b></b><br>
+										  	  		@if($bill_reguler != 0)
+										  	  			<span style="display: inline-block; width: 150px;">Total Pembayaran</span>: {{$bill_reguler[$i-1]}}<b></b><br>
 										  	  		@else
 										  	  			<span style="display: inline-block; width: 150px;">Total Pembayaran</span>: Rp0,00<b></b><br>
 										  	  		@endif
-										  	  		@if($lunas == 'Belum lunas')
+										  	  		@if($lunas_reguler == 'Belum lunas')
 										  	  			<span style="display: inline-block; width: 150px;">Keterangan</span>: <span style="color:red;"><b>Belum lunas</b></span><br>
 										  	  		@else
 										  	  			<span style="display: inline-block; width: 150px;">Keterangan</span>: <span style="color:green;"><b>Lunas</b></span><br>
@@ -312,7 +312,7 @@
 									}
 								}
 								</script>
-								<?php $a += 1; ?>
+								<?php $i += 1; ?>
 								@endforeach
 							</table>
 						</div>

@@ -7,7 +7,7 @@
 
 @endsection
 
-@section('header_title','Penghuni | Pendaftaran Non Reguler')
+@section('header_title','Penghuni | Pendaftaran Reguler')
 @section('content')
 <div class="container">
 	<br><br>
@@ -29,11 +29,11 @@
 						{{session()->get('status2')}}
 					</div> 
 				@endif
-				<h1><b>Pendaftaran Non Reguler</b></h1>
-				<p>Anda akan mendaftarkan diri sebagai penghuni untuk sementara waktu. Pastikan Anda sudah membaca segala ketentuan dan jumlah pembayaran yang telah ditetapkan.</p>
+				<h1><b>Pendaftaran Reguler</b></h1>
+				<p>Anda akan mendaftarkan diri sebagai penghuni asrama. Pastikan Anda sudah membaca segala ketentuan dan jumlah pembayaran yang telah ditetapkan.</p>
 				<div style="border: 1px solid #C9C9C9; border-radius: 5px;">
 					<div style="background-color: #E8E8E8; padding: 10px 15px 10px 15px">
-						Form Pendaftaran Penghuni Non Reguler
+						Form Pendaftaran Penghuni Reguler
 					</div>
 					<div style="padding: 10px 15px 10px 15px;"><br>
 						<form class="form-horizontal" role="form" method="POST" action="{{ route('form_reguler') }}">
