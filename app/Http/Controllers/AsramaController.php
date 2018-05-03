@@ -16,13 +16,7 @@ use Illuminate\Support\Facades\Auth;
 class AsramaController extends Controller
 {
     public function index() {
-		$user = Auth::user();
 		$list_asrama = Asrama::orderBy('id_asrama', 'desc')->get();
-		if ($user && $user->is_pengelola == '1') {
-			$pengelola = Pengelola::find($user->id);
-			$nama_asrama = Asrama::find($pengelola->id_asrama)->nama;
-		}
-		
 		$tanggal = date("Y-m-d");
 		
         
@@ -57,7 +51,6 @@ class AsramaController extends Controller
         }
 		return view('asrama.index')
 			->with(['list_asrama' => $list_asrama,
-					'user' => $user,
 					'nama_asrama' => isset($nama_asrama) ? $nama_asrama : ""]);
 	}
 }

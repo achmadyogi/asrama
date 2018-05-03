@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 
-@section('title','Informasi | Berita')
+@section('title','Informasi | Pengumuman')
 
 @section('menu_informasi','active')
 @section('main_menu')
@@ -13,11 +13,9 @@
     <button id="dir_up" style="border: none; background-color: transparent;"><b><i class="fa fa-angle-up" style="font-size: 24px;"></i></b></button>
         <ul class="sub_dir">
             <li class="sub_dir_list" id="active"><a href="/informasi/pendaftaran">Pendaftaran</a></li>
-            <li class="sub_dir_list"><a href="#">Fasilitas</a></li>
             <li class="sub_dir_list"><a href="{{url('/berita')}}">Berita</a></li>
             <li class="sub_dir_list"><a href="{{url('/pengumuman')}}">Pengumuman</a></li>
-            <li class="sub_dir_list"><a href="#">Peta</a></li>
-            <li class="sub_dir_list"><a href="#">Hubungi Kami</a></li>
+            <li class="sub_dir_list"><a href="{{ route('peta') }}">Peta</a></li>
         </ul>
     </div>
     </div>
@@ -80,20 +78,18 @@
 @section('header_title','Informasi | Pengumuman')
 
 @section('content')
-<div style="background-color: white; width: 100%; height: 500px; overflow: hidden;margin-top: 0px; position: relative;">
-   
-</div>
+<br><br>
 <div class="container">
     <div class="row">
-        <div class="col-md-3">
-            <!-- MENU DASHBOARD -->
-            @include('pengumuman.sider')
-        </div>
         <div class="col-md-9">
-            <h1><b>{{$pengumuman->title}}</b></h1><hr>
+            <h2><b>{{$pengumuman->title}}</b></h2><hr>
             <p style="text-align: justify;">
                 {{$pengumuman->isi}}
             </p>
+        </div>
+        <div class="col-md-3">
+            <!-- MENU DASHBOARD -->
+            @include('pengumuman.sider')
         </div>
     </div>
 </div>
