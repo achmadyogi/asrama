@@ -48,26 +48,26 @@
                                 <option>Asrama Internasional</option>
                             </select><br>
 	                        <label>Pilih Opsi Kamar</label><br>
-	                        <select id="asrama" class="form-control" name="preference" required>
+	                        <select id="preference" class="form-control" name="preference" required>
                                 <option value="">Pilih Preferences</option>
-                                    <option>Sendiri</option>
-                                    <option>Berdua</option>
-                                    <option>Bertiga</option>
+                                <option>Sendiri</option>
+                                <option>Berdua</option>
+                                <option>Bertiga</option>
                             </select><br>
 	                        <label>Pilih Beasiswa</label><br>
 	                        <select id="beasiswa" class="form-control" name="beasiswa" required>
                                 <option value="">Pilih Beasiswa</option>
-                                    <option>Bidikmisi</option>
-                                    <option>Afirmasi</option>
-                                    <option>Non-Beasiswa</option>
-                                    <option>Lainnya</option>
+                                <option>Bidikmisi</option>
+                                <option>Afirmasi</option>
+                                <option>Non-Beasiswa</option>
+                                <option>Lainnya</option>
                             </select><br>
 	                        <label>Pilih Kampus</label><br>
 	                        <select id="mahasiswa" class="form-control" name="mahasiswa" required>
                                 <option value="">Status Mahasiswa</option>
-                                    <option>Kampus Ganesha</option>
-                                    <option>Kampus Jatinangor</option>
-                                    <option>Kampus Cirebon</option>
+                                <option>Kampus Ganesha</option>
+                                <option>Kampus Jatinangor</option>
+                                <option>Kampus Cirebon</option>
                             </select><br>
                             <label>Pilih Periode Tinggal</label><br>
                             <select id="periode" class="form-control" name="periode" required>
@@ -80,12 +80,24 @@
                             @foreach ($list_periode as $nama_periode)
                                 <input id="tanggal_mulai" type="hidden"  name="tanggal_mulai" value="{{$nama_periode->tanggal_mulai_tinggal}}">
                             @endforeach
+                            <label>Apakah Anda Memiliki Riwayat Penyakit Berat atau yang Sedang Dialami ?</label><br>
+	                        <input type="radio" id="penyakit1" name="penyakit" value="1" required> Ya<br>
+                            <input type="radio" id="penyakit2" name="penyakit" value="0" required> Tidak<br><br>
+                            <div id="ket_penyakit">
+                                <label>Keterangan Penyakit</label>
+                                <input class="input" type="text" class="form-control" name="ket_penyakit" autofocus><br><br>
+                            </div>
                             <label>Apakah Anda Termasuk Orang yang Memiliki Keterbatasan Fisik ?</label><br>
-	                        <input type="radio" name="difable" value="1" required> Ya<br>
-                            <input type="radio" name="difable" value="2" required> Tidak<br><br>
+	                        <input type="radio" id="difable1" name="difable" value="1" required> Ya<br>
+                            <input type="radio" id="difable2" name="difable" value="0" required> Tidak<br><br>
+                            <div id="ket_difable">
+                                <label>Keterangan</label>
+                                <input class="input" type="text" name="ket_difable" autofocus><br><br>
+                            </div>
+                            <label>Keterangan</label>
                             <label>Apakah Anda Termasuk Mahasiswa Internasional ?</label><br>
 	                        <input type="radio" name="inter" value="1" required> Ya<br>
-	                        <input type="radio" name="inter" value="2" required> Tidak<br><br>
+	                        <input type="radio" name="inter" value="0" required> Tidak<br><br>
 							<button class="button" type="submit">Submit</button>
 						</form>
 					</div>
@@ -95,4 +107,25 @@
 	</div>			
 	<br><br><br>
 </div>
+<script>
+    $(document).ready(function () {
+        $("#ket_difable").hide();
+        $("#difable1").click(function () {
+            $("#ket_difable").show(500);
+        });
+        $("#difable2").click(function () {
+            $("#ket_difable").hide(500);
+        });
+    });
+
+    $(document).ready(function () {
+        $("#ket_penyakit").hide();
+        $("#penyakit1").click(function () {
+            $("#ket_penyakit").show(500);
+        });
+        $("#penyakit2").click(function () {
+            $("#ket_penyakit").hide(500);
+        });
+    });
+</script>
 @endsection

@@ -61,19 +61,32 @@ class daftarRegulerController extends Controller
 				$daftar_asrama_reguler->preference = 1;
 			} else if($request->preference == "Berdua") {
 				$daftar_asrama_reguler->preference = 2;
-			} else {
+			} else if($request->preference == "Bertiga"){
 				$daftar_asrama_reguler->preference = 3;	
 			};
 			$daftar_asrama_reguler->verification = 0;
 			$daftar_asrama_reguler->status_beasiswa = $request->beasiswa;
-			$daftar_asrama_reguler->status_mahasiswa = $request->mahasiswa;
-			$daftar_asrama_reguler->is_difable = $request->difable == 'Sehat' ? '0' : '1';
-			$daftar_asrama_reguler->is_international = $request->internasional == 'Mahasiswa Internasional' ? '1' : '0';
+			$daftar_asrama_reguler->kampus_mahasiswa = $request->mahasiswa;
+			$daftar_asrama_reguler->is_international = $request->inter;
 			$daftar_asrama_reguler->id_periode = $request->periode;
 			$daftar_asrama_reguler->tanggal_masuk = $request->tanggal_mulai;
-            $daftar_asrama_reguler->lokasi_asrama = $request->asrama;
-            $daftar_asrama_reguler->ket_difable = $request->ket_difable;
-			
+			if($request->asrama == 'Asrama Jatinangor') {
+				$daftar_asrama_reguler->lokasi_asrama = 'jatinangor';
+			} else {
+				$daftar_asrama_reguler->lokasi_asrama = 'ganesha';
+			}
+			$daftar_asrama_reguler->is_difable = $request->difable;
+			if($request->difable == 1) {
+				$daftar_asrama_reguler->ket_difable = $request->ket_difable;
+			} else {
+				$daftar_asrama_reguler->ket_difable = '-';
+			}
+			$daftar_asrama_reguler->has_penyakit = $request->penyakit;
+			if($request->penyakit == 1) {
+				$daftar_asrama_reguler->ket_penyakit = $request->ket_penyakit;
+			} else {
+				$daftar_asrama_reguler->ket_penyakit = '-';
+			}
 			$daftar_asrama_reguler->save();
     		$dashboard = $this->getInitialDashboard();
 			// Mengotak-atik display tanggal
