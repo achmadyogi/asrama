@@ -147,6 +147,7 @@
 				@else
 				<p>Belum ada penghuni reguler baru yang mengajukan pendaftaran.</p>
 				@endif
+				<br><br>
 				<h2><b>Validasi Pendaftaran Non Reguler</b></h2>
 				@if($nonReg != 0)
 					<div class="table">
@@ -163,31 +164,31 @@
 								<td>{{$urut+1}}.</td>
 								<td>{{$nonreg->name}}</td>
 								<td>{{$updated_at2[$urut]}}</td>
-								<td><button class="button" id="btn{{$nonreg->id_user}}" type="button">Edit</button>
+								<td><button class="button" id="btn_non{{$nonreg->id_user}}" type="button">Edit</button>
 							</tr>
 							<!-- MODAL UNTUK EDIT PERIODE -->
 							<style type="text/css">
 								/* The Close Button */
-							.close{{$nonreg->id_user}} {
+							.close_non{{$nonreg->id_user}} {
 								color: white;
 								float: right;
 								font-size: 28px;
 								font-weight: bold;
 							}
 
-							.close{{$nonreg->id_user}}:hover,
-							.close{{$nonreg->id_user}}:focus {
+							.close_non{{$nonreg->id_user}}:hover,
+							.close_non{{$nonreg->id_user}}:focus {
 								color: #000;
 								text-decoration: none;
 								cursor: pointer;
 							}
 							</style>
-							<div id="myModal{{$nonreg->id_user}}" class="modal">
+							<div id="myModal_non{{$nonreg->id_user}}" class="modal">
 
 							  <!-- Modal content -->
 							  <div class="modal-content">
 								<div class="modal-header">
-								  <span class="close{{$nonreg->id_user}}">&times;</span>
+								  <span class="close_non{{$nonreg->id_user}}">&times;</span>
 								  <h3><b>Verifikasi Pendaftaran</b></h3>
 								</div>
 								<div class="modal-body">
@@ -211,15 +212,16 @@
 							  	  		{{$nonreg->lama_tinggal}} bulan
 							  	  	@endif <br>
 							  	  	<span style="display: inline-block; width: 150px;">Tanggal Masuk</span>: {{$tanggal_masuk2[$urut]}}<br>
-							  	  	<span style="display: inline-block; width: 150px;">Disabilitas</span>: 
+							  	  	<span style="display: inline-block; width: 150px;">Kebutuhan Khusus</span>: 
 							  	  	@if($nonreg->is_difable == 1)
 							  	  	 	Ya
 							  	  	@else
 							  	  		Tidak
-							  	  	@endif
+							  	  	@endif <br>
+							  	  	<span style="display: inline-block; width: 150px;">Rincian</span>: {{$nonreg->ket_difable}}
 							  	  	</p><hr>
 							  	  	<h3><b>Form Verifikasi</b></h3>
-									  <form action="{{route('inboundNonReg_approval')}}" method="POST">
+									  <form action="{{ route('inboundNonReg_approval') }}" method="POST">
 									  	{{ csrf_field() }}
 									  	<input type="Hidden" name="id_daftar" value="{{$nonreg->id_daftar}}">
 									  	<label>Tanggal Masuk</label><br>
@@ -257,28 +259,28 @@
 							</div>
 							<script>
 							// Get the modal
-							var modal{{$nonreg->id_user}} = document.getElementById('myModal{{$nonreg->id_user}}');
+							var modal_non{{$nonreg->id_user}} = document.getElementById('myModal_non{{$nonreg->id_user}}');
 
 							// Get the button that opens the modal
-							var btn{{$nonreg->id_user}} = document.getElementById("btn{{$nonreg->id_user}}");
+							var btn_non{{$nonreg->id_user}} = document.getElementById("btn_non{{$nonreg->id_user}}");
 
 							// Get the <span> element that closes the modal
-							var span{{$nonreg->id_user}} = document.getElementsByClassName("close{{$nonreg->id_user}}")[0];
+							var span_non{{$nonreg->id_user}} = document.getElementsByClassName("close_non{{$nonreg->id_user}}")[0];
 
 							// When the user clicks the button, open the modal 
-							btn{{$nonreg->id_user}}.onclick = function() {
-								modal{{$nonreg->id_user}}.style.display = "block";
+							btn_non{{$nonreg->id_user}}.onclick = function() {
+								modal_non{{$nonreg->id_user}}.style.display = "block";
 							}
 
 							// When the user clicks on <span> (x), close the modal
-							span{{$nonreg->id_user}}.onclick = function() {
-								modal{{$nonreg->id_user}}.style.display = "none";
+							span_non{{$nonreg->id_user}}.onclick = function() {
+								modal_non{{$nonreg->id_user}}.style.display = "none";
 							}
 
 							// When the user clicks anywhere outside of the modal, close it
 							window.onclick = function(event) {
-								if (event.target == modal{{$nonreg->id_user}}) {
-									modal{{$nonreg->id_user}}.style.display = "none";
+								if (event.target == modal_non{{$nonreg->id_user}}) {
+									modal_non{{$nonreg->id_user}}.style.display = "none";
 								}
 							}
 							</script>

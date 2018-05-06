@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 class testController extends Controller
 {
     public function index(Request $request){
-    	echo "metoo";
-    	return view('test');
+    	$jabar =  "metoo";
+    	echo "uji ocba";
+    	return view('test', ['jabar' => $jabar]);
     }
 }

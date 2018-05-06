@@ -94,10 +94,23 @@
                                                 <option>Berkebutuhan Khusus</option>
                                         </select>
                                     </div>
+                                    <script type="text/javascript">
+                                        $(document).ready(function(){
+                                            $('#difable').change(function(){
+                                                var nilai = $(this).val();
+                                                console.log(nilai);
+                                                if(nilai == 'Berkebutuhan Khusus'){
+                                                    $('#tambahan').show(500);
+                                                }else{
+                                                    $('#tambahan').hide(500);
+                                                }
+                                            });
+                                        });
+                                    </script>
                                 </div>
                            
                            
-                            <div class="form-group" id="difable-form">
+                            <div class="form-group" id="tambahan" style="display: none;">
                                 <div class="col-md-6 col-md-offset-4 well well-sm">
     
                                     <div class="row">
@@ -127,15 +140,21 @@
                                 <div class="col-md-9">
                                    
                                     <select id="periode" class="form-control" name="periode" required>
-                                        @foreach ($list_periode as $nama_periode)
-                                        <option value="{{$nama_periode->id_periode}}">
-                                            {{$nama_periode->nama_periode}}
+                                    <?php $a = 0; ?>
+                                    @foreach ($id_periode as $id)
+                                        <option value="{{$id_periode[$a]}}">
+                                            {{$nama_periode[$a]}}
                                         </option>
-                                        @endforeach
-                                    </select>
-                                    @foreach ($list_periode as $nama_periode)
-                                        <input id="tanggal_mulai" type="hidden"  name="tanggal_mulai" value="{{$nama_periode->tanggal_mulai_tinggal}}">
+                                        <?php $a += 1; ?>
                                     @endforeach
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="periode" class="col-md-3 control-label">Tanggal Masuk</label>
+                                <div class="col-md-9">
+                                    <input type="date" name="masuk" class="form-control" required>
                                 </div>
                             </div>
     

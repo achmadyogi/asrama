@@ -8,34 +8,47 @@
 						<div style="background-color: #E8E8E8; padding: 10px 15px 10px 15px">
 							Kemahasiswaan
 						</div>
-						<div style="padding: 10px 15px 10px 15px;">
-							<p>Apakah Anda mahasiswa ITB?</p>
-								<input id="mahasiswa" name="mahasiswa" type="radio" value="1" <?php if(Input::old('mahasiswa')== "1") { echo 'checked="checked"'; } ?> required checked> Yes, I am a student<br>
-								<input id="mahasiswa" name="mahasiswa" type="radio" value="0" <?php if(Input::old('mahasiswa')== "0") { echo 'checked="checked"'; } ?> required> No, I am not a student<br>
-							<div id="msg"><br>
-								<div class="form-group{{ $errors->has('nim') ? ' has-error' : '' }}">
-									<input id="nim" type="text" name="nim" class="input" value="{{old('nim')}}" placeholder="Masukkan NIM Anda">
-									@if ($errors->has('nim'))
+						<div style="padding: 10px 15px 10px 15px;"><br>
+							<div class="form-group{{ $errors->has('registrasi') ? ' has-error' : '' }}">
+								<input type="text" class="input" name="registrasi" placeholder="Nomor Registrasi" value="{{old('registrasi')}}"><br><br>
+								@if ($errors->has('registrasi'))
 	                                <span class="help-block">
-	                                    <strong>{{ $errors->first('nim') }}</strong>
+	                                    <strong>{{ $errors->first('registrasi') }}</strong>
 	                                </span>
 	                            @endif
-								</div>
+							</div>
+							<label>Apakah Anda mahasiswa ITB?</label><br>
+							<input id="mahasiswa" name="mahasiswa" type="radio" value="1" <?php if(Input::old('mahasiswa')== "1") { echo 'checked="checked"'; } ?> required> Yes, I am a student<br>
+							<input id="mahasiswa" name="mahasiswa" type="radio" value="0" <?php if(Input::old('mahasiswa')== "0") { echo 'checked="checked"'; } ?> required> No, I am not a student<br>
+							<div id="std">
+							</div>
+							<div id="m_nim">
+							</div>
+
+							<div id="fak" style="display: none;"><br>
+								<label>Pilih Fakultas</label><br>
+								<select name="fakultas" id="fakultas">
+									<option value="" selected>~~Pilih Fakultas~~</option>
+									@foreach($fakultas as $fakultas)
+										<option value="{{$fakultas->id_fakultas}}">{{$fakultas->nama}}</option>
+									@endforeach
+								</select>
 							</div>
 						</div>
 						<script type="text/javascript">
 							$(document).ready(function(){
 								$("input[type=radio][name=mahasiswa]").change(function(){
-								  var nim = $(this).val();
-								  if (nim == 1){
-								  	$('#msg').show(500);
-								  	$('#itb').show(500);
-								  	$('#non_itb').hide(500);
-								  }else{
-								  	$('#msg').hide(500);
-								  	$('#itb').hide(500);
-								  	$('#non_itb').show(500);
-								  }
+									$('#fak').hide(500);
+								  	var mahasiswa = $(this).val();
+								  	var kode = 'mahasiswa';
+								  	$.post('mahasiswa',{
+								  		'kode': kode,
+								  		'mahasiswa': mahasiswa, 
+								  		'_token':$('input[name=_token]').val()
+								  	}, function(data, status){
+								  		console.log(kode);
+										$('#std').html(data);
+									});
 								});
 							});
 						</script>

@@ -45,7 +45,11 @@
 						</div>
 						<div class="col-md-6" style="text-align: center;">
 							<h3><b>Pendaftaran Reguler</b></h3>
-							<div style="text-align: center;"><a href="{{route('daftar_reguler')}}"><button class="button">Daftar Sekarang</button></a></div>
+							@if($pass_periode == 0)
+								<p>Belum ada pendaftaran reguler untuk saat ini</p>
+							@else
+								<div style="text-align: center;"><a href="{{route('daftar_reguler')}}"><button class="button">Daftar Sekarang</button></a></div>
+							@endif
 						</div>
 					</div>
 				@else
@@ -57,15 +61,24 @@
 								<tr>
 									<th>No.</th>
 									<th>Tanggal Daftar</th>
-									<th>Tujuan Tinggal</th>
+									<th>Status</th>
 									<th>Rincian</th>
 								</tr>
 								<?php $a = 1; ?>
 								@foreach($nonReguler as $non)
 								<tr>
 									<td>{{$a}}.</td>
-									<td>{{$tanggal_daftar[$a-1]}}</td>
-									<td>{{$non->tujuan_tinggal}}</td>
+									<td>{{$tanggal_daftar_non[$a-1]}}</td>
+									<td>
+									@if($non->verification == 0)
+							  	  		Menunggu Verifikasi
+							  	  	@elseif($non->verification == 1)
+							  	  		@if($out[$a-1] == 'Aktif')
+							  	  			<span style="color:green;"><b>Aktif</b></span>
+							  	  		@else
+							  	  			<b>Checkout</b></span>
+							  	  		@endif
+							  	  	@endif </td>
 									<td><button type="button" class="button" id="btn{{$non->id_user}}">Rincian</button>
 								</tr>
 								<!-- MODAL UNTUK EDIT PERIODE -->
@@ -97,7 +110,7 @@
 										<div class="row">
 											<div class="col-md-6">
 												<p><span style="display: inline-block; width: 150px;">Nama</span><b>: {{Auth::User()->name}}</b><br>
-										  	  	<span style="display: inline-block; width: 150px;">Tanggal Daftar</span>: {{$tanggal_daftar[$a-1]}}<br>
+										  	  	<span style="display: inline-block; width: 150px;">Tanggal Daftar</span>: {{$tanggal_daftar_non[$a-1]}}<br>
 										  	  	<span style="display: inline-block; width: 150px;">Keperluan Tinggal</span>: {{$non->tujuan_tinggal}}<br>
 										  	  	<span style="display: inline-block; width: 150px;">Lokasi Asrama</span>: {{$non->lokasi_asrama}}<br>
 										  	  	@if($non->preference == 1)
@@ -116,13 +129,14 @@
 										  	  	@endif <br></p>
 											</div>
 											<div class="col-md-6">
-												<span style="display: inline-block; width: 150px;">Tanggal Masuk</span>: {{$tanggal_masuk[$a-1]}}<br>
-										  	  	<span style="display: inline-block; width: 150px;">Disabilitas</span>: 
+												<span style="display: inline-block; width: 150px;">Tanggal Masuk</span>: {{$tanggal_masuk_non[$a-1]}}<br>
+										  	  	<span style="display: inline-block; width: 150px;">Kebutuhan Khusus</span>: 
 										  	  	@if($non->is_difable == 1)
 										  	  	 	Ya
 										  	  	@else
 										  	  		Tidak
 										  	  	@endif <br>
+										  	  	<span style="display: inline-block; width: 150px;">Rincian Kebutuhan</span>: {{$non->ket_difable}} <br>
 										  	  	@if($non->verification == 0)
 										  	  		<span style="display: inline-block; width: 150px;">Status</span>: Menunggu Verifikasi<br>
 										  	  	@elseif($non->verification == 1)
@@ -203,39 +217,39 @@
 								<tr>
 									<td>{{$i}}.</td>
 									<td>{{Auth::User()->name}}</td>
-									<td>{{$tanggal_daftar[$i-1]}}</td>
-									<td><button type="button" class="button" id="btn{{$reg->id_user}}">Rincian</button>
+									<td>{{$tanggal_daftar_reg[$i-1]}}</td>
+									<td><button type="button" class="button" id="btn_reg{{$reg->id_user}}">Rincian</button>
 								</tr>
 								<!-- MODAL UNTUK EDIT PERIODE -->
 								<style type="text/css">
 									/* The Close Button */
-								.close{{$reg->id_user}} {
+								.close_reg{{$reg->id_user}} {
 									color: white;
 									float: right;
 									font-size: 28px;
 									font-weight: bold;
 								}
 
-								.close{{$reg->id_user}}:hover,
-								.close{{$reg->id_user}}:focus {
+								.close_reg{{$reg->id_user}}:hover,
+								.close_reg{{$reg->id_user}}:focus {
 									color: #000;
 									text-decoration: none;
 									cursor: pointer;
 								}
 								</style>
-								<div id="myModal{{$reg->id_user}}" class="modal">
+								<div id="myModal_reg{{$reg->id_user}}" class="modal">
 
 								  <!-- Modal content -->
 								  <div class="modal-content">
 									<div class="modal-header">
-									  <span class="close{{$reg->id_user}}">&times;</span>
+									  <span class="close_reg{{$reg->id_user}}">&times;</span>
 									  <h3><b>Rincian Pendaftaran</b></h3>
 									</div><br>
 									<div class="modal-body">
 										<div class="row">
 											<div class="col-md-6">
 												<p><span style="display: inline-block; width: 150px;">Nama</span><b>: {{Auth::User()->name}}</b><br>
-										  	  	<span style="display: inline-block; width: 150px;">Tanggal Daftar</span>: {{$tanggal_daftar[$i-1]}}<br>
+										  	  	<span style="display: inline-block; width: 150px;">Tanggal Daftar</span>: {{$tanggal_daftar_reg[$i-1]}}<br>
 										  	  	<span style="display: inline-block; width: 150px;">Lokasi Asrama</span>: {{$reg->lokasi_asrama}}<br>
 										  	  	@if($reg->preference == 1)
 										  	  		<span style="display: inline-block; width: 150px;">Preference</span>: Sendirian<br>
@@ -247,7 +261,7 @@
 										  	   <br></p>
 											</div>
 											<div class="col-md-6">
-												<span style="display: inline-block; width: 150px;">Tanggal Masuk</span>: {{$tanggal_masuk[$i-1]}}<br>
+												<span style="display: inline-block; width: 150px;">Tanggal Masuk</span>: {{$tanggal_masuk_reg[$i-1]}}<br>
 										  	  	<span style="display: inline-block; width: 150px;">Disabilitas</span>: 
 										  	  	@if($reg->is_difable == 1)
 										  	  	 	Ya
@@ -287,28 +301,28 @@
 								</div>
 								<script>
 								// Get the modal
-								var modal{{$reg->id_user}} = document.getElementById('myModal{{$reg->id_user}}');
+								var modal_reg{{$reg->id_user}} = document.getElementById('myModal_reg{{$reg->id_user}}');
 
 								// Get the button that opens the modal
-								var btn{{$reg->id_user}} = document.getElementById("btn{{$reg->id_user}}");
+								var btn_reg{{$reg->id_user}} = document.getElementById("btn_reg{{$reg->id_user}}");
 
 								// Get the <span> element that closes the modal
-								var span{{$reg->id_user}} = document.getElementsByClassName("close{{$reg->id_user}}")[0];
+								var span_reg{{$reg->id_user}} = document.getElementsByClassName("close_reg{{$reg->id_user}}")[0];
 
 								// When the user clicks the button, open the modal 
-								btn{{$reg->id_user}}.onclick = function() {
-									modal{{$reg->id_user}}.style.display = "block";
+								btn_reg{{$reg->id_user}}.onclick = function() {
+									modal_reg{{$reg->id_user}}.style.display = "block";
 								}
 
 								// When the user clicks on <span> (x), close the modal
-								span{{$reg->id_user}}.onclick = function() {
-									modal{{$reg->id_user}}.style.display = "none";
+								span_reg{{$reg->id_user}}.onclick = function() {
+									modal_reg{{$reg->id_user}}.style.display = "none";
 								}
 
 								// When the user clicks anywhere outside of the modal, close it
 								window.onclick = function(event) {
-									if (event.target == modal{{$reg->id_user}}) {
-										modal{{$reg->id_user}}.style.display = "none";
+									if (event.target == modal_reg{{$reg->id_user}}) {
+										modal_reg{{$reg->id_user}}.style.display = "none";
 									}
 								}
 								</script>
@@ -320,6 +334,22 @@
 					@else
 						Belum ada riwayat pendaftaran reguler hingga saat ini.
 					@endif
+					<br><br><br>
+					<h2><b>Periode Pendaftaran Tersedia</b></h2>
+					<div class="row">
+						<div class="col-md-6" style="text-align: center;">
+							<h3><b>Pendaftaran Non Reguler</b></h3>
+							<div style="text-align: center;"><a href="{{ route('daftar_non_reguler') }}"><button class="button">Daftar Sekarang</button></a></div>
+						</div>
+						<div class="col-md-6" style="text-align: center;">
+							<h3><b>Pendaftaran Reguler</b></h3>
+							@if($pass_periode == 0)
+								<p>Belum ada pendaftaran reguler untuk saat ini</p>
+							@else
+								<div style="text-align: center;"><a href="{{route('daftar_reguler')}}"><button class="button">Daftar Sekarang</button></a></div>
+							@endif
+						</div>
+					</div>
 				@endif
 			</div>
 		</div>

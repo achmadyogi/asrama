@@ -16,16 +16,21 @@
 			<div style="position: absolute; background-color: rgba(0,0,0,0.6); padding: 10px; color:white; z-index: 10; margin-top: 100px; max-width: 93%; width: 500px; ">
 				{{csrf_field()}}
 				<div id="check">
-					test button here!.
+					@if(isset($jabar))
+						{{$jabar}}
+					@endif
 				</div>
 				<button type="button" class="button" id="test">Test</button>
 				<script type="text/javascript">
 					$(document).ready(function(){
 						$('#test').click(function(){
 							var text = "You have check your box";
-							$.post('test',{'text': text, '_token':$('input[name=_token]').val()}, function(data){
+							$.post('test', {
+								'text': text,
+								'_token':$('input[name=_token]').val()
+							}, function(data, status){
 								console.log(text);
-								$('#check').load(location.href + ' #check');
+								$('#check').html(data);
 							});
 						})
 					});

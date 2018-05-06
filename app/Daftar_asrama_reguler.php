@@ -22,4 +22,10 @@ class Daftar_asrama_reguler extends Model
     public function kamar_penghuni(){
     	return $this->morphMany('App\kamar_penghuni','daftar_asrama');
     }
+    public function tagihan(){
+        return $this->morphMany('App\Tagihan','daftar_asrama');
+    }
+    public function periode(){
+        return $this->belongsTo('App\Periode','id_periode');
+    }
 }

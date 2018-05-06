@@ -22,6 +22,7 @@ use App\Kamar_penghuni;
 use App\Tagihan;
 use App\Checkout;
 use App\Pembayaran;
+use App\Fakultas;
 
 trait initialDashboard{
 	public function getInitialDashboard(){
@@ -194,7 +195,8 @@ trait initialDashboard{
         	$pengelola = User::find($userID)->pengelola;
         	$pengelolaAsrama = Pengelola::find($pengelola->id_pengelola)->asrama;
         }
-        // Mengambil data jurusan dan fakultas dari User NIM bila ada
+        // Mengambil data fakultas dan jurusan
+        $fakultas = Fakultas::all();
         return (['reguler'=>$reguler,
         	        'nonReguler'=>$nonReguler,
         		'userNim'=>$userNim,
@@ -213,7 +215,9 @@ trait initialDashboard{
                         'bill' => $bill,
                         'bill_reguler' => $bill_reguler,
                         'lunas' => $lunas,
-                        'lunas_reguler' => $lunas_reguler]);
+                        'lunas_reguler' => $lunas_reguler,
+                        'fakultas'=>$fakultas,
+                        'prodi' => 0]);
 	}
 }
 ?>
