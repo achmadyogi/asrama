@@ -47,7 +47,7 @@
 			@if($userPenghuni != '0')
             	<a href="#">Edit Data Diri</a><br>
             	@if($userNim != '0')
-            		<a href="#">Edit NIM</a><br>
+            		<a href="{{route('lihat_nim')}}">Edit NIM</a><br>
             	@endif
             @endif
             <a href="#">Ganti Username</a><br>

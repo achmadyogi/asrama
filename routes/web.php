@@ -20,7 +20,9 @@ Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::post('dashboard/createPenghuni', 'penghuni\dataPenghuniController@createPenghuni')->name('daftar_penghuni');
 // Pendaftaran penghuni
 Route::get('dashboard/penghuni/pendaftaran_penghuni', 'penghuni\pendaftaranPenghuniController@index')->name('pendaftaran_penghuni');
-
+// Ganti NIM
+Route::get('dashboard/penghuni/nim', 'penghuni\dataPenghuniController@showNIM')->name('lihat_nim');
+Route::post('dashboard/penghuni/pergantian_nim', 'penghuni\dataPenghuniController@editNIM')->name('ganti_nim');
 // Form Pendaftaran Non Reguler
 Route::get('dashboard/penghuni/pendaftaran_penghuni/non_reguler', 'penghuni\daftarNonRegulerController@index')->name('daftar_non_reguler');
 // Pendaftaran Non Reguler

@@ -93,5 +93,37 @@ class dataPenghuniController extends Controller
     		
     	}
     	return view('dashboard.dashboard', $this->getInitialDashboard());
-    }
+	}
+
+	protected function showNIM() {
+		$user = Auth::user();
+		$nim = User_nim::where('id_user', $user->id)->get();
+		$nama = $user->name;
+		return view('dashboard.penghuni.editNIM', $this->getInitialDashboard())->with(['nim'=>$nim,
+											   'nama'=>$nama]);
+	}
+	
+	protected function editNIM (Request $request) {
+		
+		//Mencari prodi
+		$nim_user = $request->nim;
+		$id_prodi = substr(strval($request->nim), 0, 3);
+		if(Prodi::where(['id_prodi'=>$id_prodi])->count() < 1){
+			Session::flash('status1','Kode nim Anda tidak tersedia dalam daftar Prodi di ITB. Gunakan NIM yang valid.');
+		}elseif(User_nim::where(['nim'=>$nim_user])->count() > 0){
+			Session::flash('status1', 'NIM Anda sudah terdaftar pada database. Untuk mengganti NIM, silahkan masuk di aplikasi ganti NIM.');
+		}else{
+			$user = Auth::user();
+			$user_nim = $user->user_nim->first();
+			$user_nim->id_user = Auth::User()->id;
+			$user_nim->id_prodi = $id_prodi;
+			$user_nim->nim = $nim_user;
+			$user_nim->status_nim = 1;
+			$user_nim->save(); 
+			
+			Session::flash('status2','Pergantian NIM berhasil dilakukan.');
+		}
+    		
+    	return view('dashboard.dashboard', $this->getInitialDashboard());
+	}
 }
