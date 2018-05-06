@@ -234,12 +234,13 @@ class validasiPendaftaranController extends Controller
         }
     }
 
-    protected function inboundReg(Request $request){
-        echo "test non";
-        $this->Validate($request, [
-            'tanggal_masuk' => 'required|date',
-            'lama_tinggal' => 'required|numeric',
-        ]);
+    // protected function inboundReg(Request $request){
+    //     echo "test non";
+    //     $this->Validate($request, [
+    //         'tanggal_masuk' => 'required|date',
+    //         'lama_tinggal' => 'required|numeric',
+    //     ]);
+    // }
 
     // protected function inboundReg(Request $request) {
     //     echo($request->id_daftar_reguler);

@@ -71,15 +71,14 @@
                             </select><br>
                             <label>Pilih Periode Tinggal</label><br>
                             <select id="periode" class="form-control" name="periode" required>
-                                @foreach ($list_periode as $nama_periode)
-                                <option value="{{$nama_periode->id_periode}}">
-                                    {{$nama_periode->nama_periode}}
+                                <?php $i=0; ?>
+                                @foreach ($id_periode as $id)
+                                <option value="{{$id_periode[$i]}}">
+                                    {{$nama_periode[$i]}}
                                 </option>
+                                <?php $i += 1; ?>
                                 @endforeach
                             </select><br>
-                            @foreach ($list_periode as $nama_periode)
-                                <input id="tanggal_mulai" type="hidden"  name="tanggal_mulai" value="{{$nama_periode->tanggal_mulai_tinggal}}">
-                            @endforeach
                             <label>Apakah Anda Memiliki Riwayat Penyakit Berat atau yang Sedang Dialami ?</label><br>
 	                        <input type="radio" id="penyakit1" name="penyakit" value="1" required> Ya<br>
                             <input type="radio" id="penyakit2" name="penyakit" value="0" required> Tidak<br><br>

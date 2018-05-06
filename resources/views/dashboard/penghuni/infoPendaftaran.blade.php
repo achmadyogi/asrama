@@ -217,7 +217,7 @@
 								<tr>
 									<td>{{$i}}.</td>
 									<td>{{Auth::User()->name}}</td>
-									<td>{{$tanggal_daftar_reg[$i-1]}}</td>
+									<td>{{$tanggal_daftar[$i-1]}}</td>
 									<td><button type="button" class="button" id="btn_reg{{$reg->id_user}}">Rincian</button>
 								</tr>
 								<!-- MODAL UNTUK EDIT PERIODE -->
@@ -249,7 +249,7 @@
 										<div class="row">
 											<div class="col-md-6">
 												<p><span style="display: inline-block; width: 150px;">Nama</span><b>: {{Auth::User()->name}}</b><br>
-										  	  	<span style="display: inline-block; width: 150px;">Tanggal Daftar</span>: {{$tanggal_daftar_reg[$i-1]}}<br>
+										  	  	<span style="display: inline-block; width: 150px;">Tanggal Daftar</span>: {{$tanggal_daftar[$i-1]}}<br>
 										  	  	<span style="display: inline-block; width: 150px;">Lokasi Asrama</span>: {{$reg->lokasi_asrama}}<br>
 										  	  	@if($reg->preference == 1)
 										  	  		<span style="display: inline-block; width: 150px;">Preference</span>: Sendirian<br>
@@ -261,7 +261,7 @@
 										  	   <br></p>
 											</div>
 											<div class="col-md-6">
-												<span style="display: inline-block; width: 150px;">Tanggal Masuk</span>: {{$tanggal_masuk_reg[$i-1]}}<br>
+												<span style="display: inline-block; width: 150px;">Tanggal Masuk</span>: {{$tanggal_masuk[$i-1]}}<br>
 										  	  	<span style="display: inline-block; width: 150px;">Disabilitas</span>: 
 										  	  	@if($reg->is_difable == 1)
 										  	  	 	Ya
@@ -343,11 +343,7 @@
 						</div>
 						<div class="col-md-6" style="text-align: center;">
 							<h3><b>Pendaftaran Reguler</b></h3>
-							@if($pass_periode == 0)
-								<p>Belum ada pendaftaran reguler untuk saat ini</p>
-							@else
 								<div style="text-align: center;"><a href="{{route('daftar_reguler')}}"><button class="button">Daftar Sekarang</button></a></div>
-							@endif
 						</div>
 					</div>
 				@endif

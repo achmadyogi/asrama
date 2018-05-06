@@ -20,6 +20,7 @@ use App\Periode;
 use dateTime;
 use Carbon\Carbon;
 use App\Daftar_asrama_reguler;
+use App\Asrama;
 
 class daftarRegulerController extends Controller
 {
@@ -29,10 +30,50 @@ class daftarRegulerController extends Controller
 
     public function index(){
         $dashboard = $this->getInitialDashboard();
-        $list_periode = Periode::all();
-    	Session::flash('menu','penghuni/pendaftaran_penghuni');
-        return view('dashboard.penghuni.formReguler', $this->getInitialDashboard())
-                ->with(['list_periode' => $list_periode]);
+		if (Auth::guest()) {
+            return redirect('/login');
+        } 
+        else {
+            $user_penghuni_info = Auth::user()->user_penghuni;
+                $list_asrama = Asrama::all();
+                // Mendapatkan tanggal sekarang
+		    	$now = Carbon::now();
+		    	$periode = Periode::all()->sortByDesc('id_periode');
+		    	$i = 0;
+		    	foreach ($periode as $periode) {
+		    		$kadaluarsa = $periode->tanggal_tutup_daftar;
+		    		$kadaluarsa = explode(' ', $kadaluarsa);
+		    		$kadaluarsa_date = explode('-', $kadaluarsa[0]);
+		    		$kadaluarsa_time = explode(':', $kadaluarsa[1]);
+		    		$kadal = Carbon::create($kadaluarsa_date[0],$kadaluarsa_date[1],$kadaluarsa_date[2],$kadaluarsa_time[0],$kadaluarsa_time[1],$kadaluarsa_time[2]);
+		    		if($now < $kadal){
+		    			$nama_periode[$i] = $periode->nama_periode;
+			    		$t_buka_daftar[$i] = $this->date($periode->tanggal_buka_daftar);
+			    		$t_tutup_daftar[$i] = $this->date($periode->tanggal_tutup_daftar);
+			    		$t_mulai_tinggal[$i ]= $this->dateTanggal($periode->tanggal_mulai_tinggal);
+			    		$t_selesai_tinggal[$i] = $this->dateTanggal($periode->tanggal_selesai_tinggal);
+			    		$jumlah_bulan[$i] = $periode->jumlah_bulan;
+			    		$keterangan[$i] = $periode->keterangan;
+			    		$id_periode[$i] = $periode->id_periode;
+			    		$tanggal_mulai[$i] = $periode->tanggal_mulai_tinggal;
+		    			$i += 1;
+					}
+		    	}
+				$pass_periode = 1;    	
+		    	Session::flash('menu','penghuni/pendaftaran_penghuni');
+		    	return view('dashboard.penghuni.formReguler', $this->getInitialDashboard())->with(['nama_periode' => $nama_periode,
+								        			't_buka_daftar' => $t_buka_daftar,
+								        			't_tutup_daftar' => $t_tutup_daftar,
+								        			't_mulai_tinggal' => $t_mulai_tinggal,
+								        			't_selesai_tinggal' => $t_selesai_tinggal,
+								        			'jumlah_bulan' => $jumlah_bulan,
+								        			'keterangan' => $keterangan,
+								        			'id_periode' => $id_periode,
+								        			'periode' => $periode,
+	    											'pass_periode' => $pass_periode,
+	    											'list_asrama' => $list_asrama]);
+            
+        }
     }
 
     public function daftar(Request $request){
@@ -69,7 +110,8 @@ class daftarRegulerController extends Controller
 			$daftar_asrama_reguler->kampus_mahasiswa = $request->mahasiswa;
 			$daftar_asrama_reguler->is_international = $request->inter;
 			$daftar_asrama_reguler->id_periode = $request->periode;
-			$daftar_asrama_reguler->tanggal_masuk = $request->tanggal_mulai;
+			$tanggal_masuk = Periode::where('id_periode',$request->periode)->first();
+			$daftar_asrama_reguler->tanggal_masuk = $tanggal_masuk->tanggal_mulai_tinggal; 
 			if($request->asrama == 'Asrama Jatinangor') {
 				$daftar_asrama_reguler->lokasi_asrama = 'jatinangor';
 			} else {

@@ -37,9 +37,9 @@ Route::post('dashboard/penghuni/save_info_penghuni', 'penghuni\dataPenghuniContr
 
 
 // Form Pendaftaran Reguler
-Route::get('dashboard/penghuni/pendaftaran_penghuni/reguler', 'penghuni\pendaftaranPenghuniController@showFormReguler')->name('daftar_reguler');
+Route::get('dashboard/penghuni/pendaftaran_penghuni/reguler', 'penghuni\daftarRegulerController@index')->name('daftar_reguler');
 // Pendaftaran Reguler
-Route::post('dashboard/penghuni/pendaftaran_penghuni/waiting_reguler', 'penghuni\pendaftaranPenghuniController@daftarReguler')->name('form_reguler');
+Route::post('dashboard/penghuni/pendaftaran_penghuni/waiting_reguler', 'penghuni\daftarRegulerController@daftar')->name('form_reguler');
 // Pembayaran
 Route::get('dashboard/penghuni/FormPembayaran','penghuni\pembayaranPenghuniController@form')->name('pembayaran_penghuni');
 Route::post('dashboard/penghuni/ConfirmPembayaran','penghuni\pembayaranPenghuniController@index')->name('submit_pembayaran');
