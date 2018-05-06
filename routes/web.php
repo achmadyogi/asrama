@@ -27,6 +27,10 @@ Route::post('dashboard/penghuni/pergantian_nim', 'penghuni\dataPenghuniControlle
 Route::get('dashboard/penghuni/pendaftaran_penghuni/non_reguler', 'penghuni\daftarNonRegulerController@index')->name('daftar_non_reguler');
 // Pendaftaran Non Reguler
 Route::post('dashboard/penghuni/pendaftaran_penghuni/waiting', 'penghuni\daftarNonRegulerController@daftar')->name('form_non_reguler');
+// Edit Data Penghuni
+Route::get('dashboard/penghuni/edit_info_penghuni', 'penghuni\dataPenghuniController@edit_data_penghuni')->name('edit_data_diri');
+Route::post('dashboard/penghuni/save_info_penghuni', 'penghuni\dataPenghuniController@save_data_penghuni')->name('edit_data_penghuni');
+
 
 // Form Pendaftaran Reguler
 Route::get('dashboard/penghuni/pendaftaran_penghuni/reguler', 'penghuni\daftarRegulerController@index')->name('daftar_reguler');

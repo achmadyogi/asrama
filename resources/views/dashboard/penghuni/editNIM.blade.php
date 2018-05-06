@@ -7,7 +7,7 @@
 
 @endsection
 
-@section('header_title','Sekretariat | Edit Periode')
+@section('header_title','Penghuni | Edit NIM')
 @section('content')
 <div class="container">
 	<br><br>
@@ -29,7 +29,7 @@
 						{{session()->get('status2')}}
 					</div> 
 				@endif
-                <h1><b>List Periode Terdaftar</b></h1>
+                <h1><b>Data NIM</b></h1>
                 <div class="table">
                     <table>
                         <tr>
@@ -44,7 +44,7 @@
                             <td>{{$urut+1}}.</td>
                             <td>{{$nama}}</td>
                             <td>{{$nim->nim}}</td>
-                            <td>{{$nim->no_reg}}</td>
+                            <td>{{$nim->registrasi}}</td>
                         </tr>
                         @endforeach
                     </table>
