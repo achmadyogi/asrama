@@ -15,8 +15,8 @@ return [
     */
 
     'mailgun' => [
-        'domain' => 'itbmun.com',
-        'secret' => 'key-6613488e5ff44a70146263c55b1a1d26',
+        'domain' => 'perkasaid.com',
+        'secret' => 'key-15450c6837adbf5d8c4482856f9aba14',
     ],
 
     'ses' => [

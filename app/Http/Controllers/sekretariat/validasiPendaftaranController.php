@@ -220,6 +220,11 @@ class validasiPendaftaranController extends Controller
             $setuju->tempo = $request->tempo;
             $setuju->save();
 
+            // Update is penghuni jadi 1
+            $is_penghuni = User::find(Daftar_asrama_non_reguler::find($request->id_daftar)->id_user);
+            $is_penghuni->is_penghuni = 1;
+            $is_penghuni->save();
+
             Session::flash('status2','Verifikasi berhasil dilakukan. Proses selanjutnya adalah pembayaran untuk rencana tinggal yang sudah disetujui.');
             Session::flash('menu','sekretariat/validasi_pendaftaran');
             return view('dashboard.sekretariat.validasiPendaftaran', $this->getEditPeriode())->with($this->getPendaftaranPenghuni());
@@ -229,6 +234,12 @@ class validasiPendaftaranController extends Controller
         }
     }
 
+    protected function inboundReg(Request $request){
+        echo "test non";
+        $this->Validate($request, [
+            'tanggal_masuk' => 'required|date',
+            'lama_tinggal' => 'required|numeric',
+        ]);
 
     // protected function inboundReg(Request $request) {
     //     echo($request->id_daftar_reguler);
@@ -250,6 +261,7 @@ class validasiPendaftaranController extends Controller
             }
             //dd($daftarReg);
             // Parameter 1 - Kamar untuk penghuni reguler (v)
+
             $kamarReguler = DB::select("SELECT asrama.id_asrama, asrama.lokasi_asrama, gedung.id_gedung, room.id_kamar, room.id_gedung, room.nama, kapasitas, status, room.gender, which_user, room.is_difable, idKamar, id_checkout, id_user, id_daftar FROM gedung 
             LEFT JOIN asrama ON gedung.id_asrama = asrama.id_asrama 
             RIGHT JOIN (SELECT kamar.id_kamar, kamar.id_gedung, kamar.nama, kapasitas, status, kamar.gender, which_user, kamar.is_difable, idKamar, id_checkout, id_user, id_daftar FROM kamar 
@@ -341,7 +353,7 @@ class validasiPendaftaranController extends Controller
             echo($kapasitas_kamar[$pick_kamar]." ".$id_k);
             // Ambil tarif
             $tarif = DB::select('SELECT * FROM tarif WHERE id_asrama = :id_asrama AND kapasitas_kamar = :kap', ['id_asrama'=>$id_k, 'kap'=>$kapasitas_kamar[$pick_kamar]]);       
-            //dd($tarif);
+
             foreach ($tarif as $tarif){
                 $sarjana = $tarif->tarif_sarjana;
                 $pasca_sarjana = $tarif->tarif_pasca_sarjana;
@@ -365,6 +377,11 @@ class validasiPendaftaranController extends Controller
             }else{
                 // Dapatkan harga tarif
                 $satuan_tagihan = $umum;
+            }
+            // Ambil periode dari daftar reguler + periode
+            $lama_bulan = DB::select('SELECT daftar_asrama_reguler.id_daftar, periodes.jumlah_bulan FROM daftar_asrama_reguler LEFT JOIN periodes ON periodes.id_periode = daftar_asrama_reguler.id_periode WHERE daftar_asrama_reguler.id_daftar = ?',[$request->id_daftar]);
+            foreach ($lama_bulan as $lama) {
+                $lama_t = $lama->jumlah_bulan;
             }
             // Hitung total tagihan
             if($satuan_tagihan == NULL){
@@ -405,6 +422,11 @@ class validasiPendaftaranController extends Controller
             $setuju->verification = 1;
             $setuju->tanggal_masuk = $request->tanggal_masuk_reguler;
             $setuju->save();
+
+            // Update is penghuni jadi 1
+            $is_penghuni = User::find(Daftar_asrama_reguler::find($request->id_daftar)->id_user);
+            $is_penghuni->is_penghuni = 1;
+            $is_penghuni->save();
 
             Session::flash('status2','Verifikasi berhasil dilakukan. Proses selanjutnya adalah pembayaran untuk rencana tinggal yang sudah disetujui.');
             Session::flash('menu','sekretariat/validasi_pendaftaran');

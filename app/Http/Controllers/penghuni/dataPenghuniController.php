@@ -19,9 +19,23 @@ class dataPenghuniController extends Controller
 	use initialDashboard;
 
     protected function createPenghuni(Request $data){
+    	// TENTANG REGISTRASI
     	// Memeriksa apakah mahasiswa atau bukan
     	if($data->mahasiswa == 1){
-    		$this->Validate($data,['nim' => 'required|string|size:8']);
+    		// Memeriksa sudah punya nim apa belum
+    		if($data->nomor_NIM == 1){
+    			// Validasi NIM
+	    		$this->Validate($data,['nim' => 'required|string|size:8']);
+	    		$nomor_NIM = $data->nomor_NIM;
+    		}else{
+    			$nomor_NIM = '-';
+    			$prod = Prodi::where(['id_fakultas'=>$data->fakultas])->get();
+    			foreach ($prod as $prod) {
+    				if(strpos($prod->nama_prodi, 'Tahap') !== false){
+    					$id_prod = $prod->id_prodi;
+    				}
+    			}
+    		}
     	}
     	// Memeriksa input instansi apakah ITB atau bukan
 		if($data['instansi'] == NULL){
@@ -31,6 +45,7 @@ class dataPenghuniController extends Controller
 			$this->Validate($data,['instansi' => 'required']);
 		}
 		$this->Validate($data, [
+			'registrasi' => 'required|string|unique:user_nim,registrasi',
 	    	'nomor_identitas' => 'required|unique:user_penghuni,nomor_identitas',
 	    	'jenis_identitas' => 'required',
 	    	'tempat_lahir' => 'required',
@@ -43,7 +58,35 @@ class dataPenghuniController extends Controller
 	    	'telepon' => 'required',
 	    	'kontak_darurat' => 'required',
 		]);
-		
+		// Memeriksa keberadaan NIM dan memasukkannya bila belum ada
+		if($nomor_NIM != '-'){
+    		//Mencari prodi
+    		$nim = substr(strval($data['nim']), 0, 3);
+    		if(Prodi::where(['id_prodi'=>$nim])->count() < 1){
+    			Session::flash('status1','Kode nim Anda tidak tersedia dalam daftar Prodi di ITB. Gunakan NIM yang valid.');
+    		}elseif(User_nim::where(['id_prodi'=>$nim])->count() > 0){
+    			Session::flash('status1', 'NIM yang Anda masukkan sudah terdaftar pada database. Periksa NIM Anda kembali apakah sudah benar atau terdapat kesalahan.');
+    			return redirect()->back();
+    		}else{
+    			$user_nim = User_nim::create([
+	    			'id_user' => Auth::User()->id,
+	    			'id_prodi' => $nim,
+	    			'registrasi' => $data->registrasi,
+	    			'nim' => $data['nim'],
+	    			'status_nim' => 1,
+	    		]);
+	    		Session::flash('status2','Pendaftaran data diri penghuni berhasil dilakukan.');
+    		}
+    	}else{
+    		$user_nim = User_nim::create([
+	    			'id_user' => Auth::User()->id,
+	    			'id_prodi' => $id_prod,
+	    			'registrasi' => $data->registrasi,
+	    			'nim' => $nomor_NIM,
+	    			'status_nim' => 1,
+	    	]);
+	    	Session::flash('status2','Pendaftaran data diri penghuni berhasil dilakukan.');
+    	}
 		// Memeriksa keberadaan penghuni dan memasukkannya bila belum ada
 		if(user_penghuni::where(['id_user'=>Auth::User()->id])->count() > 0){
     		Session::flash('status1', 'Status kepenghunian Anda sudah terdaftar. Untuk mengedit status kepenghunian Anda, silahkan edit di aplikasi kepenghunian.');
@@ -72,25 +115,6 @@ class dataPenghuniController extends Controller
 				'alamat_ortu_wali' => $data['alamat_ortu_wali'],
 				'telepon_ortu_wali' => $data['telepon_ortu_wali'],
 			]);
-    	}
-    	// Memeriksa keberadaan NIM dan memasukkannya bila belum ada
-		if($data['mahasiswa'] == '1'){
-    		//Mencari prodi
-    		$nim = substr(strval($data['nim']), 0, 3);
-    		if(Prodi::where(['id_prodi'=>$nim])->count() < 1){
-    			Session::flash('status1','Kode nim Anda tidak tersedia dalam daftar Prodi di ITB. Gunakan NIM yang valid.');
-    		}elseif(User_nim::where(['id_prodi'=>$nim])->count() > 0){
-    			Session::flash('status1', 'NIM Anda sudah terdaftar pada database. Untuk mengganti NIM, silahkan masuk di aplikasi ganti NIM.');
-    		}else{
-    			$user_nim = User_nim::create([
-	    			'id_user' => Auth::User()->id,
-	    			'id_prodi' => $nim,
-	    			'nim' => $data['nim'],
-	    			'status_nim' => 1,
-	    		]);
-	    		Session::flash('status2','Pendaftaran data diri penghuni berhasil dilakukan.');
-    		}
-    		
     	}
     	return view('dashboard.dashboard', $this->getInitialDashboard());
 	}

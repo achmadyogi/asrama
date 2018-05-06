@@ -17,7 +17,7 @@
 				<h4><b>Selamat Datang!</b></h4>
 				<p>UPT Asrama ITB memberikan pelayanan utama berupa pendidikan karakter bagi seluruh penghuninya.
 				Difasilitasi dengan segenap personel tutor dan karyawan kami siap membangun generasi penerus bangsa yang lebih baik.</p>
-				<a href="#"><button class="home1"><b>Telurusi >></b></button></a>
+				<a href="{{url('/about')}}"><button class="home1"><b>Telurusi >></b></button></a>
 			</div>
 		</div>
 	</div>
@@ -42,7 +42,7 @@
 									echo substr($post->isi,0,150).'...';
 									?>
 									<br><br>
-								<a href="#">Cari Tahu >></a></p>
+								<a href="berita/{{$post->id_berita}}">Cari Tahu >></a></p>
 							</div>
 							<div class="berita">
 								<div style="background-color: white; width: 100%; height: 200px; overflow: hidden;margin-top: 0px; position: relative;">
@@ -68,7 +68,7 @@
 									echo substr($post->isi,0,150).'...';
 									?>
 									<br><br>
-								<a href="#">Cari Tahu >></a></p>
+								<a href="berita/{{$post->id_berita}}">Cari Tahu >></a></p>
 							</div>
 						</div><br><br>
 					</div>
@@ -115,7 +115,7 @@
 					@foreach($pengumuman as $informasi)
 					<tr><td class="tab2"><h4><b>{{$informasi->title}}</b></h4><i>{{$dateInfo[$j]}}</i>
 						<br><?php echo substr($informasi->isi,0,100).'...'; ?>
-						<div style="text-align: right"><a href="#">Selengkapnya >></a></div></td></tr>
+						<div style="text-align: right"><a href="pengumuman/{{$informasi->id_pengumuman}}">Selengkapnya >></a></div></td></tr>
 					@endforeach
 				@endif
 			</table><br><br>

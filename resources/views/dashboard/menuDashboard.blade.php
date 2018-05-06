@@ -50,8 +50,12 @@
             		<a href="{{route('lihat_nim')}}">Edit NIM</a><br>
             	@endif
             @endif
-            <a href="#">Ganti Username</a><br>
-            <a href="#">Ganti Password</a><br>
+            @if(session()->has('menu') && session('menu') == 'penghuni/pendaftaran_penghuni')
+            	<a class="active" href="{{route('ganti_username')}}">Ganti Username</a><br>
+			@else
+            	<a href="{{route('ganti_username')}}">Ganti Username</a><br>
+			@endif
+           	<!-- <a href="/password/reset">Ganti Password</a><br> -->
 		</div>
 	@if($userPenghuni != '0')
 		<div class="sider_pan" onclick="dapatkanId('pan_penghuni')" style="cursor: pointer;"><b><i class="fa fa-angle-down"></i> Penghuni</b></div>
@@ -63,10 +67,16 @@
 			@endif
 			
 			@if($user->is_penghuni == 1)
-			<a href="#">Informasi Pembayaran</a><br>
+			@if(session()->has('menu') && session('menu') == 'pembayaran_penghuni')
+				<a class="active" href="{{ route('pembayaran_penghuni') }}">Pembayaran</a><br>
+			@else
+				<a href="{{ route('pembayaran_penghuni') }}">Pembayaran</a><br>
+			@endif
+			<!-- Belum ada
 			<a href="#">Lapor Kerusakan</a><br>
 			<a href="#">Pindah Kamar</a><br>
 			<a href="#">Keluar Asrama</a><br>
+			-->
 			@endif
 		</div>
 	@endif 

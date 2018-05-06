@@ -15,8 +15,9 @@ class User_nim extends Model
      * @var array
      */
     protected $fillable = [
-        'id_user', 'id_fakultas', 'id_prodi', 'nim','status_nim',
+        'id_user', 'registrasi', 'id_fakultas', 'id_prodi', 'nim','status_nim',
     ];
+    protected $nullable = ['nim'];
     public function prodi(){
         return $this->hasOne('App\Prodi','id_prodi');
     }

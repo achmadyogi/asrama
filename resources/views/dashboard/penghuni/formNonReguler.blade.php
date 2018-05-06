@@ -45,9 +45,24 @@
 	                        <label>Dimanakah lokasi asrama yang hendak ditinggali?</label><br>
 	                        <input type="radio" name="lokasi_asrama" value="ganesha" required> Asrama ITB Ganesha<br>
 	                        <input type="radio" name="lokasi_asrama" value="jatinangor" required> Asrama ITB Jatinangor<br><br>
-	                        <label>Apakah Anda termasuk orang yang memiliki disabilitas?</label><br>
-	                        <input type="radio" name="difable" value="0" required> Tidak<br>
-	                        <input type="radio" name="difable" value="1" required> Iya<br><br>
+	                        <label>Apakah Anda memiliki kebutuhan khusus?</label><br>
+	                        <input type="radio" id="difable" name="difable" value="0" required> Tidak<br>
+	                        <input type="radio" id="difable" name="difable" value="1" required> Iya<br><br>
+	                        <div id="khusus" style="display: none;">
+	                        	<label>Rincian Kebutuhan khusus</label> <input name="ket_difable" class="input" type="text"><br><Br>
+	                        </div>
+	                        <script type="text/javascript">
+	                        	$(document).ready(function(){
+	                        		$('input[type=radio][name=difable]').change(function(){
+	                        			var difa = $(this).val();
+	                        			if(difa == 1){
+	                        				$('#khusus').show(500);
+	                        			}else{
+	                        				$('#khusus').hide(500);
+	                        			}
+	                        		});
+	                        	});
+	                        </script>
 	                        <label>Pilih paket periode tinggal</label><br>
 	                        <input type="radio" name="tempo" value="harian" required> Harian<br>
 	                        <input type="radio" name="tempo" value="bulanan" required> Bulanan<br><br>

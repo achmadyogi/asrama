@@ -14,6 +14,10 @@ Route::get('/resendEmail/{email}/{token_verification}','Auth\RegisterController@
 // --------------- DASHBOARD ----------------- //
 // Masuk Dashboard
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+// Form Ganti Username
+Route::get('/dashboard/ganti_username','dashboard\gantiUsernameController@form')->name('ganti_username');
+// Action Ganti Username
+Route::post('/dashboard/ganti_username/action','dashboard\gantiUsernameController@index')->name('action_username');
 
 // DASHBOARD PENGHUNI
 // Mendaftarkan data diri penghuni
@@ -33,12 +37,12 @@ Route::post('dashboard/penghuni/save_info_penghuni', 'penghuni\dataPenghuniContr
 
 
 // Form Pendaftaran Reguler
-Route::get('dashboard/penghuni/pendaftaran_penghuni/reguler', 'penghuni\daftarRegulerController@index')->name('daftar_reguler');
+Route::get('dashboard/penghuni/pendaftaran_penghuni/reguler', 'penghuni\pendaftaranPenghuniController@showFormReguler')->name('daftar_reguler');
 // Pendaftaran Reguler
-Route::post('dashboard/penghuni/pendaftaran_penghuni/waiting_reguler', 'penghuni\daftarRegulerController@daftar')->name('form_reguler');
-// // pendaftaran reguler
-// Route::get('dashboard/penghuni/daftar_reguler', 'penghuni\pendaftaranPenghuniController@showFormReguler')->name('daftar_reguler');
-// Route::post('dashboard/penghuni/daftar_reguler', 'penghuni\pendaftaranPenghuniController@daftarReguler')->name('daftar_reguler');
+Route::post('dashboard/penghuni/pendaftaran_penghuni/waiting_reguler', 'penghuni\pendaftaranPenghuniController@daftarReguler')->name('form_reguler');
+// Pembayaran
+Route::get('dashboard/penghuni/FormPembayaran','penghuni\pembayaranPenghuniController@form')->name('pembayaran_penghuni');
+Route::post('dashboard/penghuni/ConfirmPembayaran','penghuni\pembayaranPenghuniController@index')->name('submit_pembayaran');
 
 // DASHBOARD SEKRETARIAT
 // Buat/edit periode pendaftaran
@@ -50,8 +54,8 @@ Route::post('/edit_periode', 'sekretariat\tambahPeriodeController@editPeriode')-
 // Validasi Pendaftaran
 Route::get('/dashboard/sekretariat/validasi_pendaftaran', 'sekretariat\validasiPendaftaranController@index')->name('validasi_pendaftaran');
 // Persetujuan validasi, mengenerate kamar, dan jumlah tagihan
-Route::post('/dashboard/sekretariat/validasi_pendaftaran', 'sekretariat\validasiPendaftaranController@inboundNonReg')->name('inboundNonReg_approval');
-Route::post('/dashboard/sekretariat/validasi_pendaftaran/reguler', 'sekretariat\validasiPendaftaranController@inboundReg')->name('inboundReg_approval');
+Route::post('/dashboard/sekretariat/validasi_pendaftaran/submitNonReguler', 'sekretariat\validasiPendaftaranController@inboundNonReg')->name('inboundNonReg_approval');
+Route::post('/dashboard/sekretariat/validasi_pendaftaran/submitReguler', 'sekretariat\validasiPendaftaranController@inboundReg')->name('inboundReg_approval');
 
 
 
@@ -99,9 +103,17 @@ Route::get('/download/{id}', 'DownloadController@download_file');
 Route::get('test', function(){
 	return view('test');
 });
-Route::post('test','testController@index');
+Route::post('test', function(){
+	return view('test2');
+});
 
 //ADMIN
 Route::get('/users/grid', 'admin\UsersController@grid');
 Route::resource('/users', 'admin\UsersController');
 
+// --------AJAX----------
+// Penghuni
+Route::post('mahasiswa',function(){
+	return view('dashboard.penghuni.ajax.pendaftaran');
+});
+Route::post('fakultas','ajax\fakultasController@index');
