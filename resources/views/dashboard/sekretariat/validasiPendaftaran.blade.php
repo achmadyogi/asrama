@@ -96,15 +96,10 @@
 							  	  	<h3><b>Form Verifikasi</b></h3>
 									  <form action="{{route('inboundReg_approval')}}" method="POST">
 									  	{{ csrf_field() }}
-									  	<input type="Hidden" name="id_daftar" value="{{$reguler->id_daftar}}">
+									  	<input type="Hidden" name="id_daftar_reguler" value="{{$reguler->id_daftar}}">
 									  	<label>Tanggal Masuk</label><br>
 									  	<div class="form-group{{ $errors->has('tanggal_masuk') ? ' has-error' : '' }}">
-										  	<input id="tanggal_masuk" class="input" type="date" name="tanggal_masuk" value="{{$reguler->tanggal_masuk}}">
-										  	@if ($errors->has('tanggal_masuk'))
-				                                <span class="help-block">
-				                                    <strong>{{ $errors->first('tanggal_masuk') }}</strong>
-				                                </span>
-				                            @endif
+										  	<input id="tanggal_masuk" class="input" type="date" name="tanggal_masuk_reguler" value="{{$reguler->tanggal_masuk}}">
 										</div>
 										<p><i>Catatan: form ini digunakan untuk memastikan bahwa data yang dimasukkan oleh calon penghuni sebelum disetujui masih dapat diedit kembali sesuai dengan keperluan. Setelah Anda melakukan verifikasi maka calon penghuni akan mendapatkan kamar dan data tagihan yang harus dibayar.<br></i></p>
 									  	<button class="button" type="submit">Verify</button><br><br>

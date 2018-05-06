@@ -59,13 +59,15 @@ trait initialDashboard{
                                                 $total_reguler[$i] = "Rp".substr($jumlah_tagihan_reguler, -6, (strlen($jumlah_tagihan_reguler)-3)).".".substr($jumlah_tagihan_reguler, -3).",00";
                                         }elseif(strlen($jumlah_tagihan_reguler) > 6 && strlen($jumlah_tagihan_reguler) < 10){
                                                 $total_reguler[$i] = "Rp".substr($jumlah_tagihan_reguler, -9, (strlen($jumlah_tagihan_reguler)-6)).".".substr($jumlah_tagihan_reguler, -6, (strlen($jumlah_tagihan_reguler)-3)).".".substr($jumlah_tagihan_reguler, -3).",00";
+                                        }else{
+                                                $total_reguler[$i] = "Rp".$jumlah_tagihan_reguler.",00";
                                         }
                                 }
                                 // Ambil data pembayaran
                                 $bayar_reguler = DB::select("SELECT pembayaran.id_tagihan, pembayaran.jumlah_bayar, data.jumlah_tagihan, data.id_daftar FROM pembayaran LEFT JOIN (SELECT jumlah_tagihan, id_daftar, id_tagihan FROM tagihan LEFT JOIN daftar_asrama_reguler ON tagihan.daftar_asrama_id = daftar_asrama_reguler.id_daftar WHERE tagihan.daftar_asrama_type = 'Daftar_asrama_reguler' AND id_daftar = ?) AS data ON data.id_tagihan = pembayaran.id_tagihan",[$reg->id_daftar]);
                                 $j = 0;
                                 $total_bayar_reguler = 0;
-                                foreach ($bayar as $bayar) {
+                                foreach ($bayar_reguler as $bayar) {
                                         $total_bayar_reguler = $total_bayar_reguler + $bayar_reguler->jumlah_bayar;
                                         $j += 1;
                                 }
@@ -86,9 +88,9 @@ trait initialDashboard{
                                 }
                                 // periksa apakah sudah check out
                                 if(Checkout::where(['daftar_asrama_id'=>$reg->id_daftar, 'daftar_asrama_type'=>'Daftar_asrama_reguler'])->count() < 0){
-                                        $out_reguler[$x] = "Checkout";
+                                        $out_reguler[$i] = "Checkout";
                                 }else{
-                                        $out_reguler[$x] = "Aktif";
+                                        $out_reguler[$i] = "Aktif";
                                 }
                         }else{
                                 // passing variable
