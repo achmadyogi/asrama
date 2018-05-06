@@ -47,7 +47,7 @@ class daftarRegulerController extends Controller
 			}
 			return view('dashboard.penghuni.infoPendaftaran', $this->getInitialDashboard())->with([
 								        			'tanggal_daftar' => $tanggal_daftar,
-								        			'tanggal_masuk' => $tanggal_masuk]);
+													'tanggal_masuk' => $tanggal_masuk]);
 		}else{
 			$user = Auth::user();
 
@@ -99,52 +99,8 @@ class daftarRegulerController extends Controller
 			Session::flash('status2','Pendaftaran berhasil dilakukan, silahkan lakukan pembayaran dan lakukan konfirmasi pada petugas kami untuk bisa melakukan aktivasi dan finalisasi.');
 			return view('dashboard.penghuni.infoPendaftaran', $this->getInitialDashboard())->with([
 											        			'tanggal_daftar' => $tanggal_daftar,
-								        						'tanggal_masuk' => $tanggal_masuk]);
+																'tanggal_masuk' => $tanggal_masuk]);
 		};
-    	// $this->Validate($request, [
-	    // 	'jumlah' => 'required|numeric',
-	    // 	'tanggal_masuk' => 'required|date',
-	    // 	'tujuan_tinggal' => 'required',
-		// ]);
-		// // Memeriksa keberadaan pendaftaran pada database
-		// if(Daftar_asrama_reguler::where(['id_user'=>Auth::User()->id])->count() > 0){
-    	// 	$dashboard = $this->getInitialDashboard();
-		// 	// Mengotak-atik tanggal
-		// 	$i = 0;
-		// 	foreach ($dashboard['reguler'] as $reg) {
-		// 		$tanggal_daftar[$i] = $this->date($reg->created_at);
-		// 		$tanggal_masuk[$i] = $this->dateTanggal($reg->tanggal_masuk);
-		// 		$i += 1;
-		// 	}
-		// 	return view('dashboard.penghuni.infoPendaftaran', $this->getInitialDashboard())->with([
-		// 						        			'tanggal_daftar' => $tanggal_daftar,
-		// 						        			'tanggal_masuk' => $tanggal_masuk]);
-		// }else{
-		// 	Daftar_asrama_reguler::create([
-		// 		'id_user' => Auth::User()->id,
-        //         'preference' => $request->preference,
-		// 		'lokasi_asrama' => $request->lokasi_asrama,
-		// 		'verification' => 0,
-        //         'is_difable' =>$request->difable,
-        //         'is_internasional' => $request->international,
-        //         'tanggal_masuk' => $request->tanggal_masuk,
-        //         'status_mahasiswa' => $request->mahasiswa,
-        //         'status_beasiswa' => $request->beasiswa,
-        //         'ket_difable' => $request->ket_difable
-		// 	]);
-    	// 	$dashboard = $this->getInitialDashboard();
-		// 	// Mengotak-atik display tanggal
-		// 	$i = 0;
-		// 	foreach ($dashboard['reguler'] as $reg) {
-		// 		$tanggal_daftar[$i] = $this->date($reg->created_at);
-		// 		$tanggal_masuk[$i] = $this->dateTanggal($reg->tanggal_masuk);
-		// 		$i += 1;
-		// 	}
-		// 	Session::flash('status2','Pendaftaran berhasil dilakukan, silahkan lakukan pembayaran dan lakukan konfirmasi pada petugas kami untuk bisa melakukan aktivasi dan finalisasi.');
-		// 	return view('dashboard.penghuni.infoPendaftaran', $this->getInitialDashboard())->with([
-		// 									        			'tanggal_daftar' => $tanggal_daftar,
-		// 						        						'tanggal_masuk' => $tanggal_masuk]);
-		// };
 
     }
 }
