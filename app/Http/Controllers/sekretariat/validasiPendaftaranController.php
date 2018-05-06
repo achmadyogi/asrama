@@ -41,6 +41,9 @@ class validasiPendaftaranController extends Controller
     	return view('dashboard.sekretariat.validasiPendaftaran', $this->getEditPeriode())->with($this->getPendaftaranPenghuni());
     }
 
+    // protected function inboundNonReg(Request $request){
+    //     echo($request->id_daftar);
+    // }
     protected function inboundNonReg(Request $request){
         $this->Validate($request, [
             'tanggal_masuk' => 'required|date',
@@ -132,6 +135,8 @@ class validasiPendaftaranController extends Controller
                     }
                 }
             }
+
+            //dd($daftarNonReg);
             // Ambil satu kamar jika pilihan setidaknya ada satu, dan jika tidak ada pilihan akan dikembalikan
             if($a - 1 != 0){
                 $pick_kamar = array_rand($collect_id_kamar,1);
@@ -224,79 +229,90 @@ class validasiPendaftaranController extends Controller
         }
     }
 
-    protected function inboundReg(Request $request){
-        $this->Validate($request, [
-            'tanggal_masuk' => 'required|date',
-            'lama_tinggal' => 'required|numeric',
-        ]);
 
+    // protected function inboundReg(Request $request) {
+    //     echo($request->id_daftar_reguler);
+    // }
+    
+    protected function inboundReg(Request $request){
+        
         // GENERATE KAMAR
         // memeriksa apakah id daftar sudah tersedia di kamar penghuni
-        if(Kamar_penghuni::where(['daftar_asrama_id'=>$request->id_daftar,
-                                  'daftar_asrama_type'=>'daftar_asrama_reguler'])->count() < 1){
+        if(Kamar_penghuni::where(['daftar_asrama_id'=>$request->id_daftar_reguler,'daftar_asrama_type'=>'daftar_asrama_reguler'])->count() < 1){
             // Mendapatkan informasi yang dibutuhkan
-            $daftarReg = Daftar_asrama_reguler::find(['id_daftar' => $request->id_daftar])->take(1);
+            $daftarReg = Daftar_asrama_reguler::find(['id_daftar' => $request->id_daftar_reguler])->take(1);
             foreach ($daftarReg as $daftar) {
-                $difable_reguler = $daftar->is_difable;
-                $preference_reguler = $daftar->preference;
-                $kelamin_reguler = $daftar->user_penghuni->jenis_kelamin;
-                $lokasi_reguler = $daftar->lokasi_asrama;
+                $difable = $daftar->is_difable;
+                $preference = $daftar->preference;
+                $kelamin = $daftar->user_penghuni->jenis_kelamin;
+                $lokasi = $daftar->lokasi_asrama;
+                $international = $daftar->is_international;
             }
+            //dd($daftarReg);
             // Parameter 1 - Kamar untuk penghuni reguler (v)
-            $kamarReguler = DB::select("SELECT asrama.id_asrama, asrama.lokasi_asrama, gedung.id_gedung, 
-                                    room.id_kamar, room.id_gedung, room.nama, kapasitas, status, room.gender, which_user, 
-                                    room.is_difable, idKamar, id_checkout, id_user, id_daftar FROM gedung 
-                                LEFT JOIN asrama ON gedung.id_asrama = asrama.id_asrama 
-                                RIGHT JOIN 
-                                    (SELECT kamar.id_kamar, kamar.id_gedung, kamar.nama, kapasitas, 
-                                            status, kamar.gender, which_user, kamar.is_difable, idKamar, 
-                                            id_checkout, id_user, id_daftar FROM kamar 
-                                            LEFT JOIN 
-                                                (SELECT id_kamar as idKamar, id_checkout, id_user, id_daftar 
-                                                    FROM kamar_penghuni 
-                                                    LEFT JOIN 
-                                                        (SELECT id_checkout, id_user, id_daftar FROM daftar_asrama_reguler 
-                                                            LEFT JOIN checkout ON checkout.daftar_asrama_id = daftar_asrama_reguler.id_daftar 
-                                                                AND checkout.daftar_asrama_type = 'Daftar_asrama_reguler') 
-                                                                AS reguler 
-                                                                ON kamar_penghuni.daftar_asrama_id = reguler.id_daftar 
-                                                                AND kamar_penghuni.daftar_asrama_type = 'Daftar_asrama_reguler') 
-                                                                AS kamarReguler 
-                                                                ON kamar.id_kamar = kamarReguler.idKamar) 
-                                                                AS room ON room.id_gedung = gedung.id_gedung 
-                                                                WHERE room.which_user = 3 
-                                                                AND asrama.lokasi_asrama = ?",[$lokasi]);
+            $kamarReguler = DB::select("SELECT asrama.id_asrama, asrama.lokasi_asrama, gedung.id_gedung, room.id_kamar, room.id_gedung, room.nama, kapasitas, status, room.gender, which_user, room.is_difable, idKamar, id_checkout, id_user, id_daftar FROM gedung 
+            LEFT JOIN asrama ON gedung.id_asrama = asrama.id_asrama 
+            RIGHT JOIN (SELECT kamar.id_kamar, kamar.id_gedung, kamar.nama, kapasitas, status, kamar.gender, which_user, kamar.is_difable, idKamar, id_checkout, id_user, id_daftar FROM kamar 
+                LEFT JOIN (SELECT id_kamar as idKamar, id_checkout, id_user, id_daftar FROM kamar_penghuni 
+                LEFT JOIN (SELECT id_checkout, id_user, id_daftar FROM daftar_asrama_reguler 
+                    LEFT JOIN checkout ON checkout.daftar_asrama_id = daftar_asrama_reguler.id_daftar AND checkout.daftar_asrama_type = 'Daftar_asrama_reguler') AS reguler ON kamar_penghuni.daftar_asrama_id = reguler.id_daftar AND kamar_penghuni.daftar_asrama_type = 'Daftar_asrama_reguler') AS kamarReguler ON kamar.id_kamar = kamarReguler.idKamar) AS room ON room.id_gedung = gedung.id_gedung WHERE room.which_user IN (1,2) AND asrama.lokasi_asrama = ?",[$lokasi]);
             $a = 0;
             foreach ($kamarReguler as $kamar) {
                 // Parameter 2 - Periksa disabilitas
-                if($kamar->is_difable == $difable_reguler){
+                if($kamar->is_difable == $difable){
                     // Parameter 3 - Periksa kamar apakah dapat dihuni atau tidak
                     if($kamar->status == 1){
                         // Parameter 4 - Periksa Gender
-                        if($kamar->gender == $kelamin_reguler){
+                        if($kamar->gender == $kelamin){
                             // Periksa preferensi
                             if($preference == 1){
                                 // Kalo dia pengen sendiri, harus cari kamar yang isi dua biar hemat
                                 if($kamar->kapasitas == 2){
                                     // Periksa apakah kamar masih dihuni penghuni sebelumnya
-                                    if(Kamar_penghuni::where(['id_kamar'=>$kamar->id_kamar])->count() < 1){
+                                    $cekKamar = DB::select("SELECT kamar_penghuni.id_kamar, kamar_penghuni.daftar_asrama_id, kamar_penghuni.daftar_asrama_type, checkout.id_checkout FROM kamar_penghuni LEFT JOIN checkout ON checkout.daftar_asrama_id = kamar_penghuni.daftar_asrama_id AND checkout.daftar_asrama_type = kamar_penghuni.daftar_asrama_type WHERE kamar_penghuni.id_kamar = :id_kamar AND checkout.id_checkout = NULL",[$kamar->id_kamar]);
+                                    // hitung penghuni dalam kamar tersebut
+                                    $hit = 0;
+                                    foreach ($cekKamar as $ck) {
+                                        $hit += 1;
+                                    }
+                                    // ambil kamarnya jika isinya nggak ada
+                                    if($hit == 0){
                                         $collect_id_kamar[$a] = $kamar->id_kamar;
+                                        $kapasitas_kamar[$a] = $kamar->kapasitas;
                                         $a += 1;
                                     }
                                 }
                             }elseif($preference == 2){
                                 // Kalo dia pengen berdua, harus cari kamar yang isi dua
                                 if($kamar->kapasitas == 2){
-                                    if(Kamar_penghuni::where(['id_kamar'=>$kamar->id_kamar])->count() < 2){
+                                    // Periksa apakah kamar masih dihuni penghuni sebelumnya
+                                    $cekKamar = DB::select("SELECT kamar_penghuni.id_kamar, kamar_penghuni.daftar_asrama_id, kamar_penghuni.daftar_asrama_type, checkout.id_checkout FROM kamar_penghuni LEFT JOIN checkout ON checkout.daftar_asrama_id = kamar_penghuni.daftar_asrama_id AND checkout.daftar_asrama_type = kamar_penghuni.daftar_asrama_type WHERE kamar_penghuni.id_kamar = :id_kamar AND checkout.id_checkout = NULL",[$kamar->id_kamar]);
+                                    // hitung penghuni dalam kamar tersebut
+                                    $hit = 0;
+                                    foreach ($cekKamar as $ck) {
+                                        $hit += 1;
+                                    }
+                                    // ambil kamarnya jika isinya nggak ada
+                                    if($hit < 2){
                                         $collect_id_kamar[$a] = $kamar->id_kamar;
+                                        $kapasitas_kamar[$a] = $kamar->kapasitas;
                                         $a += 1;
                                     }
                                 }
                             }elseif($preference == 3){
                                 // Kalo dia pengen bertiga, harus cari kamar yang isi tiga
                                 if($kamar->kapasitas == 3){
-                                    if(Kamar_penghuni::where(['id_kamar'=>$kamar->id_kamar])->count() < 3){
+                                    // Periksa apakah kamar masih dihuni penghuni sebelumnya
+                                    $cekKamar = DB::select("SELECT kamar_penghuni.id_kamar, kamar_penghuni.daftar_asrama_id, kamar_penghuni.daftar_asrama_type, checkout.id_checkout FROM kamar_penghuni LEFT JOIN checkout ON checkout.daftar_asrama_id = kamar_penghuni.daftar_asrama_id AND checkout.daftar_asrama_type = kamar_penghuni.daftar_asrama_type WHERE kamar_penghuni.id_kamar = :id_kamar AND checkout.id_checkout = NULL",[$kamar->id_kamar]);
+                                    // hitung penghuni dalam kamar tersebut
+                                    $hit = 0;
+                                    foreach ($cekKamar as $ck) {
+                                        $hit += 1;
+                                    }
+                                    // ambil kamarnya jika isinya nggak ada
+                                    if($hit < 3){
                                         $collect_id_kamar[$a] = $kamar->id_kamar;
+                                        $kapasitas_kamar[$a] = $kamar->kapasitas;
                                         $a += 1;
                                     }
                                 }
@@ -305,7 +321,7 @@ class validasiPendaftaranController extends Controller
                     }
                 }
             }
-            // Ambil satu kamar jika pilihan setidaknya ada satu, dan jika tidak ada pilihan akan dikembalikan
+            
             if($a - 1 != 0){
                 $pick_kamar = array_rand($collect_id_kamar,1);
             }else{
@@ -317,11 +333,15 @@ class validasiPendaftaranController extends Controller
             // GENERATE TAGIHAN
             // Ambil id gedung
             $id_kamar = DB::select("SELECT asrama.id_asrama, bangunan.id_gedung, bangunan.id_kamar FROM asrama RIGHT JOIN (SELECT kamar.id_kamar, gedung.id_gedung, gedung.id_asrama FROM kamar LEFT JOIN gedung ON kamar.id_gedung = gedung.id_gedung) AS bangunan ON bangunan.id_asrama = asrama.id_asrama WHERE bangunan.id_kamar = ?",[$collect_id_kamar[$pick_kamar]]);
+            
+            //dd($id_kamar);
             foreach ($id_kamar as $kamar) {
-                $id_k = $kamar->id_gedung;
+                $id_k = $kamar->id_asrama;
             }
+            echo($kapasitas_kamar[$pick_kamar]." ".$id_k);
             // Ambil tarif
-            $tarif = DB::select('SELECT * FROM tarif WHERE id_asrama = :id_asrama AND tempo = :tempo', ['id_asrama'=>$id_k,'tempo'=>$request->tempo]);       
+            $tarif = DB::select('SELECT * FROM tarif WHERE id_asrama = :id_asrama AND kapasitas_kamar = :kap', ['id_asrama'=>$id_k, 'kap'=>$kapasitas_kamar[$pick_kamar]]);       
+            //dd($tarif);
             foreach ($tarif as $tarif){
                 $sarjana = $tarif->tarif_sarjana;
                 $pasca_sarjana = $tarif->tarif_pasca_sarjana;
@@ -329,7 +349,7 @@ class validasiPendaftaranController extends Controller
                 $umum = $tarif->tarif_umum;
             }
             // Periksa pendaftar apakah S1, S2, S3, atau umum
-            $strata = DB::select("SELECT strata, prodi, id_daftar, id FROM prodi RIGHT JOIN (SELECT user_nim.id_prodi AS prodi, id_daftar, id FROM user_nim RIGHT JOIN (SELECT id_daftar, id FROM daftar_asrama_reguler LEFT JOIN users ON daftar_asrama_reguler.id_user = users.id) AS penghuni ON penghuni.id = user_nim.id_user) AS nim ON nim.prodi = prodi.id_prodi WHERE nim.id_daftar = ?",[$request->id_daftar]);
+            $strata = DB::select("SELECT strata, prodi, id_daftar, id FROM prodi RIGHT JOIN (SELECT user_nim.id_prodi AS prodi, id_daftar, id FROM user_nim RIGHT JOIN (SELECT id_daftar, id FROM daftar_asrama_reguler LEFT JOIN users ON daftar_asrama_reguler.id_user = users.id) AS penghuni ON penghuni.id = user_nim.id_user) AS nim ON nim.prodi = prodi.id_prodi WHERE nim.id_daftar = ?",[$request->id_daftar_reguler]);
             foreach($strata as $strata){
                 $stra = $strata->strata;
             }
@@ -349,35 +369,41 @@ class validasiPendaftaranController extends Controller
             // Hitung total tagihan
             if($satuan_tagihan == NULL){
                 if($umum != NULL){
-                    $tagihan_total = $umum*$request->lama_tinggal;
+                    if($preference == 1){
+                        $tagihan_total = $umum*$request->lama_tinggal*$kapasitas_kamar[$pick_kamar];
+                    }else{
+                        $tagihan_total = $umum*$request->lama_tinggal;
+                    }
                 }else{
                     Session::flash('status1','Kamar tidak tersedia atau tarif tidak tersedia.');
                     return view('dashboard.sekretariat.validasiPendaftaran', $this->getEditPeriode())->with($this->getPendaftaranPenghuni());
                 }
             }
             else{
-                $tagihan_total = $satuan_tagihan*$request->lama_tinggal;
+                if($preference == 1){
+                    $tagihan_total = $satuan_tagihan*$request->lama_tinggal*$kapasitas_kamar[$pick_kamar];
+                }else{
+                    $tagihan_total = $satuan_tagihan*$request->lama_tinggal;
+                }
             }
             // Masukkan tagihan ke database
             Tagihan::create([
-                    'daftar_asrama_id' => $request->id_daftar,
+                    'daftar_asrama_id' => $request->id_daftar_reguler,
                     'daftar_asrama_type' => 'daftar_asrama_reguler',
                     'jumlah_tagihan' => $tagihan_total
                     ]);
 
             // Isi table kamar penghuni
             $kamar_penghuni_baru = Kamar_penghuni::create([
-                                    'daftar_asrama_id' => $request->id_daftar,
+                                    'daftar_asrama_id' => $request->id_daftar_reguler,
                                     'daftar_asrama_type' => 'Daftar_asrama_reguler',
                                     'id_kamar' => $collect_id_kamar[$pick_kamar]
                                     ]);
 
             // Update verification untuk disetujui
-            $setuju = Daftar_asrama_reguler::find($request->id_daftar);
+            $setuju = Daftar_asrama_reguler::find($request->id_daftar_reguler);
             $setuju->verification = 1;
-            $setuju->tanggal_masuk = $request->tanggal_masuk;
-            $setuju->lama_tinggal = $request->lama_tinggal;
-            $setuju->tempo = $request->tempo;
+            $setuju->tanggal_masuk = $request->tanggal_masuk_reguler;
             $setuju->save();
 
             Session::flash('status2','Verifikasi berhasil dilakukan. Proses selanjutnya adalah pembayaran untuk rencana tinggal yang sudah disetujui.');

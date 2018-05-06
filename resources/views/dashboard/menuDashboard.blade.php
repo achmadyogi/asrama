@@ -45,9 +45,9 @@
 		<div class="sider_pan" onclick="dapatkanId('pan_akun')" style="cursor: pointer;"><b><i class="fa fa-angle-down"></i> Manajemen Akun</b></div>
 		<div class="sider_body" id="pan_akun" style="display: block;">
 			@if($userPenghuni != '0')
-            	<a href="#">Edit Data Diri</a><br>
+            	<a href="{{route('edit_data_diri')}}">Edit Data Diri</a><br>
             	@if($userNim != '0')
-            		<a href="#">Edit NIM</a><br>
+            		<a href="{{route('lihat_nim')}}">Edit NIM</a><br>
             	@endif
             @endif
             <a href="#">Ganti Username</a><br>
