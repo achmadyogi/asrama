@@ -48,21 +48,18 @@ class tambahPeriodeController extends Controller
 	    			'keterangan' => $request->keterangan,
 	    		]);
         Session::flash('status2', 'Periode baru berhasil ditambahkan silahkan periksa tabel periode.');
-    	return view('dashboard.sekretariat.edit_periode', $this->getEditPeriode());
+    	return redirect()->back();
     }
 
     protected function editPeriode(Request $request){
-        $this->Validate($request, [
-            'tanggal_pendaftaran_dibuka' => $request->tanggal_buka_daftar,
-            'tanggal_pendaftaran_ditutup' => $request->tanggal_tutup_daftar,
-        ]);
 
         $edit = Periode::find($request->id_periode);
-        $edit->tanggal_buka_daftar = $request->tanggal_buka_daftar;
-        $edit->tanggal_tutup_daftar = $request->tanggal_tutup_daftar;
+        $edit->nama_periode = $request->nama_periode_edit;
+        $edit->tanggal_buka_daftar = $request->tanggal_pendaftaran_dibuka;
+        $edit->tanggal_tutup_daftar = $request->tanggal_pendaftaran_ditutup;
         $edit->save();
 
         Session::flash('status2', 'Periode berhasil diedit.');
-        return view('dashboard.sekretariat.edit_periode', $this->getEditPeriode());
+        return redirect()->back();
     }
 }

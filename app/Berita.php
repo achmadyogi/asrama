@@ -8,7 +8,7 @@ class Berita extends Model
 {
     protected $table = 'berita';
     protected $primaryKey = 'id_berita';
-    protected $fillable = ['title', 'isi', 'file'];
+    protected $fillable = ['id_penulis','title', 'isi', 'file'];
 
     public function user(){
     	return $this->belongsTo('App/User','id_penulis');

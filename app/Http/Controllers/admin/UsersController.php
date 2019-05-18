@@ -12,7 +12,7 @@ use App\Pengelola;
 use App\User;
 use App\Blacklist;
 use App\Asrama;
-
+use DormAuth;
 use DB;
 
 class UsersController extends Controller
@@ -29,7 +29,7 @@ class UsersController extends Controller
 		if (Auth::guest()) {
     		return redirect('/home');
     	} else {
-    		$user = Auth::user();
+    		$user = DormAuth::User();
 
     		if(!($user->is_admin == '1')) {
     			return redirect('/dashboard');
@@ -44,7 +44,7 @@ class UsersController extends Controller
 		if (Auth::guest()) {
     		return redirect('/home');
     	} else {
-    		$user = Auth::user();
+    		$user = DormAuth::User();
 
     		if(!($user->is_admin == '1')) {
     			return redirect('/dashboard');
@@ -62,7 +62,7 @@ class UsersController extends Controller
 		if (Auth::guest()) {
     		return redirect('/home');
     	} else {
-    		$user = Auth::user();
+    		$user = DormAuth::User();
 
     		if(!($user->is_admin == '1')) {
     			return redirect('/dashboard');

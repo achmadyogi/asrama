@@ -12,7 +12,7 @@
     <button id="dir_down" style="border: none; background-color: transparent;"><b><i class="fa fa-angle-down" style="font-size: 24px;"></i></b></button>
     <button id="dir_up" style="border: none; background-color: transparent;"><b><i class="fa fa-angle-up" style="font-size: 24px;"></i></b></button>
         <ul class="sub_dir">
-            <li class="sub_dir_list"><a href="/informasi/pendaftaran">Pendaftaran</a></li>
+            <li class="sub_dir_list"><a href="{{url('/informasi/pendaftaran')}}">Pendaftaran</a></li>
             <li class="sub_dir_list"><a href="{{url('/berita')}}">Berita</a></li>
             <li class="sub_dir_list"><a href="{{url('/pengumuman')}}">Pengumuman</a></li>
             <li class="sub_dir_list" id="active"><a href="{{ route('peta') }}">Peta</a></li>

@@ -20,7 +20,12 @@ class CreatePembayaranTable extends Migration
             $table->dateTime('tanggal_bayar')->comment('sesuai tanggal pembayaran bank');
             $table->string('nomor_transaksi')->comment('nomor pada slip pembayaran bank');
             $table->integer('jumlah_bayar');
+            $table->boolean('jenis_pembayaran')->comment('0 = host-to-host, 1 = rekening penampungan');
             $table->text('keterangan');
+            $table->string('nama_pengirim');
+            $table->string('bank_asal');
+            $table->boolean('is_accepted');
+            $table->text('file');
             $table->timestamps();
         });
     }

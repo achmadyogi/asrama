@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => 'admin@asrama.itb.ac.id',
-        'name' => 'UPT Asrama ITB',
+        'address' => 'sekretariat@asrama.itb.ac.id',
+        'name' => 'UPT ASRAMA ITB',
     ],
 
     /*

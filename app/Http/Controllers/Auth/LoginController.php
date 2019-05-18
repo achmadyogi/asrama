@@ -43,8 +43,17 @@ class LoginController extends Controller
         return 'username';
     }
 
+    public function email()
+    {
+        return 'email';
+    }
+
     protected function credentials(Request $request)
     {
-        return ['username'=>$request->{$this->username()}, 'password'=>$request->password,'verification'=>'1'];
+        if (filter_var($request->username, FILTER_VALIDATE_EMAIL) == FALSE) {
+            return ['username'=>$request->username, 'password'=>$request->password,'verification'=>'1'];
+        }else{
+            return ['email'=>$request->username, 'password'=>$request->password,'verification'=>'1'];
+        }
     }
 }

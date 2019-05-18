@@ -12,8 +12,8 @@
     <button id="dir_down" style="border: none; background-color: transparent;"><b><i class="fa fa-angle-down" style="font-size: 24px;"></i></b></button>
     <button id="dir_up" style="border: none; background-color: transparent;"><b><i class="fa fa-angle-up" style="font-size: 24px;"></i></b></button>
         <ul class="sub_dir">
-            <li class="sub_dir_list"><a href="/about">Gambaran Umum</a></li>
-            <li class="sub_dir_list" id="active"><a href="/about/struktur_organisasi">Struktur Organisasi</a></li>
+            <li class="sub_dir_list"><a href="{{url('/about')}}">Gambaran Umum</a></li>
+            <li class="sub_dir_list" id="active"><a href="{{url('/about/struktur_organisasi')}}">Struktur Organisasi</a></li>
         </ul>
     </div>
     </div>
@@ -205,67 +205,68 @@
             </ul>
         </div><br>
     </div><br><br><br><br>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="media">
-                <div class="media-left">
-                    <img src="{{ asset('img/tentang/agung.jpg') }}" alt="agung" width="100px"><br><br>
-                </div>
-                <div class="media-body">
-                    <p><b>Kepala UPT Asrama ITB</b><br>
-                        <span style="display: inline-block; width: 100px;">Nama</span>: Dr. Ir. Agung Wiyono Hadi Soeharno, MS, M.Eng.<br>
-                        <span style="display: inline-block; width: 100px;">Email</span>: ag.wiyono@yahoo.com<br>
-                    </p>
-                </div>
-            </div>
-            <div class="media">
-                <div class="media-left">
-                    <img src="{{ asset('img/tentang/dadan.jpg') }}" alt="agung" width="100px"><br><br>
-                </div>
-                <div class="media-body">
-                    <p><b>Kepala Bidang Perencanaan dan Monitoring</b><br>
-                        <span style="display: inline-block; width: 100px;">Nama</span>: Dr. Eng. Raden Dadan Ramdan, ST.<br>
-                        <span style="display: inline-block; width: 100px;">Email</span>: dadan@material.itb.ac.id<br>
-                    </p>
-                </div>
-            </div>
-            <div class="media">
-                <div class="media-left">
-                    <img src="{{ asset('img/tentang/trides.jpg') }}" alt="agung" width="100px"><br><br>
-                </div>
-                <div class="media-body">
-                    <p><b>Kepala Bidang Urusan Jatinangor</b><br>
-                        <span style="display: inline-block; width: 100px;">Nama</span>: Dr. Tri Desmana Rachmildha ST, MT.<br>
-                        <span style="display: inline-block; width: 100px;">Email</span>: trides@gmail.com<br>
-                    </p>
-                </div>
-            </div>       
-        </div>
-        <div class="col-md-6">
-            <div class="media">
-                <div class="media-left">
-                    <img src="{{ asset('img/tentang/pak_rena.jpg') }}" alt="agung" width="100px"><br><br>
-                </div>
-                <div class="media-body">
-                    <p><b>Kepala Bidang Operasional</b><br>
-                        <span style="display: inline-block; width: 100px;">Nama</span>: Rena Muhammad Tohirin, S.Si, MT.<br>
-                        <span style="display: inline-block; width: 100px;">Email</span>: rena@staff.itb.ac.id<br>
-                    </p>
-                </div>
-            </div>
-            <div class="media">
-                <div class="media-left">
-                    <img src="{{ asset('img/tentang/Fazat1.jpg') }}" alt="agung" width="100px"><br><br>
-                </div>
-                <div class="media-body">
-                    <p><b>Kepala Bidang Manajemen dan Sistem Informasi</b><br>
-                        <span style="display: inline-block; width: 100px;">Nama</span>: Dr. Fazat Nur Azizah ST, M.Sc.<br>
-                        <span style="display: inline-block; width: 100px;">Email</span>: fazat@informatika.org<br>
-                    </p>
-                </div>
-            </div>      
-        </div>
-    </div>
+   
+    <!--<div class="row">-->
+    <!--    <div class="col-md-6">-->
+    <!--        <div class="media">-->
+    <!--            <div class="media-left">-->
+    <!--                <img src="{{ asset('img/tentang/agung.jpg') }}" alt="agung" width="100px"><br><br>-->
+    <!--            </div>-->
+    <!--            <div class="media-body">-->
+    <!--                <p><b>Kepala UPT Asrama ITB</b><br>-->
+    <!--                    <span style="display: inline-block; width: 100px;">Nama</span>: Dr. Ir. Agung Wiyono Hadi Soeharno, MS, M.Eng.<br>-->
+    <!--                    <span style="display: inline-block; width: 100px;">Email</span>: ag.wiyono@yahoo.com<br>-->
+    <!--                </p>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <div class="media">-->
+    <!--            <div class="media-left">-->
+    <!--                <img src="{{ asset('img/tentang/dadan.jpg') }}" alt="agung" width="100px"><br><br>-->
+    <!--            </div>-->
+    <!--            <div class="media-body">-->
+    <!--                <p><b>Kepala Bidang Perencanaan dan Monitoring</b><br>-->
+    <!--                    <span style="display: inline-block; width: 100px;">Nama</span>: Dr. Eng. Raden Dadan Ramdan, ST.<br>-->
+    <!--                    <span style="display: inline-block; width: 100px;">Email</span>: dadan@material.itb.ac.id<br>-->
+    <!--                </p>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <div class="media">-->
+    <!--            <div class="media-left">-->
+    <!--                <img src="{{ asset('img/tentang/trides.jpg') }}" alt="agung" width="100px"><br><br>-->
+    <!--            </div>-->
+    <!--            <div class="media-body">-->
+    <!--                <p><b>Kepala Bidang Urusan Jatinangor</b><br>-->
+    <!--                    <span style="display: inline-block; width: 100px;">Nama</span>: Dr. Tri Desmana Rachmildha ST, MT.<br>-->
+    <!--                    <span style="display: inline-block; width: 100px;">Email</span>: trides@gmail.com<br>-->
+    <!--                </p>-->
+    <!--            </div>-->
+    <!--        </div>       -->
+    <!--    </div>-->
+    <!--    <div class="col-md-6">-->
+    <!--        <div class="media">-->
+    <!--            <div class="media-left">-->
+    <!--                <img src="{{ asset('img/tentang/pak_rena.jpg') }}" alt="agung" width="100px"><br><br>-->
+    <!--            </div>-->
+    <!--            <div class="media-body">-->
+    <!--                <p><b>Kepala Bidang Operasional</b><br>-->
+    <!--                    <span style="display: inline-block; width: 100px;">Nama</span>: Rena Muhammad Tohirin, S.Si, MT.<br>-->
+    <!--                    <span style="display: inline-block; width: 100px;">Email</span>: rena@staff.itb.ac.id<br>-->
+    <!--                </p>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        <div class="media">-->
+    <!--            <div class="media-left">-->
+    <!--                <img src="{{ asset('img/tentang/Fazat1.jpg') }}" alt="agung" width="100px"><br><br>-->
+    <!--            </div>-->
+    <!--            <div class="media-body">-->
+    <!--                <p><b>Kepala Bidang Manajemen dan Sistem Informasi</b><br>-->
+    <!--                    <span style="display: inline-block; width: 100px;">Nama</span>: Dr. Fazat Nur Azizah ST, M.Sc.<br>-->
+    <!--                    <span style="display: inline-block; width: 100px;">Email</span>: fazat@informatika.org<br>-->
+    <!--                </p>-->
+    <!--            </div>-->
+    <!--        </div>      -->
+    <!--    </div>-->
+    <!--</div>-->
 </div>
 <br><br>
 @endsection

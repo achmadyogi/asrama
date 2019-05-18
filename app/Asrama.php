@@ -9,6 +9,7 @@ class Asrama extends Model
     protected $table = 'asrama';
     protected $primaryKey = 'id_asrama';
     public $timestamps = false;
+    protected $fillable = ['nama','deskripsi','lokasi_asrama','alamat','filename','latitude','longitude'];
 	
 	public function getNama($string)
 	{

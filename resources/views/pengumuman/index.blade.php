@@ -11,7 +11,7 @@
     <button id="dir_down" style="border: none; background-color: transparent;"><b><i class="fa fa-angle-down" style="font-size: 24px;"></i></b></button>
     <button id="dir_up" style="border: none; background-color: transparent;"><b><i class="fa fa-angle-up" style="font-size: 24px;"></i></b></button>
         <ul class="sub_dir">
-            <li class="sub_dir_list"><a href="/informasi/pendaftaran">Pendaftaran</a></li>
+            <li class="sub_dir_list"><a href="{{url('/informasi/pendaftaran')}}">Pendaftaran</a></li>
             <li class="sub_dir_list"><a href="{{url('/berita')}}">Berita</a></li>
             <li class="sub_dir_list" id="active"><a href="{{url('/pengumuman')}}">Pengumuman</a></li>
             <li class="sub_dir_list"><a href="{{ route('peta') }}">Peta</a></li>
@@ -79,14 +79,19 @@
 @section('content')
 <br>
 <div class="container">
-    @foreach($list_pengumuman as $pengumuman)
-    <h2><b>{{ $pengumuman->title }}</b></h2>
-    <p><?php
-        echo substr($pengumuman->isi,0,150).'...';
-        ?>
-        <br><br>
-    <a href="{{url('/pengumuman')}}/{{$pengumuman->id_pengumuman}}">Cari Tahu >></a></p>
-    <hr>
-    @endforeach
+    @if($list_pengumuman == '0')
+        <h2>Belum terdapat berita untuk saat ini</h2>
+        <br>
+    @else
+        @foreach($list_pengumuman as $pengumuman)
+        <h2><b>{{ $pengumuman->title }}</b></h2>
+        <p><?php
+            echo substr($pengumuman->isi,0,150).'...';
+            ?>
+            <br><br>
+        <a href="{{url('/pengumuman')}}/{{$pengumuman->id_pengumuman}}">Cari Tahu >></a></p>
+        <hr>
+        @endforeach
+    @endif
 </div>
 @endsection

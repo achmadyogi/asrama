@@ -12,13 +12,11 @@ use App\User;
 use App\User_nim;
 use App\Prodi;
 use Session;
-use App\Http\Controllers\Traits\initialDashboard;
+use DormAuth;
 
 class dataPenghuniController extends Controller
 {
-	use initialDashboard;
-
-    protected function createPenghuni(Request $data){
+    public function createPenghuni(Request $data){
     	// TENTANG REGISTRASI
     	// Memeriksa apakah mahasiswa atau bukan
     	if($data->mahasiswa == 1){
@@ -26,26 +24,29 @@ class dataPenghuniController extends Controller
     		if($data->nomor_NIM == 1){
     			// Validasi NIM
 	    		$this->Validate($data,['nim' => 'required|string|size:8']);
-	    		$nomor_NIM = $data->nomor_NIM;
+	    		$nomor_NIM = $data->nim;
     		}else{
     			$nomor_NIM = '-';
     			$prod = Prodi::where(['id_fakultas'=>$data->fakultas])->get();
+    			echo $prod;
     			foreach ($prod as $prod) {
     				if(strpos($prod->nama_prodi, 'Tahap') !== false){
     					$id_prod = $prod->id_prodi;
     				}
     			}
     		}
+    	} else {
+    		$nomor_NIM = 0;
+    		$id_prod = 0;
+    		$data->registrasi = 0;
     	}
     	// Memeriksa input instansi apakah ITB atau bukan
 		if($data['instansi'] == NULL){
 			$instansi = 'Institut Teknologi Bandung';
 		}else{
 			$instansi = $data['instansi'];
-			$this->Validate($data,['instansi' => 'required']);
 		}
 		$this->Validate($data, [
-			'registrasi' => 'required|string|unique:user_nim,registrasi',
 	    	'nomor_identitas' => 'required|unique:user_penghuni,nomor_identitas',
 	    	'jenis_identitas' => 'required',
 	    	'tempat_lahir' => 'required',
@@ -59,27 +60,28 @@ class dataPenghuniController extends Controller
 	    	'kontak_darurat' => 'required',
 		]);
 		// Memeriksa keberadaan NIM dan memasukkannya bila belum ada
-		if($nomor_NIM != '-'){
+		if($nomor_NIM !== '-'){
     		//Mencari prodi
-    		$nim = substr(strval($data['nim']), 0, 3);
-    		if(Prodi::where(['id_prodi'=>$nim])->count() < 1){
+    		$nim = $data['nim'];
+    		$id_prod = substr(strval($data['nim']), 0, 3);
+    		if(Prodi::where(['id_prodi'=>$id_prod])->count() < 1){
     			Session::flash('status1','Kode nim Anda tidak tersedia dalam daftar Prodi di ITB. Gunakan NIM yang valid.');
-    		}elseif(User_nim::where(['id_prodi'=>$nim])->count() > 0){
+    		}elseif(User_nim::where(['nim'=>$nim])->count() > 0){
     			Session::flash('status1', 'NIM yang Anda masukkan sudah terdaftar pada database. Periksa NIM Anda kembali apakah sudah benar atau terdapat kesalahan.');
     			return redirect()->back();
     		}else{
     			$user_nim = User_nim::create([
-	    			'id_user' => Auth::User()->id,
-	    			'id_prodi' => $nim,
+	    			'id_user' => DormAuth::User()->id,
+	    			'id_prodi' => $id_prod,
 	    			'registrasi' => $data->registrasi,
-	    			'nim' => $data['nim'],
+	    			'nim' => $nim,
 	    			'status_nim' => 1,
 	    		]);
 	    		Session::flash('status2','Pendaftaran data diri penghuni berhasil dilakukan.');
     		}
     	}else{
     		$user_nim = User_nim::create([
-	    			'id_user' => Auth::User()->id,
+	    			'id_user' => DormAuth::User()->id,
 	    			'id_prodi' => $id_prod,
 	    			'registrasi' => $data->registrasi,
 	    			'nim' => $nomor_NIM,
@@ -88,11 +90,11 @@ class dataPenghuniController extends Controller
 	    	Session::flash('status2','Pendaftaran data diri penghuni berhasil dilakukan.');
     	}
 		// Memeriksa keberadaan penghuni dan memasukkannya bila belum ada
-		if(user_penghuni::where(['id_user'=>Auth::User()->id])->count() > 0){
+		if(user_penghuni::where(['id_user'=>DormAuth::User()->id])->count() > 0){
     		Session::flash('status1', 'Status kepenghunian Anda sudah terdaftar. Untuk mengedit status kepenghunian Anda, silahkan edit di aplikasi kepenghunian.');
     	}else{
 	    	$user_penghuni = User_penghuni::create([
-				'id_user' => Auth::User()->id,
+				'id_user' => DormAuth::User()->id,
 				'nomor_identitas' => $data['nomor_identitas'],
 				'jenis_identitas' => $data['jenis_identitas'],
 				'tempat_lahir' => $data['tempat_lahir'],
@@ -116,15 +118,17 @@ class dataPenghuniController extends Controller
 				'telepon_ortu_wali' => $data['telepon_ortu_wali'],
 			]);
     	}
-    	return view('dashboard.dashboard', $this->getInitialDashboard());
+    	return redirect()->route('dashboard');
 	}
 
 	protected function showNIM() {
-		$user = Auth::user();
-		$nim = User_nim::where('id_user', $user->id)->get();
-		$nama = $user->name;
-		return view('dashboard.penghuni.editNIM', $this->getInitialDashboard())->with(['nim'=>$nim,
-											   'nama'=>$nama]);
+		Session::flash('menu','editNim');
+		return view('dashboard.penghuni.editNIM');
+	}
+
+	protected function showRegistrasi() {
+		Session::flash('menu','editRegis');
+		return view('dashboard.penghuni.editRegistrasi');
 	}
 	
 	protected function editNIM (Request $request) {
@@ -137,9 +141,9 @@ class dataPenghuniController extends Controller
 		}elseif(User_nim::where(['nim'=>$nim_user])->count() > 0){
 			Session::flash('status1', 'NIM Anda sudah terdaftar pada database. Untuk mengganti NIM, silahkan masuk di aplikasi ganti NIM.');
 		}else{
-			$user = Auth::user();
+			$user = DormAuth::User();
 			$user_nim = $user->user_nim->first();
-			$user_nim->id_user = Auth::User()->id;
+			$user_nim->id_user = DormAuth::User()->id;
 			$user_nim->id_prodi = $id_prodi;
 			$user_nim->nim = $nim_user;
 			$user_nim->status_nim = 1;
@@ -147,32 +151,25 @@ class dataPenghuniController extends Controller
 			
 			Session::flash('status2','Pergantian NIM berhasil dilakukan.');
 		}
-    		
-    	return view('dashboard.dashboard', $this->getInitialDashboard());
+    	return redirect()->back();
+	}
+
+	protected function editRegistrasi (Request $request) {
+		
+		$user = DormAuth::User();
+		$prodi = User_nim::where('id_user', $user->id)->get();
+		$user_nim = $user->user_nim->first();
+		$user_nim->id_user = DormAuth::User()->id;
+		$user_nim->registrasi = $request->registrasi;
+		$user_nim->status_nim = 1;
+		$user_nim->save(); 
+		
+		Session::flash('status2','Pergantian Nomor Registrasi berhasil dilakukan.');
+    	return redirect()->back();
 	}
 
 	protected function edit_data_penghuni() {
-		if (Auth::guest()) {
-            return redirect('/login');
-        } else {
-            $user_penghuni_info = Auth::user()->user_penghuni;
-            // $nim = Auth::user()->nim;
-            // if (count($nim) == 0) $nim = null;
-			// else $nim = $nim[0];
-
-            if ($user_penghuni_info == null) {
-                return view('dashboard.penghuni.editDataPenghuni', $this->getInitialDashboard())
-                    ->with([
-                        'info_penghuni' => new UserPenghuni(),
-                        ]);
-            } else {
-                return view('dashboard.penghuni.editDataPenghuni', $this->getInitialDashboard())
-                    ->with([
-                        'info_penghuni' => $user_penghuni_info,
-                        ]);
-            }
-
-        }
+        return view('dashboard.penghuni.editDataPenghuni');
 	}
 
 	protected function save_data_penghuni(Request $data) {
@@ -191,10 +188,10 @@ class dataPenghuniController extends Controller
 		]);
 		
 		//Menyimpan data
-		$user = Auth::user();
-		$id = Auth::user()->id;
+		$user = DormAuth::User();
+		$id = DormAuth::User()->id;
 		$user_penghuni = $user->user_penghuni->where('id_user', $id)->first();
-		$user_penghuni->id_user = Auth::User()->id;
+		$user_penghuni->id_user = DormAuth::User()->id;
 		$user_penghuni->nomor_identitas = $data->nomor_identitas;
 		$user_penghuni->jenis_identitas = $data->jenis_identitas;
 		$user_penghuni->tempat_lahir = $data->tempat_lahir;
@@ -219,7 +216,7 @@ class dataPenghuniController extends Controller
 		$user_penghuni->save();
 
 		Session::flash('status2','Pergantian data penghuni berhasil dilakukan.');		
-		return view('dashboard.dashboard', $this->getInitialDashboard());
+		return redirect()->back();
 
 	}
 }

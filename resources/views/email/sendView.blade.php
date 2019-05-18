@@ -13,10 +13,10 @@
         color: white;
     }
     </style>
-    <img src="https://asrama.itb.ac.id/pembinaan/images/logoasrama3.png" width="200px" alt="logo">
-    <br><br>
+    <img src="https://asrama.itb.ac.id/pembinaan/images/logoasrama3.png" width="50px" alt="logo"><h2><b>UPT ASRAMA ITB</b></h2>
+    <br>
     Dear, {{$name}}
-    <br><br>
+    <br>
     <div class="verificationEmail">
         <p>Terimakasih telah bergabung dengan UPT Asrama ITB. Untuk melakukan verifikasi email,<br> Silahkan klik tombol dibawah ini.<br><br>
             <button type="button" class="button"><a href="{{ route('sendEmailDone',['email'=>$user->email, 'token_verification'=>$user->token_verification]) }}">disini</a></button>
@@ -28,7 +28,7 @@
         Gedung Campus Center Timur Lantai 2<br>
         Kode Pos: 40132<br>
         089615098438 | 089660552121 (telepon)<br>
-        Email: sekretariat.asramaitb@gmail.com<br>
+        Email: sekretariat@asrama.itb.ac.id<br>
     </address>
     <hr>
     <p style="font-size: 10px"><i>Pesan ini dikirim secara otomatis oleh sistem. Apabila hendak membalas<br>

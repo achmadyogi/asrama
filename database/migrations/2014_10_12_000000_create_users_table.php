@@ -27,6 +27,7 @@ class CreateUsersTable extends Migration
             $table->boolean('is_sekretariat');
             $table->boolean('is_pimpinan');
             $table->boolean('is_admin');
+            $table->string('foto_profil');
             $table->timestamps();
         });
     }

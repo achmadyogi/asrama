@@ -16,7 +16,7 @@ class Pengelola extends Model
      * @var array
      */
     protected $fillable = [
-        'id_user', 'id_asrama',
+        'id_user', 'id_asrama', 'is_superpengelola'
     ];
 
     /* public function user()

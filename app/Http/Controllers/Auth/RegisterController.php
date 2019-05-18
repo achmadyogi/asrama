@@ -79,6 +79,8 @@ class RegisterController extends Controller
             'is_sekretariat' => 0,
             'is_pimpinan' => 0,
             'is_admin' => 0,
+            'is_keuangan' => 0,
+            'is_eksternal' => 0,
 
         ]);
         $thisUser = User::findOrFail($user->id);

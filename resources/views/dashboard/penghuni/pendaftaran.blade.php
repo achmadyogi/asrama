@@ -1,26 +1,24 @@
 				<!-- PENGISIAN FORM DATA PENGHUNI DAN NIM PENGHUNI -->
-				@if($userPenghuni == '0')
+				@if(ITBdorm::DataUser(DormAuth::User()->id)->id_penghuni == NULL)
 				<h1 style="margin-top: 0px;"><b>Data Diri Penghuni</b></h1>
 				<p>Sebelum melanjutkan pada daftar aplikasi, silahkan melengkapi data diri Anda pada form di bawah ini.</p>
 				<form  method="POST" role="form" action="{{ route('daftar_penghuni') }}">
 					{{ csrf_field() }}
-					<div style="border: 1px solid #C9C9C9; border-radius: 5px;">
-						<div style="background-color: #E8E8E8; padding: 10px 15px 10px 15px">
-							Kemahasiswaan
-						</div>
-						<div style="padding: 10px 15px 10px 15px;"><br>
-							<div class="form-group{{ $errors->has('registrasi') ? ' has-error' : '' }}">
-								<input type="text" class="input" name="registrasi" placeholder="Nomor Registrasi" value="{{old('registrasi')}}"><br><br>
-								@if ($errors->has('registrasi'))
-	                                <span class="help-block">
-	                                    <strong>{{ $errors->first('registrasi') }}</strong>
-	                                </span>
-	                            @endif
-							</div>
+					<div class="sider">
+                    	<div style="margin-top: 0px; height: 4px; background-color: #0769B0; border-top-left-radius: 3px; border-top-right-radius: 3px;"></div>
+						<div class="sider_body" style="background-color: white; padding: 10px 15px 10px 15px;">
+                        	<h4><b>Data Kemahasiswaan</b></h4><hr>
 							<label>Apakah Anda mahasiswa ITB?</label><br>
-							<input id="mahasiswa" name="mahasiswa" type="radio" value="1" <?php if(Input::old('mahasiswa')== "1") { echo 'checked="checked"'; } ?> required> Yes, I am a student<br>
-							<input id="mahasiswa" name="mahasiswa" type="radio" value="0" <?php if(Input::old('mahasiswa')== "0") { echo 'checked="checked"'; } ?> required> No, I am not a student<br>
+							<input id="mahasiswa" name="mahasiswa" type="radio" value="1" <?php if(old('mahasiswa')== "1") { echo 'checked="checked"'; } ?> required> Yes, I am a student<br>
+							<input id="mahasiswa" name="mahasiswa" type="radio" value="0" <?php if(old('mahasiswa')== "0") { echo 'checked="checked"'; } ?> required> No, I am not a student<br>
+							<div id="non_itb" style="display: none;">
+								<br><input class="input" name="instansi" type="text" value="" placeholder="Nama Instansi"><br>
+							</div>
+							<div id="itb" style="display: none;">
+								<input class="input" name="instansi_itb" type="text" value="Institut Teknologi Bandung" disabled><br><br>
+							</div>
 							<div id="std">
+								<input type="hidden" name="registrasi" value="0">
 							</div>
 							<div id="m_nim">
 							</div>
@@ -40,6 +38,11 @@
 								$("input[type=radio][name=mahasiswa]").change(function(){
 									$('#fak').hide(500);
 								  	var mahasiswa = $(this).val();
+								  	if(mahasiswa == 0){
+								  		$('#non_itb').show(500);
+								  	}else{
+								  		$('#non_itb').hide(500);
+								  	}
 								  	var kode = 'mahasiswa';
 								  	$.post('mahasiswa',{
 								  		'kode': kode,
@@ -53,11 +56,10 @@
 							});
 						</script>
 					</div><br>
-					<div style="border: 1px solid #C9C9C9; border-radius: 5px;">
-						<div style="background-color: #E8E8E8; padding: 10px 15px 10px 15px">
-							Data Diri
-						</div>
-						<div style="padding: 10px 15px 10px 15px;"><br>
+					<div class="sider">
+                    	<div style="margin-top: 0px; height: 4px; background-color: #0769B0; border-top-left-radius: 3px; border-top-right-radius: 3px;"></div>
+						<div class="sider_body" style="background-color: white; padding: 10px 15px 10px 15px;">
+                        	<h4><b>Data Diri</b></h4><hr>
 							<div class="form-group{{ $errors->has('nomor_identitas') ? ' has-error' : '' }}">
 								<input id="nomor_identitas" class="input" name="nomor_identitas" type="text" value="{{old('nomor_identitas')}}" placeholder="Nomor Identitas" required><br>
 								@if ($errors->has('nomor_identitas'))
@@ -92,18 +94,18 @@
 		                        @endif
 							</div>
 							Golongan Darah:<br>
-							<input type="radio" name="gol_darah" value="O" <?php if(Input::old('gol_darah')== "O") { echo 'checked="checked"'; } ?> required> O
+							<input type="radio" name="gol_darah" value="O" <?php if(old('gol_darah')== "O") { echo 'checked="checked"'; } ?> required> O
 							<span style="display: inline-block; width: 50px;"></span>
-							<input type="radio" name="gol_darah" value="AB" required <?php if(Input::old('gol_darah')== "AB") { echo 'checked="checked"'; } ?>> AB
+							<input type="radio" name="gol_darah" value="AB" required <?php if(old('gol_darah')== "AB") { echo 'checked="checked"'; } ?>> AB
 							<span style="display: inline-block; width: 50px;"></span>
-							<input type="radio" name="gol_darah" value="A" <?php if(Input::old('gol_darah')== "A") { echo 'checked="checked"'; } ?> required> A
+							<input type="radio" name="gol_darah" value="A" <?php if(old('gol_darah')== "A") { echo 'checked="checked"'; } ?> required> A
 							<span style="display: inline-block; width: 50px;"></span>
-							<input type="radio" name="gol_darah" value="B" <?php if(Input::old('gol_darah')== "B") { echo 'checked="checked"'; } ?> required> B
+							<input type="radio" name="gol_darah" value="B" <?php if(old('gol_darah')== "B") { echo 'checked="checked"'; } ?> required> B
 							<span style="display: inline-block; width: 50px;"></span><br><br>
 							Jenis Kelamin:<br>
-							<input type="radio" name="kelamin" value="L" <?php if(Input::old('kelamin')== "L") { echo 'checked="checked"'; } ?> required> Laki-laki
+							<input type="radio" name="kelamin" value="L" <?php if(old('kelamin')== "L") { echo 'checked="checked"'; } ?> required> Laki-laki
 							<span style="display: inline-block; width: 50px;"></span>
-							<input type="radio" name="kelamin" value="P" <?php if(Input::old('kelamin')== "P") { echo 'checked="checked"'; } ?> required> Perempuan<br><br>
+							<input type="radio" name="kelamin" value="P" <?php if(old('kelamin')== "P") { echo 'checked="checked"'; } ?> required> Perempuan<br><br>
 							Asal Negara:<br>
 							<select id="country" name ="negara" value="{{old('negara')}}" required></select></br></br>
 							Propinsi/State:<br>
@@ -169,23 +171,15 @@
 	                                </span>
 	                            @endif
 							</div>
-							<div id="non_itb" style="display: none;">
-								<div class="form-group{{ $errors->has('instansi') ? ' has-error' : '' }}">
-									<input class="input" name="instansi" type="text" value="{{old('instansi')}}" placeholder="Nama Instansi"><br></div>
-								</div>
-							<div id="itb" style="display: none;">
-								<input class="input" name="instansi_itb" type="text" value="Institut Teknologi Bandung" disabled><br><br>
-							</div>
 							<script language="javascript">
 								populateCountries("country2");
 							</script>
 						</div>
 					</div><br>
-					<div style="border: 1px solid #C9C9C9; border-radius: 5px;">
-						<div style="background-color: #E8E8E8; padding: 10px 15px 10px 15px">
-							Data Orang Tua / Wali
-						</div>
-						<div style="padding: 10px 15px 10px 15px;"><br>
+					<div class="sider">
+                    	<div style="margin-top: 0px; height: 4px; background-color: #0769B0; border-top-left-radius: 3px; border-top-right-radius: 3px;"></div>
+						<div class="sider_body" style="background-color: white; padding: 10px 15px 10px 15px;">
+                        	<h4><b>Data Orang Tua/Wali</b></h4><hr>
 							<input class="input" name="nama_ortu_wali" type="text" value="{{old('nama_ortu_wali')}}" placeholder="Nama Orang Tua / Wali" required><br><br>
 							<input class="input" name="pekerjaan_ortu_wali" type="text" value="{{old('pekerjaan_ortu_wali')}}" placeholder="Pekerjaan Orang Tua / Wali" required><br><br>
 							<input class="input" name="alamat_ortu_wali" type="text" value="{{old('alamat_ortu_wali')}}" placeholder="Alamat Orang Tua / Wali" required><br><br>
@@ -196,7 +190,7 @@
 				</form> 
 			@endif
 			<!-- PENDAFTARAN ASRAMA -->
-			@if($user->is_penghuni == 0 && $userPenghuni != '0')
+			@if(DormAuth::User()->is_penghuni == 0 && ITBdorm::DataUser(DormAuth::User()->id)->id_penghuni != NULL)
 				<h1><b>Informasi Pendaftaran</b></h1>
 				<p>Terimakasih telah bergabung dengan UPT Asrama ITB. Silahkan daftarkan diri Anda untuk permohonan tinggal di asarama.
 					Syarat dan ketentuan adalah sebagai berikut:<br>

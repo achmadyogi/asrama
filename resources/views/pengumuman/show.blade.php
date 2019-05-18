@@ -12,7 +12,7 @@
     <button id="dir_down" style="border: none; background-color: transparent;"><b><i class="fa fa-angle-down" style="font-size: 24px;"></i></b></button>
     <button id="dir_up" style="border: none; background-color: transparent;"><b><i class="fa fa-angle-up" style="font-size: 24px;"></i></b></button>
         <ul class="sub_dir">
-            <li class="sub_dir_list" id="active"><a href="/informasi/pendaftaran">Pendaftaran</a></li>
+            <li class="sub_dir_list" id="active"><a href="{{url('/informasi/pendaftaran')}}">Pendaftaran</a></li>
             <li class="sub_dir_list"><a href="{{url('/berita')}}">Berita</a></li>
             <li class="sub_dir_list"><a href="{{url('/pengumuman')}}">Pengumuman</a></li>
             <li class="sub_dir_list"><a href="{{ route('peta') }}">Peta</a></li>
@@ -81,16 +81,22 @@
 <br><br>
 <div class="container">
     <div class="row">
-        <div class="col-md-9">
-            <h2><b>{{$pengumuman->title}}</b></h2><hr>
-            <p style="text-align: justify;">
-                {{$pengumuman->isi}}
-            </p>
-        </div>
-        <div class="col-md-3">
-            <!-- MENU DASHBOARD -->
-            @include('pengumuman.sider')
-        </div>
+        @if($pengumuman == '0')
+            <h2>Belum terdapat pengumuman untuk saat ini</h2>
+            <br>
+        @else
+            <div class="col-md-8">
+                <h2><b>{{$pengumuman->title}}</b></h2><hr>
+                <script src ="ckeditor/ckeditor.js"></script>
+                <p style="text-align: justify;">
+                    <?php echo($pengumuman->isi) ?>
+                </p><br><br>
+            </div>
+            <div class="col-md-4">
+                <!-- MENU DASHBOARD -->
+                @include('pengumuman.sider')
+            </div>
+        @endif
     </div>
 </div>
 <br><br>

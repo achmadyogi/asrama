@@ -1,6 +1,7 @@
 @extends('layouts.default')
 
 @section('title','Periode Tinggal')
+@section('menu_dash','active')
 
 @section('main_menu')
 	@parent
@@ -12,10 +13,6 @@
 <div class="container">
 	<br><br>
 	<div class="row">
-		<div class="col-md-3">
-			<!-- MENU DASHBOARD -->
-			@include('dashboard.menuDashboard')
-		</div>
 		<div class="col-md-9">
 			<!-- KONTEN UTAMA-->
 			<div id="content">
@@ -29,32 +26,16 @@
 						{{session()->get('status2')}}
 					</div> 
 				@endif
-                <h1><b>Data NIM</b></h1>
-                <div class="table">
-                    <table>
-                        <tr>
-                            <th>No.</th>
-                            <th>Nama</th>
-                            <th>NIM</th>
-                            <th>No. Registrasi</th>
-                        </tr>
-                        <?php $urut = 0; ?>
-                        @foreach($nim as $nim)
-                        <tr>
-                            <td>{{$urut+1}}.</td>
-                            <td>{{$nama}}</td>
-                            <td>{{$nim->nim}}</td>
-                            <td>{{$nim->registrasi}}</td>
-                        </tr>
-                        @endforeach
-                    </table>
-                </div>
-                <h1><b>Form Edit NIM</b></h1>
-				<div style="border: 1px solid #C9C9C9; border-radius: 5px;">
-					<div style="background-color: #E8E8E8; padding: 10px 15px 10px 15px">
-						Form Edit NIM
-					</div>
-					<div style="padding: 10px 15px 10px 15px;"><br>
+                <h1><b>Data Penghuni</b></h1>
+                <p>
+                    <span style="display: inline-block; width: 100px;">Nama</span>: {{DormAuth::User()->name}}<br>
+                    <span style="display: inline-block; width: 100px;">NIM</span>: {{ITBdorm::DataUser(DormAuth::User()->id)->nim}}<br>
+                    <span style="display: inline-block; width: 100px;">Registrasi</span>: {{ITBdorm::DataUser(DormAuth::User()->id)->registrasi}}<br>
+                </p>
+				<div class="sider">
+                    <div style="margin-top: 0px; height: 4px; background-color: #0769B0; border-top-left-radius: 3px; border-top-right-radius: 3px;"></div>
+					<div class="sider_body" style="background-color: white; padding: 10px 15px 10px 15px;">
+                        <h3><b>Form Edit NIM</b></h3>
 						<form action="{{ route('ganti_nim') }}" method="post">
 							{{ csrf_field() }}
 							<div class="form-group{{ $errors->has('nim') ? ' has-error' : '' }}">
@@ -65,11 +46,15 @@
                                 </span>
                                  @endif
                             </div>
-							<button class="button" type="submit">Submit</button>
+							<button class="button" type="submit">Submit</button><br><br>
 						</form>
 					</div>
                 </div>
-            </div>
+            </div><br><br>
+        </div>
+        <div class="col-md-3">
+            <!-- MENU DASHBOARD -->
+            @include('dashboard.menuDashboard')
         </div>
     </div>
     <br><br><br>

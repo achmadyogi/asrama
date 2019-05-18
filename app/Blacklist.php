@@ -10,8 +10,13 @@ class Blacklist extends Model
 	protected $primaryKey = 'id_user';
 	public $timestamps = false;
 
+
 	public function user()
 	{
 		return $this->belongsTo('App\User', 'id_user');
 	}
+
+	protected $fillable = [
+        'id_user','alasan'
+    ];
 }

@@ -11,7 +11,7 @@
     <button id="dir_down" style="border: none; background-color: transparent;"><b><i class="fa fa-angle-down" style="font-size: 24px;"></i></b></button>
     <button id="dir_up" style="border: none; background-color: transparent;"><b><i class="fa fa-angle-up" style="font-size: 24px;"></i></b></button>
         <ul class="sub_dir">
-            <li class="sub_dir_list"><a href="/informasi/pendaftaran">Pendaftaran</a></li>
+            <li class="sub_dir_list"><a href="{{url('/informasi/pendaftaran')}}">Pendaftaran</a></li>
             <li class="sub_dir_list" id="active"><a href="{{url('/berita')}}">Berita</a></li>
             <li class="sub_dir_list"><a href="{{url('/pengumuman')}}">Pengumuman</a></li>
             <li class="sub_dir_list"><a href="{{ route('peta') }}">Peta</a></li>
@@ -82,7 +82,7 @@
     @foreach($list_berita as $berita)
     <div class="row">
         <div class="col-md-4"  style="padding-top: 15px">
-            <div style="padding:5px; border: 1px solid grey; border-radius: 5px;"><img src="img/berita/{{ $berita->file }}" style="width:100%"></div>
+            <div style="padding:5px; border: 1px solid grey; border-radius: 5px;"><img src="{{ Storage::url($berita->file) }}" style="width:100%"></div>
         </div> 
         <div class="col-md-8" style="padding-top: 0px">
             <h2 style="margin-top: 0px"><b>{{ $berita->title }}</b></h2>

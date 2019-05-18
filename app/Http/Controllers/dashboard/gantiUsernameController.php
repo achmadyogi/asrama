@@ -12,11 +12,6 @@ use App\User;
 use App\User_nim;
 use App\Prodi;
 use Session;
-use App\Http\Controllers\Traits\initialDashboard;
-use App\Http\Controllers\Traits\tanggalWaktu;
-use App\Http\Controllers\Traits\tanggal;
-use App\Http\Controllers\Traits\editPeriode;
-use App\Http\Controllers\Traits\pendaftaranPenghuni;
 use App\Periode;
 use dateTime;
 use Carbon\Carbon;
@@ -27,29 +22,42 @@ use App\Kamar;
 use App\Kamar_penghuni;
 use App\Tarif;
 use App\Tagihan;
+use ITBdorm;
+use DormAuth;
 
 class gantiUsernameController extends Controller
 {
-	use initialDashboard;
-	use tanggalWaktu;
-	use tanggal;
-	use editPeriode;
-    use pendaftaranPenghuni;
-
     public function index(Request $request){
     	$this->Validate($request, [
     		'username' => 'required|unique:users,username'
     	]);
-    	$username = Auth::User();
+    	$username = DormAuth::User();
     	$username->username = $request->username;
     	$username->save();
 
     	Session::flash('status2','username Anda sudah diperbarui. Silahkan logout dan login kembali untuk mengaplikasikan perubahan yang sudah diatur.');
-    	return view('dashboard.ganti_username', $this->getInitialDashboard());
-    }
+    	return redirect()->back();
+	}
+	
+	public function gantiEmail(Request $request){
+    	$this->Validate($request, [
+    		'email' => 'required|unique:users,email'
+    	]);
+    	$email = DormAuth::User();
+    	$email->email = $request->email;
+    	$email->save();
+
+    	Session::flash('status2','Email Anda sudah diperbarui. Silahkan logout dan login kembali untuk mengaplikasikan perubahan yang sudah diatur.');
+    	return redirect()->back();
+	}
 
     public function form(){
     	Session::flash('menu','username');
-    	return view('dashboard.ganti_username', $this->getInitialDashboard());
-    }
+    	return view('dashboard.ganti_username');
+	}
+	
+	public function formEditEmail(){
+    	Session::flash('menu','email');
+    	return view('dashboard.ganti_email');
+	}
 }

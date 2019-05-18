@@ -19,6 +19,6 @@ class User_penghuni extends Model
         'gol_darah', 'jenis_kelamin', 'alamat', 'kota', 'propinsi', 'kodepos', 'negara', 'agama',
         'pekerjaan', 'warga_negara', 'telepon', 'instansi',
         'nama_ortu_wali', 'pekerjaan_ortu_wali', 'alamat_ortu_wali', 'telepon_ortu_wali',
-        'kontak_darurat',
+        'kontak_darurat', 'status_daftar'
     ];
 }

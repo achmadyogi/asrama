@@ -8,6 +8,7 @@ class Kerusakan_kamar extends Model
 {
     protected $table = 'kerusakan_kamar';
 	protected $primaryKey = 'id_kerusakan';
+	protected $fillable = ['id_pelapor','id_kamar','keterangan','status'];
 
 	public function user()
 	{

@@ -8,7 +8,7 @@ class Daftar_asrama_non_reguler extends Model
 {
     protected $table = 'daftar_asrama_non_reguler';
     protected $primaryKey = 'id_daftar';
-    protected $fillable = ['id_user','tujuan_tinggal','preference','lokasi_asrama','verification','is_difable','ket_difable', 'tanggal_masuk','tempo','lama_tinggal'];
+    protected $fillable = ['id_user','tujuan_tinggal','preference','lokasi_asrama','verification','is_difable','ket_difable', 'tanggal_masuk','tempo','lama_tinggal','jenis_penghuni'];
     protected $nullable = ['ket_difable'];
 
     public function user() {

@@ -13,4 +13,8 @@ class Kamar_penghuni extends Model
     public function daftar_asrama(){
     	$this->morphTo();
     }
+
+    public function daftar_asrama_reguler() {
+        $this->belongsTo('App\Daftar_asrama_reguler','daftar_asrama_id','id_daftar');
+    }
 }

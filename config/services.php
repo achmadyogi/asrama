@@ -15,14 +15,14 @@ return [
     */
 
     'mailgun' => [
-        'domain' => 'perkasaid.com',
+        'domain' => 'riodpp.com',
         'secret' => 'key-15450c6837adbf5d8c4482856f9aba14',
     ],
 
     'ses' => [
         'key' => env('SES_KEY'),
         'secret' => env('SES_SECRET'),
-        'region' => 'us-east-1',
+        'region' => env('SES_REGION', 'us-east-1'),
     ],
 
     'sparkpost' => [

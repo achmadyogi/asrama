@@ -1,6 +1,7 @@
 @extends('layouts.default')
 
 @section('title','Periode Tinggal')
+@section('menu_dash','active')
 
 @section('main_menu')
 	@parent
@@ -12,10 +13,6 @@
 <div class="container">
 	<br><br>
 	<div class="row">
-		<div class="col-md-3">
-			<!-- MENU DASHBOARD -->
-			@include('dashboard.menuDashboard')
-		</div>
 		<div class="col-md-9">
 			<!-- KONTEN UTAMA-->
 			<div id="content">
@@ -58,8 +55,10 @@
 									<td>{{$jumlah_bulan[$urut]}}</td>
 									@if($status[$urut] == 'aktif')
 										<td style="color: green"><b>{{$status[$urut]}}</b></td>
-									@else
+									@elseif($status[$urut] == 'ditutup')
 										<td style="color: red"><b>{{$status[$urut]}}</b></td>
+									@else
+										<td style="color: #8D802B"><b>{{$status[$urut]}}</b></td>
 									@endif
 									<td>{{$keterangan[$urut]}}</td>
 									<td><button class="button" id="btn{{$id_periode[$urut]}}" type="button">Edit</button>
@@ -95,25 +94,13 @@
 								  	  Pengeditan dilakukan untuk membuka kembali pendaftaran setelah sesi pendaftaran sebelumnya sudah ditutup.</p><hr>
 									  <form action="{{ route('edit_lama') }}" method="POST">
 									  	{{ csrf_field() }}
-									  	<label>Tanggal Pendaftaran Dibuka</label>
+									  	<label>Nama Periode</label><br>
+										<input id="nama_periode_edit" class="input" type="text" name="nama_periode_edit" required><br><br>
+									  	<label>Tanggal Pendaftaran Dibuka (ex: 04/25/2019 08:30 AM)</label><br>
+										<input id="tanggal_pendaftaran_dibuka" class="input" type="datetime-local" name="tanggal_pendaftaran_dibuka" placeholder="Tanggal Pendaftaran Dibuka" required><br><br>
 									  	<input type="Hidden" name="id_periode" value="{{$id_periode[$urut]}}">
-									  	<div class="form-group{{ $errors->has('tanggal_pendaftaran_dibuka') ? ' has-error' : '' }}">
-										  	<input id="tanggal_pendaftaran_dibuka" class="input" type="datetime-local" name="tanggal_buka_daftar" placeholder="Tanggal Pendaftaran Dibuka">
-										  	@if ($errors->has('tanggal_pendaftaran_dibuka'))
-				                                <span class="help-block">
-				                                    <strong>{{ $errors->first('tanggal_pendaftaran_dibuka') }}</strong>
-				                                </span>
-				                            @endif
-										</div>
-										<label>Tanggal Pendaftaran Ditutup</label>
-										<div class="form-group{{ $errors->has('tanggal_pendaftaran_dibuka') ? ' has-error' : '' }}">
-										  	<input id="tanggal_pendaftaran_ditutup" class="input" type="datetime-local" name="tanggal_tutup_daftar" placeholder="Tanggal Pendaftaran Ditutup">
-										  	@if ($errors->has('tanggal_pendaftaran_ditutup'))
-				                                <span class="help-block">
-				                                    <strong>{{ $errors->first('tanggal_pendaftaran_ditutup') }}</strong>
-				                                </span>
-				                            @endif
-										</div>
+										<label>Tanggal Pendaftaran Ditutup (ex: 04/25/2019 08:30 AM)</label><br>
+										<input id="tanggal_pendaftaran_ditutup" class="input" type="datetime-local" name="tanggal_pendaftaran_ditutup" placeholder="Tanggal Pendaftaran Ditutup" required><br><br>
 									  	<button class="button" type="submit">Edit</button><br><br>
 									  </form>
 									</div>
@@ -166,6 +153,7 @@
 						<form action="{{ route('tambah_periode') }}" method="post">
 							{{ csrf_field() }}
 							<div class="form-group{{ $errors->has('nama_periode') ? ' has-error' : '' }}">
+								<label>Nama Periode</label><br>
 								<input class="input" id="nama_periode" type="text" name="nama_periode" placeholder="Nama Periode" value="{{ old('nama_periode') }}" required autofocus>
 	                            @if ($errors->has('nama_periode'))
 	                                <span class="help-block">
@@ -174,7 +162,8 @@
 	                            @endif
 	                        </div>
 	                        <div class="form-group{{ $errors->has('tanggal_buka_daftar') ? ' has-error' : '' }}">
-								<input class="input" id="tanggal_buka_daftar" type="text" onfocus="(this.type='date')" name="tanggal_buka_daftar" placeholder="Tanggal Pendaftaran Dibuka" value="{{ old('tanggal_buka_daftar') }}" required autofocus>
+	                        	<label>Tanggal Pendaftaran Dibuka (ex: 04/25/2019 08:30 AM)</label><br>
+								<input class="input" id="tanggal_buka_daftar" type="datetime-local" name="tanggal_buka_daftar" placeholder="Tanggal Pendaftaran Dibuka" value="{{ old('tanggal_buka_daftar') }}" required autofocus>
 	                            @if ($errors->has('tanggal_buka_daftar'))
 	                                <span class="help-block">
 	                                    <strong>{{ $errors->first('tanggal_buka_daftar') }}</strong>
@@ -182,7 +171,8 @@
 	                            @endif
 	                        </div>
 	                        <div class="form-group{{ $errors->has('tanggal_tutup_daftar') ? ' has-error' : '' }}">
-								<input class="input" id="tanggal_tutup_daftar" type="text" onfocus="(this.type='date')" name="tanggal_tutup_daftar" placeholder="Tanggal Pendaftaran Ditutup" value="{{ old('tanggal_tutup_daftar') }}" required autofocus>
+	                        	<label>Tanggal Pendaftaran Ditutup (ex: 04/25/2019 08:30 AM)</label><br>
+								<input class="input" id="tanggal_tutup_daftar" type="datetime-local" name="tanggal_tutup_daftar" placeholder="Tanggal Pendaftaran Ditutup" value="{{ old('tanggal_tutup_daftar') }}" required autofocus>
 	                            @if ($errors->has('tanggal_tutup_daftar'))
 	                                <span class="help-block">
 	                                    <strong>{{ $errors->first('tanggal_tutup_daftar') }}</strong>
@@ -190,7 +180,8 @@
 	                            @endif
 	                        </div>
 	                        <div class="form-group{{ $errors->has('tanggal_mulai_tinggal') ? ' has-error' : '' }}">
-								<input class="input" id="tanggal_mulai_tinggal" type="text" onfocus="(this.type='date')" name="tanggal_mulai_tinggal" placeholder="Tanggal Mulai Tinggal" value="{{ old('tanggal_mulai_tinggal') }}" required autofocus>
+	                        	<label>Tanggal Mulai Tinggal (ex: 04/25/2019)</label><br>
+								<input class="input" id="tanggal_mulai_tinggal" type="date" name="tanggal_mulai_tinggal" placeholder="Tanggal Mulai Tinggal" value="{{ old('tanggal_mulai_tinggal') }}" required autofocus>
 	                            @if ($errors->has('tanggal_mulai_tinggal'))
 	                                <span class="help-block">
 	                                    <strong>{{ $errors->first('tanggal_mulai_tinggal') }}</strong>
@@ -198,7 +189,8 @@
 	                            @endif
 	                        </div>
 	                        <div class="form-group{{ $errors->has('tanggal_selesai_tinggal') ? ' has-error' : '' }}">
-								<input class="input" id="tanggal_selesai_tinggal" type="text" onfocus="(this.type='date')" name="tanggal_selesai_tinggal" placeholder="Tanggal Selesai Tinggal" value="{{ old('tanggal_selesai_tinggal') }}" required autofocus>
+	                        	<label>Tanggal Selesai Tinggal (ex: 04/25/2019)</label><br>
+								<input class="input" id="tanggal_selesai_tinggal" type="date" name="tanggal_selesai_tinggal" placeholder="Tanggal Selesai Tinggal" value="{{ old('tanggal_selesai_tinggal') }}" required autofocus>
 	                            @if ($errors->has('tanggal_selesai_tinggal'))
 	                                <span class="help-block">
 	                                    <strong>{{ $errors->first('tanggal_selesai_tinggal') }}</strong>
@@ -206,19 +198,25 @@
 	                            @endif
 	                        </div>
 	                        <div class="form-group{{ $errors->has('jumlah_bulan') ? ' has-error' : '' }}">
-								<input class="input" id="jumlah_bulan" type="text" name="jumlah_bulan" placeholder="Jumlah bulan dalam satu periode" value="{{ old('jumlah_bulan') }}" required autofocus>
+	                        	<label>Jumlah Bulan</label><br>
+								<input class="input" id="jumlah_bulan" type="number" name="jumlah_bulan" placeholder="Jumlah bulan dalam satu periode" value="{{ old('jumlah_bulan') }}" required autofocus>
 	                            @if ($errors->has('jumlah_bulan'))
 	                                <span class="help-block">
 	                                    <strong>{{ $errors->first('jumlah_bulan') }}</strong>
 	                                </span>
 	                            @endif
 	                        </div>
+	                        <label>Keterangan Tambahan</label><br>
 							<input class="input" type="text" name="keterangan" placeholder="Keterangan Tambahan" required autofocus><br><br>
 							<button class="button" type="submit">Submit</button>
 						</form>
 					</div>
 				</div>
-			</div>
+			</div><br><br>
+		</div>
+		<div class="col-md-3">
+			<!-- MENU DASHBOARD -->
+			@include('dashboard.menuDashboard')
 		</div>
 	</div>
 	<br><br><br>

@@ -9,6 +9,7 @@ class Permohonan_pindah extends Model
     //
     protected $table = 'permohonan_pindah';
     protected $primaryKey = 'id_permohonan';
+    protected $fillable = ['id_user','id_kamar_lama', 'id_kamar_baru','alasan','tanggal_mulai_pindah','verification'];
 
     public function user()
     {

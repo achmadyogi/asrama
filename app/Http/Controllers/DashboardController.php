@@ -15,8 +15,10 @@ use App\Blacklist;
 use App\Keluar_asrama;
 use App\kerusakan_kamar;
 use App\Pengelola;
-use App\Http\Controllers\Traits\initialDashboard;
+use App\Fakultas;
 use Session;
+use ITBdorm;
+use DormAuth;
 
 class DashboardController extends Controller
 {
@@ -34,9 +36,32 @@ class DashboardController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    use initialDashboard;
     public function index(){
+        $fakultas = Fakultas::all();
         Session::flash('menu','dashboard');
-        return view('dashboard.dashboard', $this->getInitialDashboard());
+        return view('dashboard.dashboard',['fakultas' => $fakultas]);
+    }
+
+    public function dataDiri(){
+        Session::flash('menu','dataDiri');
+        return view('dashboard.dataDiri');
+    }
+
+    public function uploadProfil(Request $request){
+        //dapatkan ID user
+        $this->Validate($request, [
+            'avatar' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        $ID = DormAuth::User();
+
+        $avatarName = $ID->id.'_avatar'.time().'.'.request()->avatar->getClientOriginalExtension();
+        
+        $request->avatar->storeAs('avatars',$avatarName);
+        
+        $ID->foto_profil = $avatarName;
+        $ID->save();
+        Session::flash('status2','Foto profil berhasil di unggah.');
+        return redirect()->route('dashboard');
     }
 }

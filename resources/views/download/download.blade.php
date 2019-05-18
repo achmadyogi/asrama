@@ -8,11 +8,11 @@
       @foreach ($downloadable as $item)
       	<div class="row">
       		<div class="col-md-10">
-		        <a href="/download/{{$item->id_file}}"> <h3> {{$item->nama_file}} </h3> </a>
+		        <a target="_blank" href="/{{$item->url_file}}"> <h3> {{$item->nama_file}} </h3> </a>
 			</div>
 			@if(Auth::user())
 				<div class="col-md-2" style="text-align:right; margin-top: 22px">
-				<a href="/download/{{$item->id_file}}"> <button class="btn btn-md btn-primary"> Generate </button> </a>
+				<a target="_blank" href="/{{$item->url_file}}"> <button class="btn btn-md btn-primary"> Generate </button> </a>
 				</div>
 			@endif
 		</div>			

@@ -9,8 +9,6 @@
 
 @section('header_title','Email Verification')
 @section('content')
-
-@section('content')
 <div class="container">
     <br><br><br>
     <style>

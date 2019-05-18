@@ -12,7 +12,7 @@
     <button id="dir_down" style="border: none; background-color: transparent;"><b><i class="fa fa-angle-down" style="font-size: 24px;"></i></b></button>
     <button id="dir_up" style="border: none; background-color: transparent;"><b><i class="fa fa-angle-up" style="font-size: 24px;"></i></b></button>
         <ul class="sub_dir">
-            <li class="sub_dir_list" id="active"><a href="/informasi/pendaftaran">Pendaftaran</a></li>
+            <li class="sub_dir_list" id="active"><a href="{{url('/informasi/pendaftaran')}}">Pendaftaran</a></li>
             <li class="sub_dir_list"><a href="{{url('/berita')}}">Berita</a></li>
             <li class="sub_dir_list"><a href="{{url('/pengumuman')}}">Pengumuman</a></li>
             <li class="sub_dir_list"><a href="{{ route('peta') }}">Peta</a></li>
@@ -80,14 +80,23 @@
 @section('content')
 <div class="container">
     <h1><b>Pendaftaran Penghuni UPT Asrama ITB</b></h1><hr>
-    <p style="text-align: justify;">Tinggal di asrama dapat memberikan kesan tersendiri bagi mahasiswa saat proses akademik berlangsung. Untuk itu Asrama ITB hadir dengan berbagai pilihan kebetuhuan tinggal yang sudah disesuaikan dengan ketersediaan fasilitas yang memadai. Berikut ini adalah kategori entitas yang dapat bergabung untuk tinggal di asrama.<br>
+    <p style="text-align: justify;">Tinggal di asrama dapat memberikan kesan tersendiri bagi mahasiswa saat proses akademik berlangsung. Untuk itu Asrama ITB hadir dengan berbagai pilihan kebutuhan tinggal yang sudah disesuaikan dengan ketersediaan fasilitas yang memadai. Dikarenakan kapasitas Asrama ITB yang belum dapat menampung semua civitas akademika ITB, maka UPT Asrama memiliki prioritas mahasiswa yang dapat tinggal di Asrama ITB. Asrama ITB kampus Ganesha diperuntukkan bagi mahasiswa Strata 1 dengan kriteria sebagai berikut   :<br>
+        <ol>
+            <li>Mahasiswa Tahap Persiapan Bersama (TPB) penerima beasiswa Bidikmisi dan beasiswa program Afirmasi Pendidikan Tinggi (prioritas utama);</li>
+            <li>Mahasiswa Tahap Persiapan Bersama (TPB) Non-Bidikmisi;</li>
+            <li>Mahasiswa penerima beasiswa Bidikmisi Non-TPB dan;</li>
+            <li>Mahasiswa Non-TPB dan Non-Bidikmisi (dengan syarat melampirkan surat rekomendasi untuk dapat tinggal di asrama dari Dekan Fakultas/Sekolah atau unit kerja terkait). </li>
+        </ol>
+        Asrama ITB kampus Jatinangor diperuntukkan bagi seluruh civitas akademika ITB yang berkuliah di kampus Jatinangor dari mahasiswa S1, S2 hingga S3. Untuk mahasiswa ITB Cirebon tingkat TPB, mendapatkan prioritas utama untuk dapat tinggal di Asrama. 
+        <br><br>Berikut ini merupakan kategori kepenghunian berdasarkan periode tinggal di Asrama ITB.<br><br> 
+
         <b>PENGHUNI REGULER</b><br>
-        Penghuni reguler adalah penghuni dengan status mahasiswa ITB. Seorang penghuni reguler hanya dapat mendaftar pada periode tertentu yang waktunya telah ditetapkan oleh pihak asrama. Pendaftaran penghuni reguler secara umum dilakukan ketika tahun ajaran baru atau semester baru, namun tidak menutup kemungkinan untuk masih bisa melakukan pendaftaran ditengah-tengahnya apabila terdapat kondisi khusus dengan menghubungi petugas kami terlebih dahulu.<br>
+        Penghuni reguler adalah penghuni dengan status mahasiswa ITB. Seorang penghuni reguler hanya dapat mendaftar pada periode tertentu yang waktunya telah ditetapkan oleh pihak asrama. Pendaftaran penghuni reguler secara umum dilakukan ketika tahun ajaran baru atau semester baru, namun tidak menutup kemungkinan untuk masih bisa melakukan pendaftaran ditengah-tengahnya apabila terdapat kondisi khusus dengan menghubungi sekretariat UPT Asrama terlebih dahulu.<br><br>
         <b>PENGHUNI NON REGULER</b><br>
-        Penghuni Non Reguler terbuka bagi siapa saja yang ingin mendaftar ke asrama. Penghuni Non Reguler dapat menetapkan tanggal masuk dan tanggal keluar dari asrama sesuai keperluan tinggal. Karena persediaan kamar yang terbatas, penghuni non reguler akan diperioritaskan untuk segala entitas yang masih berkecimpung dengan akademik di ITB atau keperluan pendidikan mengingat asrama bukanlah tempat penginapan umum atau hotel yang dirancang untuk bisnis.
+        Penghuni Non Reguler terbuka bagi siapa saja yang ingin mendaftar ke asrama, akan tetapi penghuni yang akan tinggal perlu membuat surat permohonan tinggal dari Fakultas / Sekolah / Unit di ITB dan mendapat surat persetujuan tinggal dari Wakil Rektor Bidang Akademik dan Kemahasiswaan yang ditujukan kepada UPT Asrama ITB. Penghuni Non Reguler dapat menetapkan tanggal masuk dan tanggal keluar dari asrama sesuai keperluan tinggal. Karena persediaan kamar yang terbatas, penghuni non reguler akan diperioritaskan untuk segala entitas yang masih berkecimpung dengan akademik di ITB atau keperluan pendidikan mengingat asrama bukanlah tempat penginapan umum atau hotel yang dirancang untuk bisnis.
     </p><br>
     <h2><b>Biaya Tinggal</b></h2>
-    <p>Berikut ini adalah list biaya tinggal di asrama sesuai dengan Surat Keputusan Rektor Institut Teknologi Bandung Nomor SK/11.B01/PP/2017.</p>
+    <p>Berikut merupakan daftar biaya tinggal di asrama per orang sesuai dengan Surat Keputusan Rektor nomor 1322/SK/l1.B01/SK/2018 pada 5 November 2018 tentang Ketentuan Perubahan Penggunaan Asrama Institut Teknologi Bandung.</p>
     <div class="table">
         <table>
             <tr>
@@ -148,13 +157,15 @@
         <ul>
             <li>Biaya tersebut berlaku sesuai dengan jumlah penghuni dalam satu kamar seperti yang telah disebutkan.</li>
             <li>Apabila penghuni baru hendak tinggal sendiri dalam satu kamar, maka biaya akan dilipatkan berdasarkan kapasitas kamar</li>
-            <li>Untuk tinggal sementara dengan biaya harian, lama tinggal maksimal adalah 10 hari. Bila lebih dari itu, maka biaya akan berganti menjadi bulanan</li>
+            <li>Untuk tinggal sementara dengan biaya harian, lama tinggal maksimal adalah 15 hari. Bila lebih dari itu, maka biaya akan berganti menjadi bulanan</li>
             <li>Untuk kolom yang tidak ada harganya, maka pilihan tersebut tidak ada. Namun, harga dapat ditentukan lebih lanjut bila memang sangat diperlukan.</li>
+            <li>Hal-hal khusus lainnya yang tidak dicantumkan mengenai tarif asrama dapat menghubungi No Hp.0811-2295-723 / 022-2534119 .</li>
         </ul>
     </p><br>
     <h2><b>Prosedur Pendaftaran</b></h2>
     <p>Untuk bisa bergabung di UPT Asrama ITB, berikut ini adalah prosedur umum yang harus dilakukan. Untuk informasi yang lebih spesifik dapat dilihat di halaman utama untuk memeriksa informasi dan pengumuman terkait pendaftaran yang akan segera digelar khususnya untuk pendaftaran reguler.
         <ol>
+            <li>Khusus pendaftar penghuni Non-reguler sebelum membuat akun terlebih dahulu mengirimkan surat permohonan tinggal dari Fakultas / Sekolah / Unit Kerja di ITB ke Wakil Rektor Bidang Akademik dan Kemahasiswaan cc. UPT Asrama ITB. Setelah mendapatkan balasan persetujuan kemudian melakukan pendaftaran online.</li>
             <li>Peserta harus membuat akun asrama terlebih dahulu</li>
             <li>Peserta mengisi kelengkapan data diri detail pada dashboard.</li>
             <li>Peserta memilih kategori pendaftaran penghuni apakah reguler atau non reguler berdasarkan ketersediaan periode pendaftaran yang masih dibuka.</li>
@@ -164,7 +175,7 @@
             <li>Admin kami akan memeriksa status pembayaran Peserta dan akan menyetujui rencana tinggal yang diajukan.</li>
             <li>Setelah itu, Peserta akan mendapatkan kontrak tinggal dan kamar dan asrama siap untuk dihuni.</li>
             <li>Saat hadir di asrama dan proses check in, Peserta harus menyerahkan bukti fisik pendaftaran yang sudah di upload sebelumnya</li>
-        </ol>
+           </ol>
     Kebutuhan informasi spesifik akan diketahui saat proses pendaftaran berlangsung. Apabila ditemukan kebingunan, Peserta dapat menghubungi kami dengan media yang telah disediakan.
     </p>
     <br>
